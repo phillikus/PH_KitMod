@@ -1,0 +1,53 @@
+ADD_KIT ~PH_Doomblade~
+  ~PH_Doomblade 1 1 1 1 1 1 1 1~
+  ~PH_Doomblade 0 0 0 0 0 0 0 0 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 0 0 0 0 0 2 0 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~PH_Doomblade 9 0 0 11 0 0~ // Minimum Ability - abclasrq
+  ~PH_Doomblade 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~PH_Doomblade 0 0 17 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~PH_Doomblade 0 0 15 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
+  ~PH_Doomblade 1 1 1 1 1 1 1 1 1~ // Alignment
+  ~PH_Doomblade 0 0 0 0 0 0~ // Dual Class Options
+  ~PH_KITMOD\Doomblade\clab\PHDB.2da~
+  ~K_F_H K_F_D K_F_G K_F_E K_F_HE K_F_HL K_F_HO~
+  ~0x00004000 2~
+  ~Fi0~
+  ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+	SAY @101
+	SAY @102
+	SAY @103
+
+LAF fl#add_kit_ee STR_VAR 
+    kit_name = ~PH_Doomblade~
+    hpclass = HPPRS
+END
+
+// prevent usage of shields
+
+OUTER_SET doomblade_code = (0x4000 + %PH_Doomblade%)
+
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  SPRINT weapon_name ~%SOURCE_FILE%~
+  READ_SHORT 0x31 prof ELSE 0
+  READ_SHORT 0x1c type
+  READ_LONG  0x64 abil_off
+  READ_SHORT 0x68 abil_num
+
+  PATCH_IF (type = 12) BEGIN   // Shields
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 parameter1 = %doomblade_code% parameter2 = 9 power = 0 timing = 2 END
+  END
+
+//////////////////////////////////////////////////////////
+// Copy core resources
+//////////////////////////////////////////////////////////
+
+COPY ~PH_KITMOD\Doomblade\spl\dbdmg.spl~ ~override~
+COPY ~PH_KITMOD\Doomblade\spl\dbstat.spl~ ~override~
+COPY ~PH_KITMOD\Doomblade\spl\dbrage.spl~ ~override~
+
+
+COPY ~PH_KITMOD\Doomblade\spl\dbrage.spl~ ~override~ // Blood Surge
+    SAY NAME1 @104
+    SAY UNIDENTIFIED_DESC @105
+
+COPY ~PH_KITMOD\Doomblade\spl\dbheal.spl~ ~override~
+COPY ~PH_KITMOD\Doomblade\spl\dbwind.spl~ ~override~

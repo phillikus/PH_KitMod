@@ -1,0 +1,8 @@
+Doomblade:
++ set luck and save penalty => stat spl
++ implement physical damage boost
++ adjust CLAB file
++ add BloodBurst
++ add execution technique
+
+GAM_07 -> drink potion sound (use for hp steal?)

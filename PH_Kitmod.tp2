@@ -1,0 +1,28 @@
+// Doomblade
+// BGEE / BG2EE / EET
+
+BACKUP ~PH_KITMOD/backup~
+AUTHOR ~phillikus~
+VERSION ~1.0~
+
+ALWAYS
+
+	INCLUDE ~%MOD_FOLDER%/Lib/fl#add_kit_ee.tpa~
+  
+END
+
+LANGUAGE ~English~
+         ~English~
+         ~PH_KITMOD/tra/English/Doomblade.tra~
+
+BEGIN ~Doomblade~
+
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
+  @1000
+
+PRINT ~Installing Doomblade kit...~
+
+//////////////////////////////////////////////////////////
+// EEex Lua bootstrap
+//////////////////////////////////////////////////////////
+INCLUDE ~PH_KITMOD/Doomblade/tpa/Doomblade.tpa~

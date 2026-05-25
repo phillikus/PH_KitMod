@@ -1,0 +1,34 @@
+/* ===================== *
+ *    Skullbreaker          *
+ * ===================== */
+@201 = ~skullbreaker~
+@202 = ~Skullbreaker~
+@203 = ~Skullbreaker:
+
+The Skullbreaker is a brutal warrior trained to disable foes with blunt and spiked weapons. Each weapon in their arsenal delivers a distinct crippling effect, allowing the Skullbreaker to adapt to changing battles with crushing precision.
+
+Advantages:
+- Apply different effects on each hit depending on type of equiped weapon:
+    • Clubs: chance to daze targets, reducing movement and THAC0
+    • Maces: chance to stun targets
+    • Morning Stars: weaken armor and inflict lingering wounds
+    • Flails: chance to slow targets
+    • War Hammers: chance to knock targets back and stun
+    • Spiked Clubs: may shake enemy morale and reduce THAC0
+- May use the Shockwave ability once per day, gains an additional use every 4 levels thereafter
+
+Shockwave:
+All enemies within 15 feet are propelled back and stunned for 1 round on a failed save vs death. Huge creatures are stunned 
+only momentarily and will not be knocked back.
+
+- 10th level: immune to stun and knockback effects
+- 15th level: May use the Crushing Victory ability once per day
+
+Crushing Victory:
+With every ounce of strength committed to a relentless assault, the Skullbreaker strikes with enough force to splinter shields and crush armor.
+All crushing damage within the next 3 rounds is doubled. When the effect ends, the Skullbreaker becomes Winded for 2 rounds and suffers a -2 penalty 
+to THAC0 and armor class and 50% reduction in movement speed
+
+Disadvantages:
+• May only specialize in clubs, maces, flails, morning stars, and war hammers
+• Cannot use missile weapons

@@ -1,0 +1,54 @@
+/* ===================== *
+ *    Doomblade          *
+ * ===================== */
+@101 = ~doomblade~
+@102 = ~Doomblade~
+@103 = ~Doomblade:
+
+The Doomblade is a warrior who embraces ruinous aggression, sacrificing resilience and fortune for devastating melee power. Each strike lands with unnatural force, but the Doomblade’s reckless style leaves them exposed to every misstep. When pressed, they may enter a Blood Surge: a furious state that grants unmatched speed and focus, feeding on the death of their enemies to sustain their own failing body.
+
+Advantages:
+– Gains increasing bonus to physical melee damage as levels increase:
+1st level: +15%
+6th level: +30%
+11th level: +45%
+16th level: +60%
+
+- 5th level: May enter a Blood Surge once per day, gaining an additional use every 4 levels thereafter.
+
+Blood Surge:
+The Doomblade enters a state of violent overextension where survival is sacrificed for overwhelming aggression.
+For the next 5 rounds:
+- movement speed doubled
+- +1/2 APR
+- immune to fear and stun
+- cannot fall below 1HP
+- heal for 10 hit points whenever an enemy is slain
+- unaffected by any healing spells such as 'Cure Light Wounds', 'Heal' or 'Regeneration'. Potions and other healing items work like normal
+- lose 5 hit points each round
+- become winded after (slow, Thac0 + AC penalties, fall unconscious if at 1HP for 2 rounds)
+
+- 15th level: May use Execution once per day.
+
+Execution:
+The first attack within the next 5 rounds is an automatic critical hit. The target must save vs. death at a -4 penalty or die instantly.
+On a successful save, the target suffers 50 points of unmitigated magic damage.
+
+Disadvantages:
+– May not use shields
+– d8 hit dice
+– -1 Luck
+– Suffers -2 penalty to saving throws vs. spells~
+
+@104 = ~Blood Surge~
+@105 = ~Blood Surge
+The Doomblade enters a state of violent overextension where survival is sacrificed for overwhelming aggression.
+For the next 5 rounds:
+- movement speed doubled
+- +1/2 APR
+- immune to fear and stun
+- cannot fall below 1HP
+- heal for 10 hit points whenever an enemy is slain
+- unaffected by any healing spells such as 'Cure Light Wounds', 'Heal' or 'Regeneration'. Potions and other healing items work like normal
+- lose 5 hit points each round
+- become winded after Blood Surge ends (slow, Thac0 + AC penalties, fall unconscious if at 1HP for 2 rounds)~
