@@ -19,14 +19,13 @@ Advantages:
 Blood Surge:
 The Doomblade enters a state of violent overextension where survival is sacrificed for overwhelming aggression.
 For the next 5 rounds:
-- movement speed doubled
 - +1/2 APR
+- +2 bonus to critical hit chance
 - immune to fear and stun
-- cannot fall below 1HP
+- movement speed doubled
 - heal for 10 hit points whenever an enemy is slain
-- unaffected by any healing spells such as 'Cure Light Wounds', 'Heal' or 'Regeneration'. Potions and other healing items work like normal
 - lose 5 hit points each round
-- become winded after (slow, Thac0 + AC penalties, fall unconscious if at 1HP for 2 rounds)
+- become slowed and fatigued after Blood Surge ends, suffering a -2 penalty to AC and THAC0 as well as a 50% movement speed penalty
 
 - 15th level: May use Execution once per day.
 
@@ -44,11 +43,12 @@ Disadvantages:
 @105 = ~Blood Surge
 The Doomblade enters a state of violent overextension where survival is sacrificed for overwhelming aggression.
 For the next 5 rounds:
-- movement speed doubled
 - +1/2 APR
+- +2 bonus to critical hit chance
 - immune to fear and stun
-- cannot fall below 1HP
+- movement speed doubled
 - heal for 10 hit points whenever an enemy is slain
-- unaffected by any healing spells such as 'Cure Light Wounds', 'Heal' or 'Regeneration'. Potions and other healing items work like normal
 - lose 5 hit points each round
-- become winded after Blood Surge ends (slow, Thac0 + AC penalties, fall unconscious if at 1HP for 2 rounds)~
+- become slowed and fatigued after Blood Surge ends, suffering a -2 penalty to AC and THAC0 as well as a 50% movement speed penalty~
+
+@106 = ~The Blood Surge has ended and you are now winded.~
