@@ -1,8 +1,4 @@
 Doomblade:
-+ set luck and save penalty => stat spl
-+ implement physical damage boost
-+ adjust CLAB file
-+ add BloodBurst
-+ add execution technique
++ add execution technique -> use new secondary type (copy rr#deata code from rr mod)
 
 GAM_07 -> drink potion sound (use for hp steal?)

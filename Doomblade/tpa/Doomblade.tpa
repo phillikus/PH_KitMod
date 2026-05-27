@@ -40,18 +40,51 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
 // Copy core resources
 //////////////////////////////////////////////////////////
 
+COPY ~PH_KITMOD\Doomblade\bam\dbaxe.bam~ ~override~
+COPY ~PH_KITMOD\Doomblade\bam\dbaxes.bam~ ~override~
+COPY ~PH_KITMOD\Doomblade\bam\dbblood.bam~ ~override~
+COPY ~PH_KITMOD\Doomblade\bam\dbbloods.bam~ ~override~
+
+// new portrait icons
+DEFINE_ACTION_FUNCTION cd_new_portrait_icon
+  INT_VAR string = 0
+  STR_VAR bam_file = "****"
+  RET     icon
+  BEGIN
+
+  COPY_EXISTING ~statdesc.2da~ ~override~
+    COUNT_2DA_ROWS 3 count
+    READ_2DA_ENTRY (count - 1) 0 3 icon
+    SET icon += 1
+
+  APPEND ~statdesc.2da~ ~%icon% %string% %bam_file%~ UNLESS ~%bam_file%~
+
+END
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Execution~) STR_VAR bam_file = dbaxes RET dbaxes = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Blood Surge~) STR_VAR bam_file = dbbloods RET dbbloods = icon END
+
 COPY ~PH_KITMOD\Doomblade\spl\dbdmg.spl~ ~override~
 COPY ~PH_KITMOD\Doomblade\spl\dbstat.spl~ ~override~
-COPY ~PH_KITMOD\Doomblade\spl\dbrage.spl~ ~override~
+COPY ~PH_KITMOD\Doomblade\spl\dbclear.eff~ ~override~
+COPY ~PH_KITMOD\Doomblade\spl\dbclear.spl~ ~override~
 
 
 COPY ~PH_KITMOD\Doomblade\spl\dbrage.spl~ ~override~ // Blood Surge
-    SAY NAME1 @104
-    SAY UNIDENTIFIED_DESC @105
+    LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = dbbloods END // character icon
+    LPF ADD_SPELL_EFFECT INT_VAR opcode = 206 target = 1 timing = 0 duration = 30 STR_VAR resource = DBRAGE END // prevent stacking
+SAY NAME1 @104
+SAY UNIDENTIFIED_DESC @105
+
+COPY ~PH_KITMOD\Doomblade\spl\dbexec.spl~ ~override~ // Execution
+    LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = dbaxes END // character icon
+SAY NAME1 @107
+SAY UNIDENTIFIED_DESC @108
+
+COPY ~PH_KITMOD\Doomblade\spl\dbexecb.spl~ ~override~
+COPY ~PH_KITMOD\Doomblade\spl\dbexec.eff~ ~override~
 
 COPY ~PH_KITMOD\Doomblade\spl\dbheal.spl~ ~override~
 COPY ~PH_KITMOD\Doomblade\spl\dbwind.spl~ ~override~
     LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@106) STR_VAR END
-
-COPY ~PH_KITMOD\Doomblade\bam\blood.bam~ ~override~
-COPY ~PH_KITMOD\Doomblade\bam\MOS1001.PVRZ~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 206 match_parameter1 = 0 parameter1 = RESOLVE_STR_REF (~The Doomblade is too fatigued to enter a Blood Rage.~) END

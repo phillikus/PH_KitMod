@@ -14,7 +14,7 @@ Advantages:
 11th level: +45%
 16th level: +60%
 
-- 5th level: May enter a Blood Surge once per day, gaining an additional use every 4 levels thereafter.
+- 4th level: May enter a Blood Surge once per day, gaining an additional use every 4 levels thereafter.
 
 Blood Surge:
 The Doomblade enters a state of violent overextension where survival is sacrificed for overwhelming aggression.
@@ -25,7 +25,7 @@ For the next 5 rounds:
 - movement speed doubled
 - heal for 10 hit points whenever an enemy is slain
 - lose 5 hit points each round
-- become slowed and fatigued after Blood Surge ends, suffering a -2 penalty to AC and THAC0 as well as a 50% movement speed penalty
+- become winded after Blood Surge ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued
 
 - 15th level: May use Execution once per day.
 
@@ -49,6 +49,10 @@ For the next 5 rounds:
 - movement speed doubled
 - heal for 10 hit points whenever an enemy is slain
 - lose 5 hit points each round
-- become slowed and fatigued after Blood Surge ends, suffering a -2 penalty to AC and THAC0 as well as a 50% movement speed penalty~
+- become winded after Blood Surge ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued~
 
 @106 = ~The Blood Surge has ended and you are now winded.~
+@107 = ~Execution~
+@108 = ~Execution
+The first attack within the next 5 rounds is an automatic critical hit. The target must save vs. death at a -4 penalty or die instantly.
+On a successful save, the target suffers 50 points of unmitigated magic damage.~
