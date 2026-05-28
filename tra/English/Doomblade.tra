@@ -25,7 +25,8 @@ For the next 5 rounds:
 - movement speed doubled
 - heal for 10 hit points whenever an enemy is slain
 - lose 5 hit points each round
-- become winded after Blood Surge ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued
+
+Bbecome winded after Blood Surge ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued. You also lose all bonus physical damage while winded.
 
 - 15th level: May use Execution once per day.
 
@@ -49,7 +50,8 @@ For the next 5 rounds:
 - movement speed doubled
 - heal for 10 hit points whenever an enemy is slain
 - lose 5 hit points each round
-- become winded after Blood Surge ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued~
+
+Become winded after Blood Surge ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued. You also lose all bonus physical damage while winded.~
 
 @106 = ~The Blood Surge has ended and you are now winded.~
 @107 = ~Execution~

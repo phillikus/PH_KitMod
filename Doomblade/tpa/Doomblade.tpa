@@ -71,7 +71,7 @@ COPY ~PH_KITMOD\Doomblade\spl\dbclear.spl~ ~override~
 
 
 COPY ~PH_KITMOD\Doomblade\spl\dbrage.spl~ ~override~ // Blood Surge
-    LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = dbbloods END // character icon
+    LPF ADD_SPELL_EFFECT INT_VAR opcode = 142 target = 1 timing = 0 duration = 30 insert_point = 0 resist_dispel = 0 parameter2 = ~dbbloods~ END // character icon
     LPF ADD_SPELL_EFFECT INT_VAR opcode = 206 target = 1 timing = 0 duration = 30 STR_VAR resource = DBRAGE END // prevent stacking
 SAY NAME1 @104
 SAY UNIDENTIFIED_DESC @105
@@ -88,3 +88,5 @@ COPY ~PH_KITMOD\Doomblade\spl\dbheal.spl~ ~override~
 COPY ~PH_KITMOD\Doomblade\spl\dbwind.spl~ ~override~
     LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@106) STR_VAR END
     LPF ALTER_EFFECT INT_VAR match_opcode = 206 match_parameter1 = 0 parameter1 = RESOLVE_STR_REF (~The Doomblade is too fatigued to enter a Blood Rage.~) END
+
+COPY ~PH_KITMOD\Doomblade\spl\dbweak.spl~ ~override~

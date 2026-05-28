@@ -1,4 +1,12 @@
 Doomblade:
-+ add execution technique -> use new secondary type (copy rr#deata code from rr mod)
++ add dmg reduction to dbwind (-> use dbweak instead to fix alter spell effect problems)
 
 GAM_07 -> drink potion sound (use for hp steal?)
+
+New kits:
+Soul Reaver Fighter -> drain stats from enemies and add them to yourself
+Blood Parasite Mage -> drain HP / AC / Fatigue / levels from allies to empower / regain / fasten spells 
+                       (high level ability to sacrifice 1 ally for godhood buffs)
+Shade Walker Thief  -> auto cast (imp)invis every 3/2/1 rounds, no HiS / MS 
+                    -> stealth focused assassin
+                    -> lower HP / Backstab multiplier as drawback
