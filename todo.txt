@@ -15,3 +15,14 @@ Dreadwalker         -> fear on critical hit
                     -> ignore fear immunity on higher levels
                     -> ability to fear instantly on next hit
                     -> passive fear immunity
+
+
+Skullbreaker Alter crushing weapons:
+see Doomblade.tpa weapon altering:
+
+  PATCH_IF (type = <warhammer-id>) BEGIN   // Warhammers
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 timing = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Skullbreaker~) parameter2 = 9 STR_VAR resource = sbham END
+  END
+
+sbham -> set melee on hit effect to sbham1
+sbham1 -> Stun

@@ -18,7 +18,7 @@ ADD_KIT ~PH_Doomblade~
 
 LAF fl#add_kit_ee STR_VAR 
     kit_name = ~PH_Doomblade~
-    hpclass = HPPRS
+    hpclass = HPPRS // D8
 END
 
 // prevent usage of shields

@@ -8,21 +8,19 @@
 The Skullbreaker is a brutal warrior trained to disable foes with blunt and spiked weapons. Each weapon in their arsenal delivers a distinct crippling effect, allowing the Skullbreaker to adapt to changing battles with crushing precision.
 
 Advantages:
-- Apply a random effect each time you hit a target with a blunt melee weapon:
-    - -3 penalty to AC
-    - frighten target for 1 round
-    - briefly stun the target
-    - deal 10 additional crushing damage
+- Apply a random effect each time you hit a target with a blunt weapon:
+    - Clubs: chance to frighten targets
+    - Maces: apply a -3 penalty to AC
+    - Flails/Morning Stars: cause bleeding wound DoT
+    - War Hammers: chance to briefly stun targets
+    - Slings: chance to briefly slow the target
 
-- Slings have a chance to briefly stun hit targets
-
-- May use the Shockwave ability once per day, gains an additional use every 4 levels thereafter
+- 2nd level: May use the Shockwave ability once per day, gains an additional use every 4 levels thereafter.
 
 Shockwave:
-All enemies within 15 feet are propelled back and stunned for 1 round on a failed save vs death. Huge creatures are stunned 
-only momentarily and will not be knocked back.
+All enemies within 15 feet are pushed back and stunned for 1 round. Huge creatures are immune to the knockback effect.
 
-- 10th level: The Skullbreaker becomes immune to stun and knockback effects
+- 10th level: immune to stun and knockback effects
 - 15th level: May use the Crushing Victory ability once per day
 
 Crushing Victory:
@@ -31,5 +29,9 @@ All crushing damage within the next 5 rounds is doubled. When the effect ends, t
 to THAC0 and armor class and 50% reduction in movement speed
 
 Disadvantages:
-- May only use 1-handed blunt melee weapons and slings and may not exceed Mastery (3 pips) in weapon proficiencies
-- Alignment restricted to non-good~  
+- May only achieve Mastery (3 pips) in 1-handed blunt weapons and slings, all other weapons can only achieve proficiency
+- Alignment restricted to non-good~
+
+@204 = ~Shockwave~
+@205 = ~Shockwave
+All enemies within 15 feet are pushed back and stunned for 1 round. Huge creatures are immune to the knockback effect.~

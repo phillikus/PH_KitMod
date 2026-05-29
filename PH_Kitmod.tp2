@@ -1,4 +1,3 @@
-// Doomblade
 // BGEE / BG2EE / EET
 
 BACKUP ~PH_KITMOD/backup~
@@ -14,6 +13,9 @@ END
 LANGUAGE ~English~
          ~English~
          ~PH_KITMOD/tra/English/Doomblade.tra~
+         ~PH_KITMOD/tra/English/Skullbreaker.tra~
+
+// Doomblade         
 
 BEGIN ~Doomblade~
 
@@ -26,3 +28,17 @@ PRINT ~Installing Doomblade kit...~
 // EEex Lua bootstrap
 //////////////////////////////////////////////////////////
 INCLUDE ~PH_KITMOD/Doomblade/tpa/Doomblade.tpa~
+
+// Skullbreaker
+
+BEGIN ~Skullbreaker~
+
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
+  @1000
+
+PRINT ~Installing Skullbreaker kit...~
+
+//////////////////////////////////////////////////////////
+// EEex Lua bootstrap
+//////////////////////////////////////////////////////////
+INCLUDE ~PH_KITMOD/Skullbreaker/tpa/Skullbreaker.tpa~
