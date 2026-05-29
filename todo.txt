@@ -10,3 +10,8 @@ Blood Parasite Mage -> drain HP / AC / Fatigue / levels from allies to empower /
 Shade Walker Thief  -> auto cast (imp)invis every 3/2/1 rounds, no HiS / MS 
                     -> stealth focused assassin
                     -> lower HP / Backstab multiplier as drawback
+
+Dreadwalker         -> fear on critical hit
+                    -> ignore fear immunity on higher levels
+                    -> ability to fear instantly on next hit
+                    -> passive fear immunity
