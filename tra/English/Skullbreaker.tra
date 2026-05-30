@@ -25,12 +25,11 @@ All enemies within 15 feet are pushed back and stunned for 1 round. Huge creatur
 
 Crushing Victory:
 With every ounce of strength committed to a relentless assault, the Skullbreaker strikes with enough force to splinter shields and crush armor.
-All crushing damage within the next 5 rounds is doubled. 
+All crushing and piercing damage within the next 5 rounds is doubled. 
 Become winded after Crushing Victory ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued.
 
 Disadvantages:
-- May only achieve Mastery (3 pips) in 1-handed blunt weapons and slings, all other weapons can only achieve proficiency
-- Alignment restricted to non-good~
+- May only achieve Mastery (3 pips) in 1-handed blunt weapons and slings, all other weapons can only achieve proficiency~
 
 @204 = ~Shockwave~
 @205 = ~Shockwave
@@ -38,6 +37,6 @@ All enemies within 15 feet are pushed back and stunned for 1 round. Huge creatur
 @206 = ~Crushing Victory~
 @207 = ~Crushing Victory:
 With every ounce of strength committed to a relentless assault, the Skullbreaker strikes with enough force to splinter shields and crush armor.
-All crushing damage within the next 5 rounds is doubled.
+All crushing and piercing damage within the next 5 rounds is doubled.
 Become winded after Crushing Victory ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued.~
 @208 = ~The Crushing Victory has ended and you are now winded.~

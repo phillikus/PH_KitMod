@@ -5,8 +5,7 @@ GAM_07 -> drink potion sound (use for hp steal?)
 
 New kits:
 Soul Reaver Fighter -> drain stats from enemies and add them to yourself
-Blood Parasite Mage -> drain HP / AC / Fatigue / levels from allies to empower / regain / fasten spells 
-                       (high level ability to sacrifice 1 ally for godhood buffs)
+
 Shade Walker Thief  -> auto cast (imp)invis every 3/2/1 rounds, no HiS / MS 
                     -> stealth focused assassin
                     -> lower HP / Backstab multiplier as drawback
@@ -16,14 +15,23 @@ Dreadwalker         -> fear on critical hit
                     -> ability to fear instantly on next hit
                     -> passive fear immunity
 
-Echo Mage           -> create duplicates of himself with limited spellcasting
-                    -> auto-create duplicate on low HP / disable / hit / ...
-                    -> create many clones on higher level 
 
+
+Mage kits:
+Blood/Soul Parasite Mage:
+- drain HP / AC / Fatigue / levels from allies to empower / regain / fasten spells 
+- high level ability to sacrifice 1 ally for godhood buffs
+
+Mirror Mage:
+- create duplicates of himself with limited spellcasting
+- auto-create duplicate on low HP / disable / hit / ...
+- create many clones on higher level
+
+Echo Mage:
+- chance to auto-recast/duplicate spells
 
 Skullbreaker:
--> add crushing victory ability (add wind down + icon)
--> add stun / knockback immunity at level 10+
+-> adjust proficiencies
 
 Attributions:
 <a href="https://www.flaticon.com/free-icons/blood" title="blood icons">Blood icons created by srip - Flaticon</a>

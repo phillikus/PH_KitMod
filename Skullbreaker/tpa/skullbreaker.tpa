@@ -1,6 +1,6 @@
 ADD_KIT ~PH_Skullbreaker~
   ~PH_Skullbreaker 1 1 1 1 1 1 1 1~
-  ~PH_Skullbreaker 0 0 0 0 0 0 0 0 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 0 0 0 0 0 2 0 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~PH_Skullbreaker 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 3 3 1 1 3 3 1 1 1 1 1 3 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
   ~PH_Skullbreaker 9 0 0 11 0 0~ // Minimum Ability - abclasrq
   ~PH_Skullbreaker 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
   ~PH_Skullbreaker 0 0 17 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
