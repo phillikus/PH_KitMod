@@ -56,6 +56,6 @@ Become winded after Blood Surge ends, suffering a -2 penalty to AC and THAC0 as 
 
 @106 = ~The Blood Surge has ended and you are now winded.~
 @107 = ~Execution~
-@108 = ~Execution
+@108 = ~Execution:
 The first attack within the next 5 rounds is an automatic critical hit. The target must save vs. death at a -4 penalty or die instantly.
 On a successful save, the target suffers 50 points of unmitigated magic damage.~

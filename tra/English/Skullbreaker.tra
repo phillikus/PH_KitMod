@@ -9,24 +9,24 @@ The Skullbreaker is a brutal warrior trained to disable foes with blunt and spik
 
 Advantages:
 - Apply a random effect each time you hit a target with a blunt weapon:
-    - Clubs: chance to frighten targets
-    - Maces: apply a -3 penalty to AC
-    - Flails/Morning Stars: cause bleeding wound DoT
+    - Clubs: chance to frighten targets for 1 round
+    - Maces: apply a -5 penalty to AC for 2 rounds
+    - Flails/Morning Stars: cause a bleeding wound that continously deals damage over the next 3 rounds
     - War Hammers: chance to briefly stun targets
-    - Slings: chance to briefly slow the target
+    - Slings: chance to briefly slow targets
 
 - 2nd level: May use the Shockwave ability once per day, gains an additional use every 4 levels thereafter.
 
 Shockwave:
 All enemies within 15 feet are pushed back and stunned for 1 round. Huge creatures are immune to the knockback effect.
 
-- 10th level: immune to stun and knockback effects
-- 15th level: May use the Crushing Victory ability once per day
+- 10th level: Become immune to stun and knockback effects.
+- 15th level: May use the Crushing Victory ability once per day.
 
 Crushing Victory:
 With every ounce of strength committed to a relentless assault, the Skullbreaker strikes with enough force to splinter shields and crush armor.
-All crushing damage within the next 5 rounds is doubled. When the effect ends, the Skullbreaker becomes Winded for 2 rounds and suffers a -2 penalty 
-to THAC0 and armor class and 50% reduction in movement speed
+All crushing damage within the next 5 rounds is doubled. 
+Become winded after Crushing Victory ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued.
 
 Disadvantages:
 - May only achieve Mastery (3 pips) in 1-handed blunt weapons and slings, all other weapons can only achieve proficiency
@@ -35,3 +35,9 @@ Disadvantages:
 @204 = ~Shockwave~
 @205 = ~Shockwave
 All enemies within 15 feet are pushed back and stunned for 1 round. Huge creatures are immune to the knockback effect.~
+@206 = ~Crushing Victory~
+@207 = ~Crushing Victory:
+With every ounce of strength committed to a relentless assault, the Skullbreaker strikes with enough force to splinter shields and crush armor.
+All crushing damage within the next 5 rounds is doubled.
+Become winded after Crushing Victory ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued.~
+@208 = ~The Crushing Victory has ended and you are now winded.~

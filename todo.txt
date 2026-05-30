@@ -16,13 +16,17 @@ Dreadwalker         -> fear on critical hit
                     -> ability to fear instantly on next hit
                     -> passive fear immunity
 
+Echo Mage           -> create duplicates of himself with limited spellcasting
+                    -> auto-create duplicate on low HP / disable / hit / ...
+                    -> create many clones on higher level 
 
-Skullbreaker Alter crushing weapons:
-see Doomblade.tpa weapon altering:
 
-  PATCH_IF (type = <warhammer-id>) BEGIN   // Warhammers
-    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 timing = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Skullbreaker~) parameter2 = 9 STR_VAR resource = sbham END
-  END
+Skullbreaker:
+-> add crushing victory ability (add wind down + icon)
+-> add stun / knockback immunity at level 10+
 
-sbham -> set melee on hit effect to sbham1
-sbham1 -> Stun
+Attributions:
+<a href="https://www.flaticon.com/free-icons/blood" title="blood icons">Blood icons created by srip - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/axe" title="axe icons">Axe icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/mace" title="mace icons">Mace icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/mace" title="mace icons">Mace icons created by Good Ware - Flaticon</a>
