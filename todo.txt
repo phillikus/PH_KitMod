@@ -15,12 +15,18 @@ Dreadwalker         -> fear on critical hit
                     -> ability to fear instantly on next hit
                     -> passive fear immunity
 
-
+Cleric kits:
+Disciple / Cultist of Demorgorgon:
+- add fear based spells / abilities / auras
+- remove healing spells
+- add death spells
+- HLA to summon Demorgorgon
 
 Mage kits:
 Blood/Soul Parasite Mage:
-- drain HP / AC / Fatigue / levels from allies to empower / regain / fasten spells 
-- high level ability to sacrifice 1 ally for godhood buffs
+- drain HP / AC / Fatigue / levels from allies / summons to empower / regain / fasten spells 
+- HLA to sacrifice 1 ally for godhood buffs (Evil only)
+- HLA to allow draining / sacrificing enemies vs. death save 
 
 Mirror Mage:
 - create duplicates of himself with limited spellcasting
@@ -30,8 +36,31 @@ Mirror Mage:
 Echo Mage:
 - chance to auto-recast/duplicate spells
 
-Skullbreaker:
--> adjust proficiencies
+Blood Mage:
+- lose HP on spell cast -> recover spell slots, gain imp. alacrity etc.
+
+Arcane Battery:
+- chance per spell cast to re-gain spell slot
+
+Glassheart:
+- gain 1 round imp. alacrity on kill with spell
+- chance to miscast spells
+
+Soulburner Mage:
+- perma imp. alacrity
+- each spell cast adds 1 point to Soulburn stack, -1 point every round
+-> get more severe penalties on higher Soulburn (HP loss, fatigue, level drain, Unconscious)
+
+Soul Absorber:
+- regain spells upon kill / enemy death
+
+Counter Mage:
+- gain passive MR
+- gain an ability to disrupt a single mage (multi-target at high level?)
+- higher level dispel/remove magic?
+- Nullify HLA (Remove all protections and dispel single target)
+- no Conjuration and Evocation spells
+
 
 Attributions:
 <a href="https://www.flaticon.com/free-icons/blood" title="blood icons">Blood icons created by srip - Flaticon</a>
