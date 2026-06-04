@@ -1,0 +1,35 @@
+/* ===================== *
+ *    Interdictor        *
+ * ===================== */
+@301 = ~interdictor~
+@302 = ~Interdictor~
+@303 = ~Interdictor:
+
+The Interdictor is a wizard trained in reactive spellcraft, sacrificing prepared magic to answer threats instantly. Rather than overwhelming foes with raw arcane power, the Interdictor specializes in rapid magical responses—interrupting enemy spellcasters, warding off missiles, and deflecting attackers before they can strike.
+
+Advantages:
+– 1st level: May cast quick spells instantly as a free action, ignoring the 1 spell per round limit:
+- 1st level: Shield: gain a +10 bonus to AC for 1 round.
+- 3rd level: Blink: teleport 15 feet in any direction.
+- 5th level: Counterspell: instantly interrupt a single spell. The same target can not be interrupted again for the next 2 rounds.
+- 7th level: Ambush Guard: target ally gains backstab immunity for 1 round
+- 9th level: Halt: set target movement speed to 0 for 1 round on a failed save vs. spell at a -2 penalty, if they succeed the saving throw they will be slowed instead.
+- 11th level: Arcane Ward: target ally gains +50% magic resistance and a +5 bonus to save vs. spell for 1 round.
+- 13th level: Dampening Field: target ally gains +50% resistance to all elemental damage for 1 round.
+- 15th level: Deflection: reflect missile weapons (Physical Mirror) for 1 round.
+
+You may cast one quick spell every 3 rounds at level 1, every 2 rounds at level 7 and every round at level 13.
+
+- HLA: Overclock: infinite reaction spells for 2 rounds -> no reactions for next 3 rounds after
+- HLA: Major Reactions -> single use stronger reactions, use every 3 rounds:
+- Repulsion Pulse: all foes in a 15ft radius are pushed back and stunned briefly.
+- Shackle: set target APR to 0 for 1 round.
+- Major Arcane Ward: target ally is immune to spells of level 8 or lower for 1 round.
+
+Disadvantages:
+– Cannot cast Evocation or Conjuration spells.
+– Loses one spell slot per spell level.~
+@304 = ~Quick Spell~
+@305 = ~May cast 1 quick spell instantly as a free action, ignoring the 1 spell per round limit. You may use this ability once every 3 rounds.~
+@306 = ~Counterspell~
+@307 = ~Instantly interrupt a single spell. The same target can not be counterspelled again for the next 2 rounds.~

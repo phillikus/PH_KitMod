@@ -14,6 +14,7 @@ LANGUAGE ~English~
          ~English~
          ~PH_KITMOD/tra/English/Doomblade.tra~
          ~PH_KITMOD/tra/English/Skullbreaker.tra~
+         ~PH_KITMOD/tra/English/Interdictor.tra~
 
 // Doomblade         
 
@@ -42,3 +43,17 @@ PRINT ~Installing Skullbreaker kit...~
 // EEex Lua bootstrap
 //////////////////////////////////////////////////////////
 INCLUDE ~PH_KITMOD/Skullbreaker/tpa/Skullbreaker.tpa~
+
+// Skullbreaker
+
+BEGIN ~Interdictor~
+
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
+  @1000
+
+PRINT ~Installing Interdictor kit...~
+
+//////////////////////////////////////////////////////////
+// EEex Lua bootstrap
+//////////////////////////////////////////////////////////
+INCLUDE ~PH_KITMOD/Interdictor/tpa/Interdictor.tpa~

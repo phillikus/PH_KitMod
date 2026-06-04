@@ -5,7 +5,7 @@
 @102 = ~Doomblade~
 @103 = ~Doomblade:
 
-The Doomblade is a warrior who embraces ruinous aggression, sacrificing resilience and fortune for devastating melee power. Each strike lands with unnatural force, but the Doomblade’s reckless style leaves them exposed to every misstep. When pressed, they may enter a Blood Surge: a furious state that grants unmatched speed and focus, feeding on the death of their enemies to sustain their own failing body.
+The Doomblade is a warrior who embraces ruinous aggression, sacrificing resilience and fortune for devastating melee power. Each strike lands with unnatural force, but the Doomblade’s reckless style leaves them exposed to every misstep. When pressed, they may enter a Death Surge: a furious state that grants unmatched speed and focus, feeding on the death of their enemies to sustain their own failing body.
 
 Advantages:
 – Gains increasing bonus to physical melee damage as levels increase:
@@ -14,9 +14,9 @@ Advantages:
 11th level: +45%
 16th level: +60%
 
-- 4th level: May enter a Blood Surge once per day, gaining an additional use every 4 levels thereafter.
+- 4th level: May enter a Death Surge once per day, gaining an additional use every 4 levels thereafter.
 
-Blood Surge:
+Death Surge:
 The Doomblade enters a state of violent overextension where survival is sacrificed for overwhelming aggression.
 For the next 5 rounds:
 - +1/2 APR
@@ -26,7 +26,7 @@ For the next 5 rounds:
 - heal for 10 hit points whenever an enemy is slain
 - lose 5 hit points each round
 
-Bbecome winded after Blood Surge ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued. You also lose all bonus physical damage while winded.
+Become winded after Death Surge ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued. You also lose all bonus physical damage while winded.
 
 - 15th level: May use Execution once per day.
 
@@ -41,8 +41,8 @@ Disadvantages:
 – Suffers -2 penalty to saving throws vs. spells
 - Alignment restricted to non-good~
 
-@104 = ~Blood Surge~
-@105 = ~Blood Surge
+@104 = ~Death Surge~
+@105 = ~Death Surge
 The Doomblade enters a state of violent overextension where survival is sacrificed for overwhelming aggression.
 For the next 5 rounds:
 - +1/2 APR
@@ -52,9 +52,9 @@ For the next 5 rounds:
 - heal for 10 hit points whenever an enemy is slain
 - lose 5 hit points each round
 
-Become winded after Blood Surge ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued. You also lose all bonus physical damage while winded.~
+Become winded after Death Surge ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued. You also lose all bonus physical damage while winded.~
 
-@106 = ~The Blood Surge has ended and you are now winded.~
+@106 = ~The Death Surge has ended and you are now winded.~
 @107 = ~Execution~
 @108 = ~Execution:
 The first attack within the next 5 rounds is an automatic critical hit. The target must save vs. death at a -4 penalty or die instantly.

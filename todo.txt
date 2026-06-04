@@ -3,8 +3,37 @@ Doomblade:
 
 GAM_07 -> drink potion sound (use for hp steal?)
 
-New kits:
+Fighter Kits
+Echo Knight -> create 1/2/3/4/5 weakend simulacrums:
+- lower HP / APR / short duration (5 rounds max)
+- remove on-hit effect weapons 
+  -> Opcode #183 (Apply Effect Itemtype) 
+  -> 1 opcode per weapon type 
+  -> use #111 (Create Magical Weapon) to equip a pre-created magical weapon on the simulacrum
+-> auto-cast Blur / Mirror Image on higher levels when creating echos
+-> swap ability
+- d8 hit dice
+- lower damage when creating echos?
+
 Soul Reaver Fighter -> drain stats from enemies and add them to yourself
+
+Infernal Champion / Hellfire Knight Fighter (/Paladin) Kit:
+- apply scaling fire damage on hit
+- passive fire resistance
+- ignore / lower fire resistance on higher level
+- Heat dpr aura?
+- gain innate fire spells (Burning Hands, Scorcher, Fireball, Sunfire) a few times per day
+- reduced cold resistance
+- no GM?
+
+Hero of Zamour / Frost Knight / ... Fighter / Paladin Kit:
+- apply scaling cold damage on hit
+- passive cold resistance
+- ignore / lower cold resistance on higher level
+- Slow aura
+- gain cold spells
+- reduced fire resistance
+- no GM? 
 
 Shade Walker Thief  -> auto cast (imp)invis every 3/2/1 rounds, no HiS / MS 
                     -> stealth focused assassin
@@ -33,33 +62,40 @@ Mirror Mage:
 - auto-create duplicate on low HP / disable / hit / ...
 - create many clones on higher level
 
-Echo Mage:
-- chance to auto-recast/duplicate spells
-
-Blood Mage:
-- lose HP on spell cast -> recover spell slots, gain imp. alacrity etc.
+Blood Mage / Soul Mage:
+- +50% (100%?) bonus spell damage
+- lose HP on spell cast depening on spell level
+- Soul Burn active (modal) ability: boost damage even more but also double health loss
+- regain HP on kill?
 
 Arcane Battery:
 - chance per spell cast to re-gain spell slot
 
-Glassheart:
-- gain 1 round imp. alacrity on kill with spell
-- chance to miscast spells
+Soul Absorber / Doomspeaker:
+- upon killing enemies: regain spell slots, increase casting speed, increase dmg
+- Sacrifice active ability: Sacrifice minion / party member -> regain spell slots, bigger speed / dmg bonus
 
-Soulburner Mage:
-- perma imp. alacrity
-- each spell cast adds 1 point to Soulburn stack, -1 point every round
--> get more severe penalties on higher Soulburn (HP loss, fatigue, level drain, Unconscious)
+Mesmer/Mind Control Mage/Sorcerer:
+- Enchanter save bonuses
+- gain new charm/enchantment spells at higher levels:
+  - level 6: Instant Charm (Cast time 0, no save, )
 
-Soul Absorber:
-- regain spells upon kill / enemy death
+Counter / Reaction Mage -> Spellwarden:
+- gain an ability to interrupt a single spell cast (multi-target at high level?) -> .spl with Miscast Magic #60 opcode -> set to 100 for 1s
+  -> use Target = Caster (keep spell, no animation) with effect 214 Select spell -> instant cast after another spell without aura cleansing
+- get other reaction / control abilities vs martials / thieves / clerics etc. -> general battlefield control vibes
+- get 1 use of reaction abilities every 5/4/3/2/1 rounds (OPcode 171: Gain innate ability + Timing Mode delay)
+- Overclock ability: Can use reaction abilities infinitely for 3 rounds, no reactions for 5 rounds after
+- gain other reaction spells: Anti Mage spells, protections, ...
+- no Conjuration and Evocation/Necromancy spells
 
-Counter Mage:
-- gain passive MR
-- gain an ability to disrupt a single mage (multi-target at high level?)
-- higher level dispel/remove magic?
-- Nullify HLA (Remove all protections and dispel single target)
-- no Conjuration and Evocation spells
+Spellbreaker / Spellguard / Nullifier / Weave Warden Mage:
+- passive scaling MR
+- get free (use once every 5/4/3/2/1 rounds) reaction spells to counter spellcasters
+   -> Counterspell (interrupt spells), Arcane Ward (immunity to spells below x level), Dampening Field (elemental resistance),
+      Reflection Veil (reflect spells), Blink (Teleport), Nullify (Single Target Dispel at caster level + 5)
+   -> allow targeting 2/3/4 foes/allies as you level up
+
 
 
 Attributions:
@@ -67,3 +103,6 @@ Attributions:
 <a href="https://www.flaticon.com/free-icons/axe" title="axe icons">Axe icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/mace" title="mace icons">Mace icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/mace" title="mace icons">Mace icons created by Good Ware - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/spell" title="spell icons">Spell icons created by wanicon - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/teleport" title="teleport icons">Teleport icons created by Mihimihi - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/skull" title="skull icons">Skull icons created by Freepik - Flaticon</a>
