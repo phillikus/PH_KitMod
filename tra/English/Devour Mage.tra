@@ -1,0 +1,3 @@
+Mage that drains his allies to regain spells / improve casting speed etc.
+
+Use Apply effect list opcode (326) -> EA = specified value (102) -> PC

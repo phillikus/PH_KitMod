@@ -1,0 +1,33 @@
+/* ===================== *
+ *    Soulreaver          *
+ * ===================== */
+@201 = ~soulreaver~
+@202 = ~Soulreaver~
+@203 = ~Soulreaver:
+
+Soulreavers are warriors who sustain themselves by tearing fragments of essence from living foes. Hollow and weakened when battle begins, they grow steadily stronger as enemies falter, becoming deadliest when feeding on the fallen.
+
+Advantages:
+
+- 1st level: Gains the Life Drain passive ability
+Life Drain:
+Every successful melee hit weakens the hit target and strengthens the Soulreaver for 2 rounds:
+The target suffers a cumulative –1 penalty to THAC0, AC, movement speed, damage and all saving throws per stack
+The Soulreaver gains a cumulative +1 bonus to THAC0, AC, movement speed, damage and all saving throws per stack
+Both effects stack up to 5 times
+
+- 5th level: Gains the Soul Drain passive ability
+
+Soul Drain:
+The Soulreaver drains the souls of <PRO_HISHER> slain enemies, gaining the following cumulative benefits for 2 rounds:
++ 10% bonus to all resistances
++ 10% bonus to physical damage
++ 0.5 APR
++ heal for 10 hit points
+
+These effects stack up to 3 times
+
+Disadvantages:
+- Permanent –1 THAC0, AC, damage and all saving throws
+- May only specialice (2 pips) in ranged weapons
+- Alignment restricted to non-good~

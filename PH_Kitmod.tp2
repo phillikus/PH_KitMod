@@ -15,6 +15,7 @@ LANGUAGE ~English~
          ~PH_KITMOD/tra/English/Doomblade.tra~
          ~PH_KITMOD/tra/English/Skullbreaker.tra~
          ~PH_KITMOD/tra/English/Interdictor.tra~
+         ~PH_KITMOD/tra/English/Chronomancer.tra~
 
 // Doomblade         
 
@@ -44,7 +45,7 @@ PRINT ~Installing Skullbreaker kit...~
 //////////////////////////////////////////////////////////
 INCLUDE ~PH_KITMOD/Skullbreaker/tpa/Skullbreaker.tpa~
 
-// Skullbreaker
+// Interdictor
 
 BEGIN ~Interdictor~
 
@@ -57,3 +58,20 @@ PRINT ~Installing Interdictor kit...~
 // EEex Lua bootstrap
 //////////////////////////////////////////////////////////
 INCLUDE ~PH_KITMOD/Interdictor/tpa/Interdictor.tpa~
+
+// Chronomancer
+
+BEGIN ~Chronomancer~
+
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
+  @1000
+
+ACTION_IF (MOD_IS_INSTALLED ~EEEX/EEEX.TP2~ ~0~) THEN BEGIN
+
+  PRINT ~Installing Chronomancer kit...~
+
+  //////////////////////////////////////////////////////////
+  // EEex Lua bootstrap
+  //////////////////////////////////////////////////////////
+  INCLUDE ~PH_KITMOD/Chronomancer/tpa/Chronomancer.tpa~
+END

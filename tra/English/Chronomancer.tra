@@ -1,0 +1,43 @@
+/* ===================== *
+ *    Chronomancer          *
+ * ===================== */
+@401 = ~chronomancer~
+@402 = ~Chronomancer~
+@403 = ~Chronomancer:
+
+Chronomancers are rare students of temporal magic who study the hidden currents of time rather than the traditional schools of arcane power. Through dangerous experimentation they learn to briefly overlap past, present, and future, allowing them to draw magical effects from moments that have not yet occurred. While feared for their ability to bend the natural order of causality, Chronomancers are often physically and spiritually detached from reality, making them more vulnerable to hostile magic.
+
+Advantages:
+- +1 bonus to casting speed.
+- May use the Temporal Slip ability once every 3 rounds.
+
+Temporal Slip:
+By briefly synchronizing with an unrealized future, the Chronomancer may cast any memorized spell instantly without casting time. This ignores the 1 spell per round limit, allowing <PRO_HIMHER> to chain two spells together.
+The spell slot will be consumed normally. 
+
+- 7th level: May use Temporal Slip once every 2 rounds.
+
+- 9th level: May use the Temporal field ability once per day, gaining an additional use at levels 13 and 17.
+
+Temporal Field:
+The Chronomancer bends the flow of time within a localized area, creating a warped field where seconds stretch and compress unevenly. Within this distorted pocket of reality, allies move with unnatural speed and clarity, while enemies struggle through sluggish, delayed motion as if every action must push through thickened time itself.
+Though the effect is brief, it is decisive—turning moments of chaos into orchestrated advantage. Blades strike sooner, spells land faster, and hostile reactions arrive too late to matter. When the field collapses, time resumes its natural flow, often leaving only the aftermath of a battle already decided.
+For the next 5 rounds, all allies around the caster are hasted, while all enemies are slowed unless they make a save vs. spell at a -4 penalty.
+
+- 13th level: May use Temporal Slip every round.
+
+Disadvantages:
+- Cannot specialize in a wizard school and does not gain additional spell slots.
+- Repeated manipulation of time has destabilized the Chronomancer's personal timeline, reducing their ability to resist hostile spells. <PRO_HESHE> suffers a permanent -2 penalty to saving throws vs. spells.~
+
+@404 = ~Temporal Slip~
+@405 = ~Temporal Slip
+By briefly synchronizing with an unrealized future, the Chronomancer may cast any memorized spell instantly without casting time. This ignores the 1 spell per round limit, allowing <PRO_HIMHER> to chain two spells together.
+The spell slot will be consumed normally.~
+
+@406 = ~Temporal Field:~
+@407 = ~Temporal Field:
+The Chronomancer bends the flow of time within a localized area, creating a warped field where seconds stretch and compress unevenly. Within this distorted pocket of reality, allies move with unnatural speed and clarity, while enemies struggle through sluggish, delayed motion as if every action must push through thickened time itself.
+Though the effect is brief, it is decisive—turning moments of chaos into orchestrated advantage. Blades strike sooner, spells land faster, and hostile reactions arrive too late to matter. When the field collapses, time resumes its natural flow, often leaving only the aftermath of a battle already decided.
+For the next 5 rounds, all allies around the caster are hasted, while all enemies are slowed unless they make a save vs. spell at a -4 penalty.
+Using this ability leaves the Chronomancer fatigued for 2 rounds.~

@@ -1,0 +1,52 @@
+ADD_KIT ~PH_Chronomancer~
+  ~PH_Chronomancer 0 0 0 0 0 0 0 0~ // clasweap.2da
+  ~PH_Chronomancer 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~ //weapprof.2da
+  ~PH_Chronomancer 0 0 0 9 0 0~ // Minimum Ability - abclasrq
+  ~PH_Chronomancer 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~PH_Chronomancer 0 0 0 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~PH_Chronomancer 0 0 0 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
+  ~PH_Chronomancer 1 1 1 1 1 1 1 1 1~ // Alignment
+  ~PH_Chronomancer 0 0 0 0 0 0~ // Dualclass
+  ~PH_KITMOD\Chronomancer\clab\PHCN.2da~ // CLAB
+  ~K_M_H K_M_D K_M_G K_M_E K_M_HE K_M_HL K_M_HO~
+  ~0x00004000 1~
+  ~Ma0~ 
+  ~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,20 STAF20~
+  SAY @401
+  SAY @402
+  SAY @403
+
+LAF fl#add_kit_ee
+  STR_VAR 
+    kit_name = ~PH_Chronomancer~
+    clswpbon = ~1 0 3~
+    hpclass = HPWIZ
+    numwslot = 2
+END
+
+//////////////////////////////////////////////////////////
+// Copy core resources
+//////////////////////////////////////////////////////////
+
+COPY ~PH_KITMOD\Chronomancer\bam\chqck.bam~ ~override~
+COPY ~PH_KITMOD\Chronomancer\bam\chtemp.bam~ ~override~
+
+COPY ~PH_KITMOD\Chronomancer\lua\M_Chrono.lua~ ~override~
+COPY ~PH_KITMOD\Chronomancer\spl\chstat.spl~ ~override~
+
+// Quickspell
+COPY ~PH_KITMOD\Chronomancer\spl\chqck.spl~ ~override~
+SAY NAME1 @404
+SAY UNIDENTIFIED_DESC @405
+
+COPY ~PH_KITMOD\Chronomancer\spl\chhst.spl~ ~override~
+COPY ~PH_KITMOD\Chronomancer\spl\chslw.spl~ ~override~
+
+// Temporal Field
+COPY ~PH_KITMOD\Chronomancer\spl\chtemp.pro~ ~override~
+ADD_PROJECTILE ~PH_KITMOD\Chronomancer\spl\chtemp.pro~
+
+COPY ~PH_KITMOD\Chronomancer\spl\chtemp.spl~ ~override~
+SAY NAME1 @406
+SAY UNIDENTIFIED_DESC @407
+WRITE_SHORT 0x98 ~chtemp~

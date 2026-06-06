@@ -52,6 +52,23 @@ Disciple / Cultist of Demorgorgon:
 - HLA to summon Demorgorgon
 
 Mage kits:
+
+Fluxborn Sorcerer:
+- learn only 1/2 spells per level
+- regain all spells at the end of each level
+
+Arcane Arsenalist:
+- focus on ranged weapon spells like MMM
+- learn new artillery spells at higher levels
+-> magic rocks, ice meteors, Crown of Stars, 
+
+Double cast Mage / Sorcerer -> Chronomancer:
+- gain x Temporal Slip charges per day -> cast a spell instantly without 1 spell per round limit
+- use opcode 214 + known spells or EEEx
+   -> override EEex_Actionbar_GetSpellButtonData to set m_itemType = 5 for instant cast that takes a spell slot
+   -> how to check if spell caster has the spell memorized / has a spell slot?
+- gain fewer spell slots totally
+
 Blood/Soul Parasite Mage:
 - drain HP / AC / Fatigue / levels from allies / summons to empower / regain / fasten spells 
 - HLA to sacrifice 1 ally for godhood buffs (Evil only)
@@ -62,11 +79,11 @@ Mirror Mage:
 - auto-create duplicate on low HP / disable / hit / ...
 - create many clones on higher level
 
-Blood Mage / Soul Mage:
-- +50% (100%?) bonus spell damage
-- lose HP on spell cast depening on spell level
-- Soul Burn active (modal) ability: boost damage even more but also double health loss
-- regain HP on kill?
+Blood Mage / Soul Mage (Evocation / Nuker Mage):
+- Soul Burn / Overchannel / Over the Limit active (modal) ability: boost elemental / magic damage by 100% 
+  but lose 2/4/8/16/32/.. HP each round, exhausted for 5 rounds after, cannot activate Soul Burn again
+- gain new quick cast spells: Cast any evocation spell of up to 1 level lower once without cast time
+
 
 Arcane Battery:
 - chance per spell cast to re-gain spell slot
@@ -106,3 +123,6 @@ Attributions:
 <a href="https://www.flaticon.com/free-icons/spell" title="spell icons">Spell icons created by wanicon - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/teleport" title="teleport icons">Teleport icons created by Mihimihi - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/skull" title="skull icons">Skull icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/magic" title="magic icons">Magic icons created by smalllikeart - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/timer" title="timer icons">Timer icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/mystic" title="mystic icons">Mystic icons created by Freepik - Flaticon</a>
