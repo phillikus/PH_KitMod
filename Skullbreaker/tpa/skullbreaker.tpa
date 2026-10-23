@@ -64,6 +64,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   READ_SHORT 0x1c type
   READ_LONG  0x64 abil_off
   READ_SHORT 0x68 abil_num
+  READ_SHORT 0x22 appearance ELSE 0
 
   PATCH_IF (type = 21) BEGIN   // Hammers
     LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 timing = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Skullbreaker~) parameter2 = 9 STR_VAR resource = sbham END
@@ -71,7 +72,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   PATCH_IF (type = 22) OR (type = 23) BEGIN   // Morning Stars/Flails
     LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 timing = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Skullbreaker~) parameter2 = 9 STR_VAR resource = sbflail END
   END ELSE
-  PATCH_IF (type = 44) BEGIN   // Clubs
+  PATCH_IF (type = 44) OR (appearance = 19523) BEGIN   // Clubs, we have to check for appearance here as many clubs use the mace type for some reason
     LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 timing = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Skullbreaker~) parameter2 = 9 STR_VAR resource = sbclub END
   END ELSE
   PATCH_IF (type = 17) BEGIN   // Maces

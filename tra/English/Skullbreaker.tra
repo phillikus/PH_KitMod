@@ -8,24 +8,26 @@
 The Skullbreaker is a brutal warrior trained to disable foes with blunt and spiked weapons. Each weapon in their arsenal delivers a distinct crippling effect, allowing the Skullbreaker to adapt to changing battles with crushing precision.
 
 Advantages:
-- Apply a random effect each time you hit a target with a blunt weapon:
-    - Clubs: chance to frighten targets for 1 round
-    - Maces: apply a -5 penalty to AC for 2 rounds
+- Apply additional effects each time you land a critical hit with a blunt weapon:
+    - Clubs: target is frightened for half a round
+    - Maces: apply a -3 penalty to AC for 2 rounds
     - Flails/Morning Stars: cause a bleeding wound that continously deals damage over the next 3 rounds
-    - War Hammers: chance to briefly stun targets
-    - Slings: chance to briefly slow targets
+    - War Hammers: briefly stun the target
+    - Slings: briefly slow the target
+
+A single target may be affected by multiple effects at the same time, but each effect may only be applied once until it expires.
 
 - 2nd level: May use the Shockwave ability once per day, gains an additional use every 4 levels thereafter.
 
 Shockwave:
-All enemies within 15 feet are pushed back and stunned for 1 round. Huge creatures are immune to the knockback effect.
+All enemies within 15 feet are pushed back and stunned for half a round. Huge creatures are immune to the knockback effect.
 
 - 10th level: Become immune to stun and knockback effects.
 - 15th level: May use the Crushing Victory ability once per day.
 
 Crushing Victory:
 With every ounce of strength committed to a relentless assault, the Skullbreaker strikes with enough force to splinter shields and crush armor.
-All crushing and piercing damage within the next 5 rounds is doubled. 
+All crushing and piercing damage you deal within the next 5 rounds is doubled. 
 Become winded after Crushing Victory ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued.
 
 Disadvantages:

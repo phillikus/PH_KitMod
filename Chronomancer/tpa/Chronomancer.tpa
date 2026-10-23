@@ -39,10 +39,10 @@ COPY ~PH_KITMOD\Chronomancer\spl\chqck.spl~ ~override~
 SAY NAME1 @404
 SAY UNIDENTIFIED_DESC @405
 
+// Temporal Field
 COPY ~PH_KITMOD\Chronomancer\spl\chhst.spl~ ~override~
 COPY ~PH_KITMOD\Chronomancer\spl\chslw.spl~ ~override~
 
-// Temporal Field
 COPY ~PH_KITMOD\Chronomancer\spl\chtemp.pro~ ~override~
 ADD_PROJECTILE ~PH_KITMOD\Chronomancer\spl\chtemp.pro~
 

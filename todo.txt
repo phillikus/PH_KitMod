@@ -1,6 +1,10 @@
 Doomblade:
 + add dmg reduction to dbwind (-> use dbweak instead to fix alter spell effect problems)
 
+Chronomancer:
+-> add Momentary Stasis and HLAs
+-> add Dreadwalker Fighter Kit
+
 GAM_07 -> drink potion sound (use for hp steal?)
 
 Fighter Kits
@@ -39,10 +43,28 @@ Shade Walker Thief  -> auto cast (imp)invis every 3/2/1 rounds, no HiS / MS
                     -> stealth focused assassin
                     -> lower HP / Backstab multiplier as drawback
 
-Dreadwalker         -> fear on critical hit
+Dreadwalker         -> AoE fear on killing enemies
                     -> ignore fear immunity on higher levels
-                    -> ability to fear instantly on next hit
+                    -> instant single target fear ability
                     -> passive fear immunity
+                    -> passiva aura reducing movement speed of feared targets
+                    -> deal bonus damage to feared targets
+
+Paladin Kits:
+Green Warden / Thorn Herald / ...:
+-> Paladin with druid spells, dmg / thac0 bonus vs. undead, unnatural, demon, ... druid HLAs
+-> Druid version of Artisans Mystic Fire Paladin
+
+Stormlord / Oath of the Stormlord:
+-> Thunder based Paladin kit
+-> electirc resistance, + electric dmg on hit, mini stun on crit, Thundersmite ability (Call lightning on opponent)
+
+Druid Kits:
+Weavekeeper (Druid with mage spells):
+- d6 HD
+- no shapechange
+- gain mage spells: 
+
 
 Cleric kits:
 Disciple / Cultist of Demorgorgon:
@@ -55,7 +77,7 @@ Mage kits:
 
 Fluxborn Sorcerer:
 - learn only 1/2 spells per level
-- regain all spells at the end of each level
+- regain all spells at the end of each round
 
 Arcane Arsenalist:
 - focus on ranged weapon spells like MMM
@@ -83,7 +105,6 @@ Blood Mage / Soul Mage (Evocation / Nuker Mage):
 - Soul Burn / Overchannel / Over the Limit active (modal) ability: boost elemental / magic damage by 100% 
   but lose 2/4/8/16/32/.. HP each round, exhausted for 5 rounds after, cannot activate Soul Burn again
 - gain new quick cast spells: Cast any evocation spell of up to 1 level lower once without cast time
-
 
 Arcane Battery:
 - chance per spell cast to re-gain spell slot

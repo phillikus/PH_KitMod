@@ -9,7 +9,7 @@ Chronomancers are rare students of temporal magic who study the hidden currents 
 
 Advantages:
 - +1 bonus to casting speed.
-- May use the Temporal Slip ability once every 3 rounds.
+- May cast the Temporal Slip spell once every 3 rounds.
 
 Temporal Slip:
 By briefly synchronizing with an unrealized future, the Chronomancer may cast any memorized spell instantly without casting time. This ignores the 1 spell per round limit, allowing <PRO_HIMHER> to chain two spells together.
@@ -17,7 +17,7 @@ The spell slot will be consumed normally.
 
 - 7th level: May use Temporal Slip once every 2 rounds.
 
-- 9th level: May use the Temporal field ability once per day, gaining an additional use at levels 13 and 17.
+- 9th level: May use the Temporal Field ability once per day, gaining an additional use at levels 13 and 17.
 
 Temporal Field:
 The Chronomancer bends the flow of time within a localized area, creating a warped field where seconds stretch and compress unevenly. Within this distorted pocket of reality, allies move with unnatural speed and clarity, while enemies struggle through sluggish, delayed motion as if every action must push through thickened time itself.
