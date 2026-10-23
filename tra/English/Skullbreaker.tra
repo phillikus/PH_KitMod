@@ -8,14 +8,15 @@
 The Skullbreaker is a brutal warrior trained to disable foes with blunt and spiked weapons. Each weapon in their arsenal delivers a distinct crippling effect, allowing the Skullbreaker to adapt to changing battles with crushing precision.
 
 Advantages:
-- Apply additional effects each time you land a critical hit with a blunt weapon:
-    - Clubs: target is frightened for half a round
-    - Maces: apply a -3 penalty to AC for 2 rounds
-    - Flails/Morning Stars: cause a bleeding wound that continously deals damage over the next 3 rounds
-    - War Hammers: briefly stun the target
-    - Slings: briefly slow the target
+- Each time you hit an opponent with a blunt weapon, there is a 15% chance to apply an additional effect depending on the type of the equipped weapon:
+  - Clubs: frighten the target for half a round
+  - Maces: apply a -3 penalty to AC for 2 rounds
+  - Flails/Morning Stars: cause a bleeding wound that continously deals damage over the next 3 rounds
+  - War Hammers: briefly stun the target
+  - Slings: briefly slow the target
 
-A single target may be affected by multiple effects at the same time, but each effect may only be applied once until it expires.
+Each effect may only be applied once per round to a single target and multiple application of the same effect do not stack.
+However, different effects may be applied at the same time to a target.
 
 - 2nd level: May use the Shockwave ability once per day, gains an additional use every 4 levels thereafter.
 
@@ -27,7 +28,7 @@ All enemies within 15 feet are pushed back and stunned for half a round. Huge cr
 
 Crushing Victory:
 With every ounce of strength committed to a relentless assault, the Skullbreaker strikes with enough force to splinter shields and crush armor.
-All crushing and piercing damage you deal within the next 5 rounds is doubled. 
+All crushing damage you deal within the next 5 rounds is doubled. 
 Become winded after Crushing Victory ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued.
 
 Disadvantages:
@@ -39,6 +40,6 @@ All enemies within 15 feet are pushed back and stunned for 1 round. Huge creatur
 @206 = ~Crushing Victory~
 @207 = ~Crushing Victory:
 With every ounce of strength committed to a relentless assault, the Skullbreaker strikes with enough force to splinter shields and crush armor.
-All crushing and piercing damage within the next 5 rounds is doubled.
+All crushing damage you deal within the next 5 rounds is doubled.
 Become winded after Crushing Victory ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued.~
 @208 = ~The Crushing Victory has ended and you are now winded.~

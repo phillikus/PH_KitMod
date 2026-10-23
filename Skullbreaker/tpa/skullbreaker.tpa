@@ -20,9 +20,6 @@ LAF fl#add_kit_ee STR_VAR
     kit_name = ~PH_Skullbreaker~
 END
 
-COPY ~PH_KITMOD\Skullbreaker\bam\sbcrush.bam~ ~override~
-COPY ~PH_KITMOD\Skullbreaker\bam\sbcrushs.bam~ ~override~
-
 // new portrait icons
 DEFINE_ACTION_FUNCTION cd_new_portrait_icon
   INT_VAR string = 0
@@ -39,20 +36,25 @@ DEFINE_ACTION_FUNCTION cd_new_portrait_icon
 
 END
 
-LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Crushing Victory~) STR_VAR bam_file = sbcrushs RET sbcrushs = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Crushing Victory~) STR_VAR bam_file = SPWI918C RET sbcrushs = icon END
 
 
 COPY ~PH_KITMOD\Skullbreaker\spl\sbstat.spl~ ~override~
 COPY ~PH_KITMOD\Skullbreaker\spl\sbclub.eff~ ~override~
+COPY ~PH_KITMOD\Skullbreaker\spl\sbclub1.eff~ ~override~
 COPY ~PH_KITMOD\Skullbreaker\spl\sbclub.spl~ ~override~
-COPY ~PH_KITMOD\Skullbreaker\spl\sbflail.eff~ ~override~
-COPY ~PH_KITMOD\Skullbreaker\spl\sbflail.spl~ ~override~
+COPY ~PH_KITMOD\Skullbreaker\spl\sbflai.eff~ ~override~
+COPY ~PH_KITMOD\Skullbreaker\spl\sbflai1.eff~ ~override~
+COPY ~PH_KITMOD\Skullbreaker\spl\sbflai.spl~ ~override~
 COPY ~PH_KITMOD\Skullbreaker\spl\sbham.eff~ ~override~
+COPY ~PH_KITMOD\Skullbreaker\spl\sbham1.eff~ ~override~
 COPY ~PH_KITMOD\Skullbreaker\spl\sbham.spl~ ~override~
 COPY ~PH_KITMOD\Skullbreaker\spl\sbmace.eff~ ~override~
+COPY ~PH_KITMOD\Skullbreaker\spl\sbmace1.eff~ ~override~
 COPY ~PH_KITMOD\Skullbreaker\spl\sbmace.spl~ ~override~
-COPY ~PH_KITMOD\Skullbreaker\spl\sbsling.eff~ ~override~
-COPY ~PH_KITMOD\Skullbreaker\spl\sbsling.spl~ ~override~
+COPY ~PH_KITMOD\Skullbreaker\spl\sbslng.eff~ ~override~
+COPY ~PH_KITMOD\Skullbreaker\spl\sbslng1.eff~ ~override~
+COPY ~PH_KITMOD\Skullbreaker\spl\sbslng.spl~ ~override~
 
 // add blunt weapon effects
 
@@ -70,7 +72,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
     LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 timing = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Skullbreaker~) parameter2 = 9 STR_VAR resource = sbham END
   END ELSE
   PATCH_IF (type = 22) OR (type = 23) BEGIN   // Morning Stars/Flails
-    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 timing = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Skullbreaker~) parameter2 = 9 STR_VAR resource = sbflail END
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 timing = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Skullbreaker~) parameter2 = 9 STR_VAR resource = sbflai END
   END ELSE
   PATCH_IF (type = 44) OR (appearance = 19523) BEGIN   // Clubs, we have to check for appearance here as many clubs use the mace type for some reason
     LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 timing = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Skullbreaker~) parameter2 = 9 STR_VAR resource = sbclub END
@@ -79,7 +81,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
     LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 timing = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Skullbreaker~) parameter2 = 9 STR_VAR resource = sbmace END
   END ELSE
   PATCH_IF (type = 18) BEGIN   // Slings
-    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 timing = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Skullbreaker~) parameter2 = 9 STR_VAR resource = sbsling END
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 timing = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Skullbreaker~) parameter2 = 9 STR_VAR resource = sbslng END
   END
 
 COPY ~PH_KITMOD\Skullbreaker\spl\sbwave.pro~ ~override~
