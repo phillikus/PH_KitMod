@@ -23,6 +23,9 @@ COPY_EXISTING ~CLABPA01.2DA~ ~OVERRIDE/PHSTORM.2DA~
   LPF set_clab_2da_entries INT_VAR f_MinLevel = 30 f_MaxLevel = 30 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
   LPF set_clab_2da_entries INT_VAR f_MinLevel = 34 f_MaxLevel = 34 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
 
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 12 f_MaxLevel = 12 STR_VAR f_Entry = GA_slwrath END // add Wrath of the Storm
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 20 f_MaxLevel = 20 STR_VAR f_Entry = GA_slwrath END // add Wrath of the Storm
+
 	PRETTY_PRINT_2DA
 
 ADD_KIT ~PH_Stormlord~
@@ -78,8 +81,16 @@ COPY ~PH_KITMOD\Stormlord\spl\slsmt2.spl~ ~override~
 //       If we set the projectile in slstm1.spl it will apply to every hit even if the target is marked as immune to the spell for that round.
 //       The reason for that is that the engine will always apply the projectile, even if a target is immune to the spell itself.
 
-
 COPY ~PH_KITMOD\Stormlord\spl\slsmt.spl~ ~override~
     LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = slsmts END // character icon
 SAY NAME1 @604
 SAY UNIDENTIFIED_DESC @605
+
+COPY ~PH_KITMOD\Stormlord\spl\slsmtw.spl~ ~override~
+COPY ~PH_KITMOD\Stormlord\spl\slwrath.pro~ ~override~
+ADD_PROJECTILE ~PH_KITMOD\Stormlord\spl\slwrath.pro~
+
+COPY ~PH_KITMOD\Stormlord\spl\slwrath.spl~ ~override~
+SAY NAME1 @606
+SAY UNIDENTIFIED_DESC @607
+WRITE_SHORT 0x98 ~slwrath~
