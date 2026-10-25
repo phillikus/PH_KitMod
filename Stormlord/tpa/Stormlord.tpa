@@ -1,0 +1,85 @@
+COPY_EXISTING ~CLABPA01.2DA~ ~OVERRIDE/PHSTORM.2DA~
+	REPLACE_TEXTUALLY ~GA_SPCL213 ~ ~**** ~ // PROTECTION FROM EVIL
+	REPLACE_TEXTUALLY ~GA_SPCL212 ~ ~**** ~ // DETECT EVIL
+	REPLACE_TEXTUALLY ~GA_SPCL211 ~ ~**** ~ // LAY ON HANDS
+	REPLACE_TEXTUALLY ~GA_C0PAL02 ~ ~**** ~ // SMITE EVIL
+	REPLACE_TEXTUALLY ~SPCL111 ~ ~**** ~ // CURE DISEASE
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = AP_slnotun END // disable turn undead
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = AP_slstat END // add electric resistance
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 5 f_MaxLevel = 5 STR_VAR f_Entry = AP_slstat END // add electric resistance
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 9 f_MaxLevel = 9 STR_VAR f_Entry = AP_slstat END // add electric resistance
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 13 f_MaxLevel = 13 STR_VAR f_Entry = AP_slstat END // add electric resistance
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 17 f_MaxLevel = 17 STR_VAR f_Entry = AP_slstat END // add electric resistance
+
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = GA_SPPR302 END // add new storm spells
+  
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 2 f_MaxLevel = 2 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 6 f_MaxLevel = 6 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 10 f_MaxLevel = 10 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 14 f_MaxLevel = 14 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 18 f_MaxLevel = 18 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 22 f_MaxLevel = 22 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 26 f_MaxLevel = 26 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 30 f_MaxLevel = 30 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 34 f_MaxLevel = 34 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
+
+	PRETTY_PRINT_2DA
+
+ADD_KIT ~PH_Stormlord~
+  ~PH_Stormlord 0 0 0 0 0 0 0 0~
+  ~PH_Stormlord 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~PH_Stormlord 12 0 9 0 13 17~ // Minimum Ability - abclasrq
+  ~PH_Stormlord 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~PH_Stormlord 0 0 17 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~PH_Stormlord 0 0 15 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
+  ~PH_Stormlord 0 1 1 0 0 0 0 0 0~ // Alignment
+  ~PH_Stormlord 0 0 0 0 0 0~ // Dual Class Options
+  ~override\PHSTORM.2da~ // CLAB
+  ~K_P_H~
+  ~0x00004000 6~
+  ~Pa4~
+  ~CHAN09 * HELM07 BAG26 RING06 RING31 * BOOT01 AMUL20 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+  SAY @601
+  SAY @602
+  SAY @603
+
+LAF fl#add_kit_ee STR_VAR 
+    kit_name = ~PH_Stormlord~
+    hpclass = HPPRS // D8
+END
+
+APPEND ~FALLEN.2da~ ~PH_Stormlord 0~
+
+// new portrait icons
+DEFINE_ACTION_FUNCTION cd_new_portrait_icon
+  INT_VAR string = 0
+  STR_VAR bam_file = "****"
+  RET     icon
+  BEGIN
+
+  COPY_EXISTING ~statdesc.2da~ ~override~
+    COUNT_2DA_ROWS 3 count
+    READ_2DA_ENTRY (count - 1) 0 3 icon
+    SET icon += 1
+
+  APPEND ~statdesc.2da~ ~%icon% %string% %bam_file%~ UNLESS ~%bam_file%~
+
+END
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Thunderous Smite~) STR_VAR bam_file = SPWI308C RET slsmts = icon END
+
+COPY ~PH_KITMOD\Stormlord\spl\slnotun.spl~ ~override~
+COPY ~PH_KITMOD\Stormlord\spl\slstat.spl~ ~override~
+COPY ~PH_KITMOD\Stormlord\spl\slsmt.eff~ ~override~
+COPY ~PH_KITMOD\Stormlord\spl\slsmt1.spl~ ~override~
+COPY ~PH_KITMOD\Stormlord\spl\slsmt2.spl~ ~override~
+
+// NOTE: We apply the Call_Lightning_Chain_9 projectile in slstm2.spl and cast that spell from slsmt1.spl.
+//       If we set the projectile in slstm1.spl it will apply to every hit even if the target is marked as immune to the spell for that round.
+//       The reason for that is that the engine will always apply the projectile, even if a target is immune to the spell itself.
+
+
+COPY ~PH_KITMOD\Stormlord\spl\slsmt.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = slsmts END // character icon
+SAY NAME1 @604
+SAY UNIDENTIFIED_DESC @605
