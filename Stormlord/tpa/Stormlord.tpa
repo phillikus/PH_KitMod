@@ -4,27 +4,34 @@ COPY_EXISTING ~CLABPA01.2DA~ ~OVERRIDE/PHSTORM.2DA~
 	REPLACE_TEXTUALLY ~GA_SPCL211 ~ ~**** ~ // LAY ON HANDS
 	REPLACE_TEXTUALLY ~GA_C0PAL02 ~ ~**** ~ // SMITE EVIL
 	REPLACE_TEXTUALLY ~SPCL111 ~ ~**** ~ // CURE DISEASE
+
   LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = AP_slnotun END // disable turn undead
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = AP_slstat END // add electric resistance
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 5 f_MaxLevel = 5 STR_VAR f_Entry = AP_slstat END // add electric resistance
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 9 f_MaxLevel = 9 STR_VAR f_Entry = AP_slstat END // add electric resistance
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 13 f_MaxLevel = 13 STR_VAR f_Entry = AP_slstat END // add electric resistance
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 17 f_MaxLevel = 17 STR_VAR f_Entry = AP_slstat END // add electric resistance
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = AP_slstat END // electric resistance
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 5 f_MaxLevel = 5 STR_VAR f_Entry = AP_slstat END // electric resistance
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 9 f_MaxLevel = 9 STR_VAR f_Entry = AP_slstat END // electric resistance
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 13 f_MaxLevel = 13 STR_VAR f_Entry = AP_slstat END // electric resistance
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 17 f_MaxLevel = 17 STR_VAR f_Entry = AP_slstat END // electric resistance
 
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = GA_SPPR302 END // add new storm spells
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = GA_slwi115 END // Shocking Grasp
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = GA_slwi308 END // Lightning Bolt
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = GA_SPPR302 END // Call Lighnting
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = GA_SPPR327 END // Storm Shell (IWD)
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = GA_SPPR420 END // Static Charge (IWD)
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = GA_slwi615 END // Chain Lightning
   
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 2 f_MaxLevel = 2 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 6 f_MaxLevel = 6 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 10 f_MaxLevel = 10 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 14 f_MaxLevel = 14 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 18 f_MaxLevel = 18 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 22 f_MaxLevel = 22 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 26 f_MaxLevel = 26 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 30 f_MaxLevel = 30 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 34 f_MaxLevel = 34 STR_VAR f_Entry = GA_slsmt END // add Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 2 f_MaxLevel = 2 STR_VAR f_Entry = GA_slsmt END // Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 6 f_MaxLevel = 6 STR_VAR f_Entry = GA_slsmt END // Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 10 f_MaxLevel = 10 STR_VAR f_Entry = GA_slsmt END // Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 14 f_MaxLevel = 14 STR_VAR f_Entry = GA_slsmt END // Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 18 f_MaxLevel = 18 STR_VAR f_Entry = GA_slsmt END // Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 22 f_MaxLevel = 22 STR_VAR f_Entry = GA_slsmt END // Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 26 f_MaxLevel = 26 STR_VAR f_Entry = GA_slsmt END // Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 30 f_MaxLevel = 30 STR_VAR f_Entry = GA_slsmt END // Thunderous Smite
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 34 f_MaxLevel = 34 STR_VAR f_Entry = GA_slsmt END // Thunderous Smite
 
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 12 f_MaxLevel = 12 STR_VAR f_Entry = GA_slwrath END // add Wrath of the Storm
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 20 f_MaxLevel = 20 STR_VAR f_Entry = GA_slwrath END // add Wrath of the Storm
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 8 f_MaxLevel = 8 STR_VAR f_Entry = GA_sltclap END // Thunderclap
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 12 f_MaxLevel = 12 STR_VAR f_Entry = GA_sltclap END // Thunderclap
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 16 f_MaxLevel = 16 STR_VAR f_Entry = GA_sltclap END // Thunderclap
 
 	PRETTY_PRINT_2DA
 
@@ -40,7 +47,7 @@ ADD_KIT ~PH_Stormlord~
   ~override\PHSTORM.2da~ // CLAB
   ~K_P_H~
   ~0x00004000 6~
-  ~Pa4~
+  ~phs~
   ~CHAN09 * HELM07 BAG26 RING06 RING31 * BOOT01 AMUL20 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
   SAY @601
   SAY @602
@@ -69,6 +76,10 @@ DEFINE_ACTION_FUNCTION cd_new_portrait_icon
 
 END
 
+COPY_EXISTING ~LUPA0.2da~ ~override/LUPHS.2DA~
+LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL923~ END
+LPF patch_add_hla STR_VAR 2da_row = ~PHS1~ ability = ~GA_slwrath~ num_allowed = 1 END	
+
 LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Thunderous Smite~) STR_VAR bam_file = SPWI308C RET slsmts = icon END
 
 COPY ~PH_KITMOD\Stormlord\spl\slnotun.spl~ ~override~
@@ -94,3 +105,23 @@ COPY ~PH_KITMOD\Stormlord\spl\slwrath.spl~ ~override~
 SAY NAME1 @606
 SAY UNIDENTIFIED_DESC @607
 WRITE_SHORT 0x98 ~slwrath~
+
+//Thunderclap
+COPY ~PH_KITMOD\Stormlord\spl\sltclap.pro~ ~override~
+ADD_PROJECTILE ~PH_KITMOD\Stormlord\spl\sltclap.pro~
+
+COPY ~PH_KITMOD\Stormlord\spl\sltclap.spl~ ~override~
+SAY NAME1 @608
+SAY UNIDENTIFIED_DESC @609
+WRITE_SHORT 0x98 ~sltclap~
+
+
+// change new storm spells to cleric spells so they can be added to the Storm Lord spellbook
+COPY_EXISTING ~SPWI115.SPL~ ~OVERRIDE/slwi115.SPL~
+WRITE_SHORT 0X1C 2
+
+COPY_EXISTING ~SPWI308.SPL~ ~OVERRIDE/slwi308.SPL~
+WRITE_SHORT 0X1C 2
+
+COPY_EXISTING ~SPWI615.SPL~ ~OVERRIDE/slwi615.SPL~
+WRITE_SHORT 0X1C 2

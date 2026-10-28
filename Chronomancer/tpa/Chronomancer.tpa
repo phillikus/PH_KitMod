@@ -50,3 +50,8 @@ COPY ~PH_KITMOD\Chronomancer\spl\chtemp.spl~ ~override~
 SAY NAME1 @406
 SAY UNIDENTIFIED_DESC @407
 WRITE_SHORT 0x98 ~chtemp~
+
+// Shadow Step
+COPY ~PH_KITMOD\Chronomancer\spl\chstep.spl~ ~override~
+SAY NAME1 @408
+SAY UNIDENTIFIED_DESC @409

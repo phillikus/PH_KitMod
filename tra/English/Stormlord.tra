@@ -2,10 +2,10 @@
  *    Stormlord          *
  * ===================== */
 @601 = ~stormlord~
-@602 = ~Storm Lord~
-@603 = ~Storm Lord:
+@602 = ~Stormlord~
+@603 = ~Stormlord:
 
-Storm Lords are warriors who draw power from the raw force of thunder and lightning. They are bound not to morality, but to the storm itself—unpredictable, relentless, and absolute. Some serve righteous gods of sky and justice, others darker powers of destruction, and some none at all, embracing the storm as a force beyond good and evil. Clad in heavy armor and wielding two-handed weapons, Storm Lords channel lightning through their blows and command storm magic in battle.
+Stormlords are warriors who draw power from the raw force of thunder and lightning. They are bound not to morality, but to the storm itself—unpredictable, relentless, and absolute. Some serve righteous gods of sky and justice, others darker powers of destruction, and some none at all, embracing the storm as a force beyond good and evil. Clad in heavy armor and wielding two-handed weapons, Storm Lords channel lightning through their blows and command storm magic in battle.
 
 Advantages:
 - +20% resistance to electrical damage. Gains an additional 10% every four levels, up to 50% at level 17
@@ -15,21 +15,24 @@ Shocking Grasp, Lightning Bolt, Call Lightning, Storm Shell (IWD), Static Charge
 - 2nd level: May use the Thunderous Smite ability once per day, gaining an additional use every 4 levels thereafter.
 
 Thunderous Smite:
-Storm lords are able to channel the power of lightning into their weapons. Successful melee attacks call down a bolt of lightning onto the target, dealing 2d8 electrical damage.
+Stormlords are able to channel the power of lightning into their weapons. Successful melee attacks call down a bolt of lightning onto the target, dealing 2d8 electrical damage.
 The same target may only be affected once per round. This ability lasts for 2 rounds + 1 round for every 2 additional levels of the caster up to a maximum of 1 turn at level 18.
 
 - 6th level: Thunderous Smite damage increased to 3d8, target must save vs. death or be slowed for 1 round.
+- 8th level: May use the Thunderclap ability once per day, gaining an additional use at level 12 and 16.
+
+Thunderclap:
+The Stormlord unleashes a deafening burst of thunder, disorienting nearby enemies and hindering their movement. 
+All enemies within 15 feet are deafened for 3 rounds. If they fail a saving throw vs. death they are also slowed for 2 rounds and knocked unconscious for 1 round.
+
 - 10th level: Thunderous Smite damage increased to 4d8, target must save vs. death or be stunned for 1 round.
-
-- 12th level: May use the Wrath of the Storm ability once per day.
-
-Wrath of the Storm:
-The Storm Lord invokes the Wrath of the Storm, unleashing divine lightning upon all nearby enemies and summoning a torrential downpour. Instantly strike every hostile creature within a 60-foot radius with the current effets of Thunderous Smite. An additional bolt is called down upon all affected opponents after one round.
-
 - 14th level: Targets hit by Thunderous Smite must save vs. death at a -2 penalty or be stunned for 1 round.
 - 18th level: Thunderous Smite damage increased to 5d8.
 
-- 20th level: Gain an additional use of Wrath of the Storm.
+- gain the Wrath of the Storm High Level Ability, replacing the Summon (Fallen) Deva ability.
+
+Wrath of the Storm:
+The Stormlord invokes the Wrath of the Storm, unleashing divine lightning upon all nearby enemies and summoning a torrential downpour. Instantly strike every hostile creature within a 60-foot radius with the current effets of Thunderous Smite. Two additional bolts are called down upon all affected opponents within the next 2 rounds.
 
 Disadvantages:
 - d8 HD
@@ -51,4 +54,14 @@ The same target may only be affected once per round. This ability lasts for 2 ro
 
 @606 = ~Wrath of the Storm~
 @607 = ~Wrath of the Storm:
-The Storm Lord invokes the Wrath of the Storm, unleashing divine lightning upon all nearby enemies and summoning a torrential downpour. Instantly strike every hostile creature within a 60-foot radius with the current effets of Thunderous Smite. An additional bolt is called down upon all affected opponents after one round.~
+The Stormlord invokes the Wrath of the Storm, unleashing divine lightning upon all nearby enemies and summoning a torrential downpour. Instantly strike every hostile creature within a 60-foot radius with the current effets of Thunderous Smite. Two additional bolts are called down upon all affected opponents within the next 2 rounds.~
+
+@608 = ~Thunderclap~
+@609 = ~Thunderclap:
+The Stormlord unleashes a deafening burst of thunder, disorienting nearby enemies and hindering their movement. 
+All enemies within 15 feet are deafened for 3 rounds. If they fail a saving throw vs. death they are also slowed for 2 rounds and knocked unconscious for 1 round.~
+
+// TODO: remove this?
+@610 = ~Avatar of Storm~
+@611 = ~Avatar of Storm:
+For 5 rounds, the Stormlord's electrical resistance is set to 100%, electrical damage dealt is doubled, and resistance to slashing, piercing, crushing, and missile damage is increased by 20%. Fire damage is unaffected.~

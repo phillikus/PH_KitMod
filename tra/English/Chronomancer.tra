@@ -13,7 +13,13 @@ Advantages:
 
 Temporal Slip:
 By briefly synchronizing with an unrealized future, the Chronomancer may cast any memorized spell instantly without casting time. This ignores the 1 spell per round limit, allowing <PRO_HIMHER> to chain two spells together.
-The spell slot will be consumed normally. 
+The spell slot will be consumed normally.
+
+- 5th level: May use the Temporal Displacement ability once per day, gaining an additional use at level 10 and 15.
+
+Temporal Displacement:
+The Chronomancer slips beyond the present moment, moving freely while the world around them stands frozen in time. For a brief instant, distance and danger lose their meaning as they reposition beyond the reach of enemies.
+While displaced, the Chronomancer cannot attack, cast spells, or use items. When time resumes its natural flow, they emerge at their new position, leaving their foes none the wiser until it is too late.
 
 - 7th level: May use Temporal Slip once every 2 rounds.
 
@@ -35,9 +41,14 @@ Disadvantages:
 By briefly synchronizing with an unrealized future, the Chronomancer may cast any memorized spell instantly without casting time. This ignores the 1 spell per round limit, allowing <PRO_HIMHER> to chain two spells together.
 The spell slot will be consumed normally.~
 
-@406 = ~Temporal Field:~
+@406 = ~Temporal Field~
 @407 = ~Temporal Field:
 The Chronomancer bends the flow of time within a localized area, creating a warped field where seconds stretch and compress unevenly. Within this distorted pocket of reality, allies move with unnatural speed and clarity, while enemies struggle through sluggish, delayed motion as if every action must push through thickened time itself.
 Though the effect is brief, it is decisive—turning moments of chaos into orchestrated advantage. Blades strike sooner, spells land faster, and hostile reactions arrive too late to matter. When the field collapses, time resumes its natural flow, often leaving only the aftermath of a battle already decided.
 For the next 5 rounds, all allies around the caster are hasted, while all enemies are slowed unless they make a save vs. spell at a -4 penalty.
 Using this ability leaves the Chronomancer fatigued for 2 rounds.~
+
+@408 = ~Temporal Displacement~
+@409 = ~Temporal Displacement:
+The Chronomancer slips beyond the present moment, moving freely while the world around them stands frozen in time. For a brief instant, distance and danger lose their meaning as they reposition beyond the reach of enemies.
+While displaced, the Chronomancer cannot attack, cast spells, or use items. When time resumes its natural flow, they emerge at their new position, leaving their foes none the wiser until it is too late.~

@@ -8,6 +8,7 @@ ALWAYS
 
 	INCLUDE ~%MOD_FOLDER%/Lib/fl#add_kit_ee.tpa~
   INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/hlas.tpa~
   
 END
 
