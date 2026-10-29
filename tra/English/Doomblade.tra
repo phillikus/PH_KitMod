@@ -5,7 +5,7 @@
 @102 = ~Doomblade~
 @103 = ~Doomblade:
 
-The Doomblade is a warrior who embraces ruinous aggression, sacrificing resilience and fortune for devastating melee power. Each strike lands with unnatural force, but the Doomblade’s reckless style leaves them exposed to every misstep. When pressed, they may enter a Death Surge: a furious state that grants unmatched speed and focus, feeding on the death of their enemies to sustain their own failing body.
+The Doomblade is a warrior who embraces ruinous aggression, sacrificing resilience and fortune for devastating melee power. Each strike lands with unnatural force, but the Doomblade’s reckless style leaves them exposed to every misstep.
 
 Advantages:
 – Gains increasing bonus to physical melee damage as levels increase:
@@ -14,25 +14,22 @@ Advantages:
 11th level: +45%
 16th level: +60%
 
-- 4th level: May enter a Death Surge once per day, gaining an additional use every 4 levels thereafter.
+- 2nd level: May use the Mark of Death ability once per day, gaining an additional use every 5 levels thereafter.
 
-Death Surge:
-The Doomblade enters a state of violent overextension where survival is sacrificed for overwhelming aggression.
-For the next 5 rounds:
-- +1/2 APR
-- +2 bonus to critical hit chance
-- immune to fear and stun
-- movement speed doubled
-- heal for 10 hit points whenever an enemy is slain
-- lose 5 hit points each round
+Mark of Death:
+The Doomblade singles out a victim and condemns it to death. Through a ruthless display of martial precision, <PRO_HESHE> weakens the target's defenses, saps its ability to flee, and exposes it to a killing blow. Once marked, the victim can run—but cannot easily escape its executioner.
+For the next 3 rounds, the marked target moves 30% slower and suffers a -3 penalty to THAC0 and AC. 
+Additionally, the marked target can be seen within the fog of war and cannot turn invisible for the duration.
 
-Become winded after Death Surge ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued. You also lose all bonus physical damage while winded.
+- 6th level: Marked target suffers a -2 penalty to saving throws vs. death.
+- 10th level: Market target moves 50% slower. Successful melee attacks against the marked target heal the Doomblade for 2HP.
+- 14th level: Marked target must save vs. death or run in fear for 1 round.
 
-- 15th level: May use Execution once per day.
+- 15th level: May use the Execution Blow ability once per day.
 
-Execution:
-The first attack within the next 5 rounds is an automatic critical hit. The target must save vs. death at a -4 penalty or die instantly.
-On a successful save, the target suffers 50 points of unmitigated magic damage.
+Execution Blow:
+The Doomblade delivers a devastating, precisely aimed strike intended to end its prey's life in a single blow. The next successful melee attack becomes an automatic critical hit and deals an additional 50 points of unmitigated magic damage. 
+If the target is marked by Mark of Death, it must save vs. death at a -2 penalty or die instantly.
 
 Disadvantages:
 - May not use shields
@@ -41,21 +38,20 @@ Disadvantages:
 - Suffers -2 penalty to saving throws vs. spells
 - Alignment restricted to non-good~
 
-@104 = ~Death Surge~
-@105 = ~Death Surge
-The Doomblade enters a state of violent overextension where survival is sacrificed for overwhelming aggression.
-For the next 5 rounds:
-- +1/2 APR
-- +2 bonus to critical hit chance
-- immune to fear and stun
-- movement speed doubled
-- heal for 10 hit points whenever an enemy is slain
-- lose 5 hit points each round
+@104 = ~Mark of Death~
+@105 = ~Mark of Death:
+The Doomblade singles out a victim and condemns it to death. Through a ruthless display of martial precision, <PRO_HESHE> weakens the target's defenses, saps its ability to flee, and exposes it to a killing blow. 
+Once marked, the target can be seen within the fog of war and cannot turn invisible or hide. In addition, the victim suffers from the following cumulative effects:
+- 2nd level: Target moves 30% slower and suffers a -3 penalty to THAC0 and AC
+- 6th level: Target suffers a -2 penalty to saving throws vs. death.
+- 10th level: Target moves 50% slower. Successful melee attacks against the marked target heal the Doomblade for 2HP.
+- 14th level: Target must save vs. death or run in fear for 1 round.
+- 18th level (TODO): There is a 5% chance that successful melee attacks against the marked target extend the mark for another 3 rounds.
 
-Become winded after Death Surge ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued. You also lose all bonus physical damage while winded.~
+The Mark of Death lasts for 3 rounds.
+Only a single Mark of Death can be applied to a target and the effects do not stack.~
 
-@106 = ~The Death Surge has ended and you are now winded.~
-@107 = ~Execution~
-@108 = ~Execution:
-The first attack within the next 5 rounds is an automatic critical hit. The target must save vs. death at a -4 penalty or die instantly.
-On a successful save, the target suffers 50 points of unmitigated magic damage.~
+@106 = ~Execution Blow~
+@107 = ~Execution Blow:
+The Doomblade delivers a devastating, precisely aimed strike intended to end its prey's life in a single blow. The next successful melee attack becomes an automatic critical hit and deals an additional 50 points of unmitigated magic damage. 
+If the target is marked by Mark of Death, it must save vs. death at a -4 penalty or die instantly.~
