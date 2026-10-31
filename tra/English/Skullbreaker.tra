@@ -15,8 +15,11 @@ Advantages:
   - War Hammers: briefly stun the target
   - Slings: briefly slow the target
 
-Each effect may only be applied once per round to a single target and multiple application of the same effect do not stack.
-However, different effects may be applied at the same time to a target.
+Each effect may only be applied once per round to a single target and multiple applications of the same effect do not stack.
+However, different effects may be applied at the same time.
+
+NOTE: Due to an engine limitation, the mentioned effects will always apply to BOTH main and offhand weapon.
+This means there is a chance that the off-hand effect applies to the main-hand and vice versa if two different weapon types are equipped.
 
 - 2nd level: May use the Shockwave ability once per day, gains an additional use every 4 levels thereafter.
 

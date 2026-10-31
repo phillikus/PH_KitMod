@@ -15,7 +15,7 @@ Shocking Grasp, Lightning Bolt, Call Lightning, Storm Shell (IWD), Static Charge
 - 2nd level: May use the Thunderous Smite ability once per day, gaining an additional use every 4 levels thereafter.
 
 Thunderous Smite:
-Stormlords are able to channel the power of lightning into their weapons. Successful melee attacks call down a bolt of lightning onto the target, dealing 2d8 electrical damage.
+Stormlords are able to channel the power of lightning into their weapons. Successful melee attacks call down a bolt of lightning onto the target, dealing 2d8 electrical damage (save vs. death for half).
 The same target may only be affected once per round. This ability lasts for 2 rounds + 1 round for every 2 additional levels of the caster up to a maximum of 1 turn at level 18.
 
 - 6th level: Thunderous Smite damage increased to 3d8, target must save vs. death or be slowed for 1 round.
@@ -25,14 +25,14 @@ Thunderclap:
 The Stormlord unleashes a deafening burst of thunder, disorienting nearby enemies and hindering their movement. 
 All enemies within 15 feet are deafened for 3 rounds. If they fail a saving throw vs. death they are also slowed for 2 rounds and knocked unconscious for 1 round.
 
-- 10th level: Thunderous Smite damage increased to 4d8, target must save vs. death or be stunned for 1 round.
-- 14th level: Targets hit by Thunderous Smite must save vs. death at a -2 penalty or be stunned for 1 round.
+- 10th level: Thunderous Smite damage increased to 4d8, target must save vs. death or be stunned for half a round.
+- 14th level: Targets hit by Thunderous Smite must save vs. death at a -2 penalty or be stunned for half a round.
 - 18th level: Thunderous Smite damage increased to 5d8.
 
 - gain the Wrath of the Storm High Level Ability, replacing the Summon (Fallen) Deva ability.
 
 Wrath of the Storm:
-The Stormlord invokes the Wrath of the Storm, unleashing divine lightning upon all nearby enemies and summoning a torrential downpour. Instantly strike every hostile creature within a 60-foot radius with the current effets of Thunderous Smite. Two additional bolts are called down upon all affected opponents within the next 2 rounds.
+The Stormlord invokes the Wrath of the Storm, unleashing divine lightning upon all nearby enemies and summoning a torrential downpour. Instantly strike every hostile creature within a 60-foot radius with Thunderous Smite. Two additional bolts are called down upon all affected opponents within the next 2 rounds.
 
 Disadvantages:
 - d8 HD
@@ -43,12 +43,12 @@ Disadvantages:
 
 @604 = ~Thunderous Smite~
 @605 = ~Thunderous Smite:
-Channel the power of lightning into your wepaon. Successful melee attacks call down a bolt of lightning onto the target, damaging and possibly incapacating them:
+Channel the power of lightning into your wepaon. Successful melee attacks call down a bolt of lightning onto the target, damaging (save vs. death for half) and possibly incapacating them:
 - 2nd level: 2d8 electrical damage
 - 6th level: 3d8 electircal damage, target must save vs. death or be slowed for 1 round.
-- 10th level: 4d8 electrical damage, target must save vs. death or be stunned for 1 round.
-- 14th level: 4d8 electrical damage, target must save vs. death at a -2 penalty or be stunned for 1 round.
-- 18th level: 5d8 electrical damage, target must save vs. death at a -2 penalty or be stunned for 1 round.
+- 10th level: 4d8 electrical damage, target must save vs. death or be stunned for half a round.
+- 14th level: 4d8 electrical damage, target must save vs. death at a -2 penalty or be stunned for half a round.
+- 18th level: 5d8 electrical damage, target must save vs. death at a -2 penalty or be stunned for half a round.
 
 The same target may only be affected once per round. This ability lasts for 2 rounds + 1 round for every 2 additional levels of the caster up to a maximum of 1 turn at level 18.~
 
