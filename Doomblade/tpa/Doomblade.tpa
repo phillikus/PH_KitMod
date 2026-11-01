@@ -57,6 +57,7 @@ DEFINE_ACTION_FUNCTION cd_new_portrait_icon
 END
 
 LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Mark of Death~) STR_VAR bam_file = SPWI605C RET dbmark = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Execution Blow~) STR_VAR bam_file = SPWI915C RET dbexec = icon END
 
 COPY ~PH_KITMOD\Doomblade\spl\dbdmg.spl~ ~override~
 COPY ~PH_KITMOD\Doomblade\spl\dbstat.spl~ ~override~
@@ -71,12 +72,15 @@ SAY NAME1 @104
 SAY UNIDENTIFIED_DESC @105
 
 COPY ~PH_KITMOD\Doomblade\spl\dbmark\dbmark.eff~ ~override~
+COPY ~PH_KITMOD\Doomblade\spl\dbmark\dbmark.vvc~ ~override~
 COPY ~PH_KITMOD\Doomblade\spl\dbmark\dbmarka.spl~ ~override~
 COPY ~PH_KITMOD\Doomblade\spl\dbmark\dbmarkb.spl~ ~override~
 COPY ~PH_KITMOD\Doomblade\spl\dbmark\dbmarkc.spl~ ~override~
 
 // Execution Blow
 COPY ~PH_KITMOD\Doomblade\spl\dbexec.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@106) STR_VAR END 
+    LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = dbexec END // character icon
 SAY NAME1 @106
 SAY UNIDENTIFIED_DESC @107
 

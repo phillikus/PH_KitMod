@@ -28,8 +28,8 @@ Additionally, the marked target can be seen within the fog of war and cannot tur
 - 15th level: May use the Execution Blow ability once per day.
 
 Execution Blow:
-The Doomblade delivers a devastating, precisely aimed strike intended to end its prey's life in a single blow. The next successful melee attack becomes an automatic critical hit and knocks the target unconscious for 1 round on a failed save vs. death at a -2 penalty. 
-If the target is affected by Mark of Death, it must save vs. death at a -2 penalty or die instantly.
+The Doomblade delivers a devastating, precisely aimed strike intended to end its prey's life in a single blow. The next successful melee attack becomes an automatic critical hit and knocks the target unconscious for 1 round (no save). 
+If the target is affected by Mark of Death, it must additionally save vs. death at a -2 penalty or die instantly.
 
 Disadvantages:
 - May not use shields
@@ -52,5 +52,5 @@ Only a single Mark of Death can be applied to a target and the effects do not st
 
 @106 = ~Execution Blow~
 @107 = ~Execution Blow:
-The Doomblade delivers a devastating, precisely aimed strike intended to end its prey's life in a single blow. The next successful melee attack becomes an automatic critical hit and knocks the target unconscious for 1 round on a failed save vs. death at a -2 penalty. 
+The Doomblade delivers a devastating, precisely aimed strike intended to end its prey's life in a single blow. The next successful melee attack becomes an automatic critical hit and knocks the target unconscious for 1 round (no save). 
 If the target is affected by Mark of Death, it must additionally save vs. death at a -2 penalty or die instantly.~

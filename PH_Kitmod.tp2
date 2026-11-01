@@ -47,17 +47,17 @@ PRINT ~Installing Skullbreaker kit...~
 INCLUDE ~PH_KITMOD/Skullbreaker/tpa/Skullbreaker.tpa~
 
 // Interdictor
-BEGIN ~Interdictor~
+//BEGIN ~Interdictor~
 
-REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
-  @1000
+//REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
+//  @1000
 
-PRINT ~Installing Interdictor kit...~
+//PRINT ~Installing Interdictor kit...~
 
 //////////////////////////////////////////////////////////
 // EEex Lua bootstrap
 //////////////////////////////////////////////////////////
-INCLUDE ~PH_KITMOD/Interdictor/tpa/Interdictor.tpa~
+//INCLUDE ~PH_KITMOD/Interdictor/tpa/Interdictor.tpa~
 
 // Chronomancer
 BEGIN ~Chronomancer~
