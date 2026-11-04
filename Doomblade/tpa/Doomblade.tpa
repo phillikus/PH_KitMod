@@ -36,10 +36,6 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
     LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 parameter1 = %doomblade_code% parameter2 = 9 power = 0 timing = 2 END
   END
 
-//////////////////////////////////////////////////////////
-// Copy core resources
-//////////////////////////////////////////////////////////
-
 // new portrait icons
 DEFINE_ACTION_FUNCTION cd_new_portrait_icon
   INT_VAR string = 0
@@ -56,8 +52,14 @@ DEFINE_ACTION_FUNCTION cd_new_portrait_icon
 
 END
 
-LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Mark of Death~) STR_VAR bam_file = SPWI605C RET dbmark = icon END
-LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Execution Blow~) STR_VAR bam_file = SPWI915C RET dbexec = icon END
+COPY ~PH_KITMOD\Doomblade\bam\dbmark.bam~ ~override~
+COPY ~PH_KITMOD\Doomblade\bam\dbmarkb.bam~ ~override~
+COPY ~PH_KITMOD\Doomblade\bam\dbmarkc.bam~ ~override~
+COPY ~PH_KITMOD\Doomblade\bam\dbexecb.bam~ ~override~
+COPY ~PH_KITMOD\Doomblade\bam\dbexecc.bam~ ~override~
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Mark of Death~) STR_VAR bam_file = dbmarkc RET dbmark = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Execution Blow~) STR_VAR bam_file = dbexecc RET dbexec = icon END
 
 COPY ~PH_KITMOD\Doomblade\spl\dbdmg.spl~ ~override~
 COPY ~PH_KITMOD\Doomblade\spl\dbstat.spl~ ~override~

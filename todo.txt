@@ -135,6 +135,27 @@ Spellbreaker / Spellguard / Nullifier / Weave Warden Mage:
    -> allow targeting 2/3/4 foes/allies as you level up
 
 
+Shock Trooper impelmentation:
+ - add a passive effect to the kit that adds Opening Assault as on hit effect (stopen.spl)
+   - on hit should apply the damage and limited APR bonus for 3 rounds as well as stun effect + penalties
+- add a passive effect that grants immunity to stopen.spl on hit for 3 rounds (add fear immunity / passives here too)
+- 
+
+Add a a second passive effect that gives spell immunity to Openign Assault to the caster for 3 rounds
+-> After 3 rounds out of combat, the next hit will apply Openign Assault
+
+Revised combat exhaustion:
+- always apply penalties after 5 rounds of combat, restore when combat is ending
+-> on hit cast penalty spell with 5 round delay
+-> use .baf script file to check for out of combat state and remove the penalty spell (effects)
+
+
+New kits:
+Astral Vanguard Paladin
+Riftblade Fighter
+Phantom thief kit
+
+
 
 Attributions:
 <a href="https://www.flaticon.com/free-icons/blood" title="blood icons">Blood icons created by srip - Flaticon</a>

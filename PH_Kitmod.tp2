@@ -16,6 +16,7 @@ LANGUAGE ~English~
          ~English~
          ~PH_KITMOD/tra/English/Doomblade.tra~
          ~PH_KITMOD/tra/English/Skullbreaker.tra~
+         ~PH_KITMOD/tra/English/Shocktrooper.tra~
          ~PH_KITMOD/tra/English/Interdictor.tra~
          ~PH_KITMOD/tra/English/Chronomancer.tra~
          ~PH_KITMOD/tra/English/Stormlord.tra~
@@ -45,6 +46,19 @@ PRINT ~Installing Skullbreaker kit...~
 // EEex Lua bootstrap
 //////////////////////////////////////////////////////////
 INCLUDE ~PH_KITMOD/Skullbreaker/tpa/Skullbreaker.tpa~
+
+// Shocktrooper
+BEGIN ~Shocktrooper~
+
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
+  @1000
+
+PRINT ~Installing Shocktrooper kit...~
+
+//////////////////////////////////////////////////////////
+// EEex Lua bootstrap
+//////////////////////////////////////////////////////////
+INCLUDE ~PH_KITMOD/Shocktrooper/tpa/Shocktrooper.tpa~
 
 // Interdictor
 //BEGIN ~Interdictor~

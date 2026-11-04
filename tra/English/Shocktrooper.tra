@@ -1,0 +1,49 @@
+/* ===================== *
+ *    Shocktrooper       *
+ * ===================== */
+@701 = ~shocktrooper~
+@702 = ~Shocktrooper~
+@703 = ~Shocktrooper:
+
+Shocktroopers are elite assault warriors trained to break enemy lines through sudden, overwhelming violence. 
+Rather than engaging in prolonged duels, they specialize in delivering devastating opening strikes that leave opponents stunned and vulnerable before moving on to the next target. 
+
+Their brutal combat doctrine emphasizes momentum, aggression, and rapid target acquisition. However, such explosive techniques place tremendous strain on the body, and even the most seasoned Shocktrooper must eventually contend with exhaustion.
+
+Advantages:
+- 1st level: Gains the Opening Strike and Combat Exhaustion passive abilities.
+
+Opening Strike:
+The first successful melee attack at the start of combat has the following cumulative effects:
+1st level: +10 bonus damage, target suffers a -2 penalty to AC and THAC0 for 3 rounds.
+6th level: +15 bonus damage, the Shocktrooper gains +1/2 attacks per round for the next 3 rounds.
+11th level: +20 bonus damage, target must save vs. death or be stunned for 1 round.
+16th level: +25 bonus damage, target must save vs. death at a -2 penalty or be stunned for 1 round.
+
+Additionally, the Shocktrooper moves 30% faster until <PRO_HISHER> Opening Strike lands.
+Opening Strike recharges after spending 3 consecutive rounds outside of combat.
+
+Combat Exhaustion:
+Prolonged battles strain the Shocktrooper and <PRO_HESHE> suffers a -2 penalty to AC, THAC0, saving throws and damage after 5 rounds of combat.
+After 10 total rounds of combat the Shocktrooper suffers the same penalties again for a total penalty of -4 to AC, THAC0, saving throws and damage.
+These penalties dissipate after spending 3 consecutive rounds outside of combat.
+
+- 10th level: Gains the Unstoppable Assault passive ability.
+
+Unstoppable Assault:
+The Shocktrooper relentlessly pursues <PRO_HISHER> target and is immune to fear, stun and confusion for 2 rounds after performing an Opening Strike.
+
+- 12th level: May use the Shock Assault ability once per day, gaining an additional use every 4 levels thereafter.
+
+Shock Assault:
+The Shocktrooper unleashes a second, overwhelming opening strike, forcing <PRO_HISHER> body beyond its normal limits.
+Instantly regain your Opening Strike and lose all penalties of Combat Exhaustion.
+
+Disadvantages:
+- May not use shields
+- Alignment restricted to any lawful~
+
+@704 = ~Shock Assault~
+@705 = ~Shock Assault
+The Shocktrooper unleashes a second, overwhelming opening strike, forcing <PRO_HISHER> body beyond its normal limits.
+Instantly regain your Opening Strike and lose all penalties of Combat Exhaustion.~

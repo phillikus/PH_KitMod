@@ -42,7 +42,7 @@ Disadvantages:
 @105 = ~Mark of Death:
 The Doomblade singles out a victim and condemns it to death. Through a ruthless display of martial precision, <PRO_HESHE> weakens the target's defenses, saps its ability to flee, and exposes it to a killing blow. 
 Once marked, the target can be seen within the fog of war and cannot turn invisible or hide. In addition, the victim suffers from the following cumulative effects:
-- 2nd level: Target moves 30% slower and suffers a -3 penalty to THAC0 and AC
+- 2nd level: Target moves 30% slower and suffers a -3 penalty to THAC0 and AC.
 - 6th level: Target suffers a -2 penalty to saving throws vs. death.
 - 10th level: There is a 15% chance to briefly stun marked targets with each successful melee attack.
 - 14th level: There is a 5% chance to extend the Mark of Death by another 3 rounds with each successful melee attack.

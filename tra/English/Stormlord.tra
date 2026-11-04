@@ -60,8 +60,3 @@ The Stormlord invokes the Wrath of the Storm, unleashing divine lightning upon a
 @609 = ~Thunderclap:
 The Stormlord unleashes a deafening burst of thunder, disorienting nearby enemies and hindering their movement. 
 All enemies within 15 feet are deafened for 3 rounds. If they fail a saving throw vs. death they are also slowed for 2 rounds and knocked unconscious for 1 round.~
-
-// TODO: remove this?
-@610 = ~Avatar of Storm~
-@611 = ~Avatar of Storm:
-For 5 rounds, the Stormlord's electrical resistance is set to 100%, electrical damage dealt is doubled, and resistance to slashing, piercing, crushing, and missile damage is increased by 20%. Fire damage is unaffected.~

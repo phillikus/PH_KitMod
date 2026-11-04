@@ -1,0 +1,258 @@
+IF
+    Global("ST_SCRIPT_INIT", "GLOBAL", 0)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_SCRIPT_INIT", "GLOBAL", 1)
+        SetGlobal("ST_COMBAT_SEEN", "GLOBAL", 0)
+        SetGlobal("ST_OUT_OF_COMBAT", "GLOBAL", 0)
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 0)
+END
+
+IF
+    !CombatCounter(0)
+    Global("ST_COMBAT_SEEN", "GLOBAL", 0)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_COMBAT_SEEN", "GLOBAL", 1)
+        SetGlobal("ST_OUT_OF_COMBAT", "GLOBAL", 0)
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 0)
+        SetGlobalTimer("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL", 30)
+END
+
+IF
+    CombatCounter(0)
+    Global("ST_COMBAT_SEEN", "GLOBAL", 1)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_COMBAT_SEEN", "GLOBAL", 0)
+        SetGlobal("ST_OUT_OF_COMBAT", "GLOBAL", 1)
+        SetGlobalTimer("ST_OUT_OF_COMBAT_TIMER", "GLOBAL", 18)
+END
+
+IF
+    !CombatCounter(0)
+    Global("ST_COMBAT_SEEN", "GLOBAL", 1)
+    Global("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 0)
+    GlobalTimerExpired("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL")
+    Kit(Player1, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 1)
+        SetGlobalTimer("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL", 30)
+        ApplySpellRES("stcmbex", Player1)
+END
+
+IF
+    !CombatCounter(0)
+    Global("ST_COMBAT_SEEN", "GLOBAL", 1)
+    Global("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 0)
+    GlobalTimerExpired("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL")
+    Kit(Player2, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 1)
+        SetGlobalTimer("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL", 30)
+        ApplySpellRES("stcmbex", Player2)
+END
+
+IF
+    !CombatCounter(0)
+    Global("ST_COMBAT_SEEN", "GLOBAL", 1)
+    Global("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 0)
+    GlobalTimerExpired("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL")
+    Kit(Player3, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 1)
+        SetGlobalTimer("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL", 30)
+        ApplySpellRES("stcmbex", Player3)
+END
+
+IF
+    !CombatCounter(0)
+    Global("ST_COMBAT_SEEN", "GLOBAL", 1)
+    Global("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 0)
+    GlobalTimerExpired("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL")
+    Kit(Player4, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 1)
+        SetGlobalTimer("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL", 30)
+        ApplySpellRES("stcmbex", Player4)
+END
+
+IF
+    !CombatCounter(0)
+    Global("ST_COMBAT_SEEN", "GLOBAL", 1)
+    Global("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 0)
+    GlobalTimerExpired("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL")
+    Kit(Player5, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 1)
+        SetGlobalTimer("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL", 30)
+        ApplySpellRES("stcmbex", Player5)
+END
+
+IF
+    !CombatCounter(0)
+    Global("ST_COMBAT_SEEN", "GLOBAL", 1)
+    Global("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 0)
+    GlobalTimerExpired("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL")
+    Kit(Player6, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 1)
+        SetGlobalTimer("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL", 30)
+        ApplySpellRES("stcmbex", Player6)
+END
+
+IF
+    !CombatCounter(0)
+    Global("ST_COMBAT_SEEN", "GLOBAL", 1)
+    Global("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 1)
+    GlobalTimerExpired("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL")
+    Kit(Player1, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 2)
+        ApplySpellRES("stcmbex", Player1)
+END
+
+IF
+    !CombatCounter(0)
+    Global("ST_COMBAT_SEEN", "GLOBAL", 1)
+    Global("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 1)
+    GlobalTimerExpired("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL")
+    Kit(Player2, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 2)
+        ApplySpellRES("stcmbex", Player2)
+END
+
+IF
+    !CombatCounter(0)
+    Global("ST_COMBAT_SEEN", "GLOBAL", 1)
+    Global("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 1)
+    GlobalTimerExpired("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL")
+    Kit(Player3, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 2)
+        ApplySpellRES("stcmbex", Player3)
+END
+
+IF
+    !CombatCounter(0)
+    Global("ST_COMBAT_SEEN", "GLOBAL", 1)
+    Global("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 1)
+    GlobalTimerExpired("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL")
+    Kit(Player4, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 2)
+        ApplySpellRES("stcmbex", Player4)
+END
+
+IF
+    !CombatCounter(0)
+    Global("ST_COMBAT_SEEN", "GLOBAL", 1)
+    Global("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 1)
+    GlobalTimerExpired("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL")
+    Kit(Player5, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 2)
+        ApplySpellRES("stcmbex", Player5)
+END
+
+IF
+    !CombatCounter(0)
+    Global("ST_COMBAT_SEEN", "GLOBAL", 1)
+    Global("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 1)
+    GlobalTimerExpired("ST_COMBAT_EXHAUSTION_TIMER", "GLOBAL")
+    Kit(Player6, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 2)
+        ApplySpellRES("stcmbex", Player6)
+END
+
+IF
+    CombatCounter(0)
+    Global("ST_OUT_OF_COMBAT", "GLOBAL", 1)
+    GlobalTimerExpired("ST_OUT_OF_COMBAT_TIMER", "GLOBAL")
+    Kit(Player1, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_OUT_OF_COMBAT", "GLOBAL", 0)
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 0)
+        ApplySpellRES("stendc", Player1)
+        ApplySpellRES("stopen", Player1)
+END
+
+IF
+    CombatCounter(0)
+    Global("ST_OUT_OF_COMBAT", "GLOBAL", 1)
+    GlobalTimerExpired("ST_OUT_OF_COMBAT_TIMER", "GLOBAL")
+    Kit(Player2, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_OUT_OF_COMBAT", "GLOBAL", 0)
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 0)
+        ApplySpellRES("stendc", Player2)
+        ApplySpellRES("stopen", Player2)
+END
+
+IF
+    CombatCounter(0)
+    Global("ST_OUT_OF_COMBAT", "GLOBAL", 1)
+    GlobalTimerExpired("ST_OUT_OF_COMBAT_TIMER", "GLOBAL")
+    Kit(Player3, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_OUT_OF_COMBAT", "GLOBAL", 0)
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 0)
+        ApplySpellRES("stendc", Player3)
+        ApplySpellRES("stopen", Player3)
+END
+
+IF
+    CombatCounter(0)
+    Global("ST_OUT_OF_COMBAT", "GLOBAL", 1)
+    GlobalTimerExpired("ST_OUT_OF_COMBAT_TIMER", "GLOBAL")
+    Kit(Player4, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_OUT_OF_COMBAT", "GLOBAL", 0)
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 0)
+        ApplySpellRES("stendc", Player4)
+        ApplySpellRES("stopen", Player4)
+END
+
+IF
+    CombatCounter(0)
+    Global("ST_OUT_OF_COMBAT", "GLOBAL", 1)
+    GlobalTimerExpired("ST_OUT_OF_COMBAT_TIMER", "GLOBAL")
+    Kit(Player5, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_OUT_OF_COMBAT", "GLOBAL", 0)
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 0)
+        ApplySpellRES("stendc", Player5)
+        ApplySpellRES("stopen", Player5)
+END
+
+IF
+    CombatCounter(0)
+    Global("ST_OUT_OF_COMBAT", "GLOBAL", 1)
+    GlobalTimerExpired("ST_OUT_OF_COMBAT_TIMER", "GLOBAL")
+    Kit(Player6, PH_Shocktrooper)
+THEN
+    RESPONSE #100
+        SetGlobal("ST_OUT_OF_COMBAT", "GLOBAL", 0)
+        SetGlobal("ST_COMBAT_EXHAUSTION_STAGE", "GLOBAL", 0)
+        ApplySpellRES("stendc", Player6)
+        ApplySpellRES("stopen", Player6)
+END

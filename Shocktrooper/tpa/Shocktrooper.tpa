@@ -1,0 +1,98 @@
+ADD_KIT ~PH_Shocktrooper~
+  ~PH_Shocktrooper 1 1 1 1 1 1 1 1~
+  ~PH_Shocktrooper 0 0 0 0 0 0 0 0 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 0 0 0 0 0 2 0 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~PH_Shocktrooper 9 0 0 11 0 0~ // Minimum Ability - abclasrq
+  ~PH_Shocktrooper 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~PH_Shocktrooper 0 0 17 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~PH_Shocktrooper 0 0 15 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
+  ~PH_Shocktrooper 1 1 1 0 0 0 0 0 0~ // Alignment: any lawful
+  ~PH_Shocktrooper 0 0 0 0 0 0~ // Dual Class Options
+  ~PH_KITMOD\Shocktrooper\clab\PHST.2da~
+  ~K_F_H K_F_D K_F_G K_F_E K_F_HE K_F_HL K_F_HO~
+  ~0x00004000 2~
+  ~Fi0~
+  ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+  SAY @701
+  SAY @702
+  SAY @703
+
+LAF fl#add_kit_ee STR_VAR
+    kit_name = ~PH_Shocktrooper~
+END
+
+// prevent usage of shields
+
+OUTER_SET shocktrooper_code = (0x4000 + %PH_Shocktrooper%)
+
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  SPRINT weapon_name ~%SOURCE_FILE%~
+  READ_SHORT 0x31 prof ELSE 0
+  READ_SHORT 0x1c type
+  READ_LONG  0x64 abil_off
+  READ_SHORT 0x68 abil_num
+
+  PATCH_IF (type = 12) BEGIN   // Shields
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 parameter1 = %shocktrooper_code% parameter2 = 9 power = 0 timing = 2 END
+  END
+
+
+// new portrait icons
+DEFINE_ACTION_FUNCTION cd_new_portrait_icon
+  INT_VAR string = 0
+  STR_VAR bam_file = "****"
+  RET     icon
+  BEGIN
+
+  COPY_EXISTING ~statdesc.2da~ ~override~
+    COUNT_2DA_ROWS 3 count
+    READ_2DA_ENTRY (count - 1) 0 3 icon
+    SET icon += 1
+
+  APPEND ~statdesc.2da~ ~%icon% %string% %bam_file%~ UNLESS ~%bam_file%~
+
+END
+
+COPY ~PH_KITMOD\Shocktrooper\bam\stopenc.bam~ ~override~
+COPY ~PH_KITMOD\Shocktrooper\bam\stcmbec.bam~ ~override~
+COPY ~PH_KITMOD\Shocktrooper\bam\stassac.bam~ ~override~
+COPY ~PH_KITMOD\Shocktrooper\bam\stunstc.bam~ ~override~
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Opening Strike~) STR_VAR bam_file = stopenc RET stopenc = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Combat Exhaustion~) STR_VAR bam_file = stcmbec RET stcmbec = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Unstoppable Assault~) STR_VAR bam_file = stunstc RET stunstc = icon END
+
+
+ACTION_IF FILE_EXISTS_IN_GAME ~baldur.bcs~ THEN BEGIN
+EXTEND_TOP ~baldur.bcs~ ~PH_KITMOD\Shocktrooper\baf\shocktrooper.baf~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~bdbaldur.bcs~ THEN BEGIN
+EXTEND_TOP ~bdbaldur.bcs~ ~PH_KITMOD\Shocktrooper\baf\shocktrooper.baf~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~baldur25.bcs~ THEN BEGIN
+EXTEND_TOP ~baldur25.bcs~ ~PH_KITMOD\Shocktrooper\baf\shocktrooper.baf~
+END
+
+COPY ~PH_KITMOD\Shocktrooper\spl\ststat.spl~ ~override~
+COPY ~PH_KITMOD\Shocktrooper\spl\stcmbex.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = stcmbec END // character icon
+
+COPY ~PH_KITMOD\Shocktrooper\spl\stendc.spl~ ~override~
+
+// Opening Strike
+COPY ~PH_KITMOD\Shocktrooper\spl\stopen.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = stopenc END // character icon
+
+COPY ~PH_KITMOD\Shocktrooper\spl\stopena.spl~ ~override~
+COPY ~PH_KITMOD\Shocktrooper\spl\stopena.eff~ ~override~
+COPY ~PH_KITMOD\Shocktrooper\spl\stopenb.spl~ ~override~
+COPY ~PH_KITMOD\Shocktrooper\spl\stopenb.eff~ ~override~
+COPY ~PH_KITMOD\Shocktrooper\spl\stopenc.spl~ ~override~
+
+COPY ~PH_KITMOD\Shocktrooper\spl\stassa.spl~ ~override~
+SAY NAME1 @704
+SAY UNIDENTIFIED_DESC @705
+
+COPY ~PH_KITMOD\Shocktrooper\spl\stunstp.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = stunstc END // character icon
