@@ -1,0 +1,213 @@
+/* ==========================================================================
+ *  Astral Vanguard - Paladin kit
+ *
+ *  Same conventions as Stormlord.tpa. Needs the helpers that file already uses:
+ *    ADD_KIT (built in), fl#add_kit_ee, set_clab_2da_entries,
+ *    patch_add_hla, patch_remove_hla
+ *  Strings: load AstralVanguard.tra (uses @801 - @811).
+ *  Files:   PH_KITMOD\AstralVanguard\spl\  (SPL + PRO)   PH_KITMOD\AstralVanguard\bam\  (B/C icons)
+ *
+ *  Optional overrides (set BEFORE including this file, e.g. on non-English installs where the
+ *  spell names below can't be matched):
+ *    OUTER_SPRINT av_warcry ~SPCL9xx~    // resref of the Paladin "War Cry" HLA spell
+ *    OUTER_SPRINT av_bbod   ~SPWI9xx~    // resref of the mage spell "Black Blade of Disaster"
+ * ========================================================================== */
+
+// -------------------------------------------------------------------------
+// 1. CLAB  (starts from the vanilla Paladin table, so Lay on Hands, Detect Evil,
+//    Protection from Evil, Smite Evil, Cure Disease and Turn Undead are kept)
+// -------------------------------------------------------------------------
+COPY_EXISTING ~CLABPA01.2DA~ ~override/PHASTRAL.2DA~
+  REPLACE_TEXTUALLY ~GA_C0PAL02 ~ ~**** ~ // SMITE EVIL
+	REPLACE_TEXTUALLY ~SPCL111 ~ ~**** ~ // CURE DISEASE
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = AP_phnotun END // disable turn undead
+
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 3 f_MaxLevel = 3 STR_VAR f_Entry = AP_avguid END // Celestial Guidance (passive aura)
+
+  // Astral Mark: 1 use at level 1, +1 every 4 levels
+  PATCH_FOR_EACH lvl IN 1 5 9 13 17 21 25 29 33 BEGIN
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = %lvl% f_MaxLevel = %lvl% STR_VAR f_Entry = GA_avmark END
+  END
+
+  // Gravity Well: 1 use at level 8, +1 every 6 levels
+  PATCH_FOR_EACH lvl IN 8 14 20 26 32 38 BEGIN
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = %lvl% f_MaxLevel = %lvl% STR_VAR f_Entry = GA_avwell END
+  END
+
+  // Celestial Intervention: 1 use at level 5, +1 every 5 levels
+  PATCH_FOR_EACH lvl IN 5 10 15 20 25 30 35 BEGIN
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = %lvl% f_MaxLevel = %lvl% STR_VAR f_Entry = GA_avintv END
+  END
+
+  PRETTY_PRINT_2DA
+
+// -------------------------------------------------------------------------
+// 2. Kit entry
+// -------------------------------------------------------------------------
+ADD_KIT ~PH_AstralVanguard~
+  ~PH_AstralVanguard 0 0 0 0 0 0 0 0~                                   // clasweap
+  ~PH_AstralVanguard 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 0 0 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~ // weapprof
+  ~PH_AstralVanguard 12 0 9 0 13 17~                                    // Minimum Ability - abclasrq (standard Paladin)
+  ~PH_AstralVanguard 0 0 0 0 0 0~                                       // Kit Ability Modifiers - abclsmod
+  ~PH_AstralVanguard 0 0 17 0 0 0~                                      // Requirement to Dual Class (to) - abdcedsrq
+  ~PH_AstralVanguard 0 0 15 0 0 0~                                      // Requirements to Dual Class (from) - abdcscrq
+  ~PH_AstralVanguard 1 0 0 0 0 0 0 0 0~                                 // Alignment: Lawful Good only
+  ~PH_AstralVanguard 0 0 0 0 0 0~                                       // Dual Class Options
+  ~override\PHASTRAL.2da~                                               // CLAB
+  ~K_P_H~
+  ~0x00004000 6~
+  ~pha~                                                                 // HLA table prefix -> LUPHA.2DA
+  ~CHAN09 * HELM07 BAG26 RING06 RING31 * BOOT01 AMUL20 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+  SAY @801
+  SAY @802
+  SAY @803
+
+LAF fl#add_kit_ee STR_VAR
+    kit_name = ~PH_AstralVanguard~
+END
+
+// NOTE: no FALLEN.2da entry on purpose. The Stormlord appends "0" because it can't be Lawful Good;
+//       the Astral Vanguard is a Lawful Good Paladin and keeps the normal falling rules.
+
+// -------------------------------------------------------------------------
+// 3. No missile weapons: same method as the Doomblade shield restriction. Bows, crossbows, slings,
+//    darts and their ammunition get an equipped opcode 319 (item usability, type 9 = kit).
+//    Only items present at install time are covered (items added by mods installed later need the same patch).
+//    ADD_KIT (step 2) has already set %PH_AstralVanguard% to the kit number.
+// -------------------------------------------------------------------------
+OUTER_SET av_kit_code = (0x4000 + %PH_AstralVanguard%)
+
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  READ_SHORT 0x1c av_cat
+  PATCH_IF (av_cat = 15 OR av_cat = 18 OR av_cat = 24 OR av_cat = 27   // bow, sling, dart, crossbow
+         OR av_cat = 5  OR av_cat = 14 OR av_cat = 31) BEGIN           // arrows, bullets, bolts
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 parameter1 = av_kit_code parameter2 = 9 power = 0 timing = 2 END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+// -------------------------------------------------------------------------
+// 4. HLA table: Black Blade of Disaster replaces War Cry (Summon Deva is kept)
+// -------------------------------------------------------------------------
+ACTION_IF NOT VARIABLE_IS_SET av_warcry BEGIN OUTER_SPRINT av_warcry ~~ END
+ACTION_IF NOT VARIABLE_IS_SET av_bbod   BEGIN OUTER_SPRINT av_bbod   ~~ END
+
+ACTION_IF (~%av_warcry%~ STRING_EQUAL ~~) BEGIN
+  COPY_EXISTING_REGEXP GLOB ~^SPCL9.*\.SPL$~ ~override~
+    PATCH_IF (~%av_warcry%~ STRING_EQUAL ~~) BEGIN
+      READ_STRREF 0x08 av_spell_name
+      PATCH_IF (~%av_spell_name%~ STRING_EQUAL_CASE ~War Cry~) BEGIN SPRINT av_warcry ~%SOURCE_RES%~ END
+    END
+    BUT_ONLY_IF_IT_CHANGES
+END
+ACTION_IF (~%av_bbod%~ STRING_EQUAL ~~) BEGIN
+  COPY_EXISTING_REGEXP GLOB ~^SPWI9.*\.SPL$~ ~override~
+    PATCH_IF (~%av_bbod%~ STRING_EQUAL ~~) BEGIN
+      READ_STRREF 0x08 av_spell_name
+      PATCH_IF (~%av_spell_name%~ STRING_EQUAL_CASE ~Black Blade of Disaster~) BEGIN SPRINT av_bbod ~%SOURCE_RES%~ END
+    END
+    BUT_ONLY_IF_IT_CHANGES
+END
+ACTION_IF (~%av_warcry%~ STRING_EQUAL ~~) BEGIN FAIL ~Astral Vanguard: War Cry spell not found - set av_warcry (see header of AstralVanguard.tpa).~ END
+ACTION_IF (~%av_bbod%~   STRING_EQUAL ~~) BEGIN FAIL ~Astral Vanguard: Black Blade of Disaster not found - set av_bbod (see header of AstralVanguard.tpa).~ END
+
+// The mage spell, turned into an innate (HLA) ability. Name, description and icon stay vanilla.
+COPY_EXISTING ~%av_bbod%.SPL~ ~override/avbbod.spl~
+  WRITE_SHORT 0x1c 4        // spell type: innate
+  WRITE_LONG  0x1e 0        // no school/class exclusions
+  READ_LONG  0x64 av_hdr_off
+  READ_SHORT 0x68 av_hdr_num
+  FOR (av_i = 0; av_i < av_hdr_num; ++av_i) BEGIN
+    WRITE_SHORT (av_hdr_off + av_i * 0x28 + 0x02) 4   // ability location: innate
+  END
+
+COPY_EXISTING ~LUPA0.2da~ ~override/LUPHA.2DA~
+LPF patch_remove_hla STR_VAR remove_ability = EVAL ~GA_%av_warcry%~ END
+LPF patch_add_hla STR_VAR 2da_row = ~PHA1~ ability = ~GA_avbbod~ num_allowed = 1 END
+
+// -------------------------------------------------------------------------
+// 5. Portrait (status) icons - the "C" icons
+// -------------------------------------------------------------------------
+DEFINE_ACTION_FUNCTION av_new_portrait_icon
+  INT_VAR string = 0
+  STR_VAR bam_file = "****"
+  RET     icon
+  BEGIN
+
+  COPY_EXISTING ~statdesc.2da~ ~override~
+    COUNT_2DA_ROWS 3 count
+    READ_2DA_ENTRY (count - 1) 0 3 icon
+    SET icon += 1
+
+  APPEND ~statdesc.2da~ ~%icon% %string% %bam_file%~ UNLESS ~%bam_file%~
+
+END
+
+LAF av_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Astral Guidance~)         STR_VAR bam_file = avguidc RET avguids = icon END
+LAF av_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Astral Mark~)             STR_VAR bam_file = avmarkc RET avmarks = icon END
+LAF av_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Gravity Well~)            STR_VAR bam_file = avwellc RET avwells = icon END
+LAF av_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Celestial Intervention~)  STR_VAR bam_file = avintvc RET avintvs = icon END
+
+// -------------------------------------------------------------------------
+// 6. Icons (B = ability bar / spell icon, C = portrait icon)
+// -------------------------------------------------------------------------
+ACTION_FOR_EACH ~bam~ IN avmarkb avmarkc avguidb avguidc avwellb avwellc avintvb avintvc BEGIN
+  COPY ~PH_KITMOD\AstralVanguard\bam\%bam%.bam~ ~override~
+END
+
+// Gravity Well ground effect (animated vortex + its VVC; played by avwell.pro on every pulse)
+COPY ~PH_KITMOD\AstralVanguard\fx\avwellg.bam~ ~override~
+
+// -------------------------------------------------------------------------
+// 7. Projectiles (all area projectiles; flags/radius are documented in tools\generate_spells.py)
+//    (the Celestial Guidance aura uses vanilla INAREAPA.PRO = projectile 158, written directly into avguidb.spl)
+//    avguid : party only, 20 ft radius
+//    avwell : enemies only, 15 ft radius, 5 pulses 90 ticks apart
+// -------------------------------------------------------------------------
+ACTION_FOR_EACH ~pro~ IN avwell BEGIN
+  COPY ~PH_KITMOD\AstralVanguard\spl\%pro%.pro~ ~override~
+  ADD_PROJECTILE ~PH_KITMOD\AstralVanguard\spl\%pro%.pro~
+END
+
+// Writes projectile number %av_proj% into every ability header of the spell being patched
+DEFINE_PATCH_MACRO av_set_projectile BEGIN
+  READ_LONG  0x64 av_hdr_off
+  READ_SHORT 0x68 av_hdr_num
+  FOR (av_i = 0; av_i < av_hdr_num; ++av_i) BEGIN
+    WRITE_SHORT (av_hdr_off + av_i * 0x28 + 0x26) av_proj
+  END
+END
+
+// -------------------------------------------------------------------------
+// 8. Spells
+// -------------------------------------------------------------------------
+
+COPY ~PH_KITMOD\Shared\spl\phnotun.spl~ ~override~
+
+// Astral Mark ----------------------------------------------------------------
+COPY ~PH_KITMOD\AstralVanguard\spl\avmark.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = avmarks END // portrait icon
+  SAY NAME1 @804
+  SAY UNIDENTIFIED_DESC @805
+
+// Celestial Guidance (passive) -----------------------------------------------
+COPY ~PH_KITMOD\AstralVanguard\spl\avguid.spl~ ~override~
+  SAY NAME1 @806
+  SAY UNIDENTIFIED_DESC @807
+
+COPY ~PH_KITMOD\AstralVanguard\spl\avguida.spl~ ~override~
+COPY ~PH_KITMOD\AstralVanguard\spl\avguidb.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = avguids END
+
+// Gravity Well ----------------------------------------------------------------
+COPY ~PH_KITMOD\AstralVanguard\spl\avwell.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = avwells END
+  SET av_proj = avwell
+  LAUNCH_PATCH_MACRO ~av_set_projectile~
+  SAY NAME1 @808
+  SAY UNIDENTIFIED_DESC @809
+
+// Celestial Intervention ------------------------------------------------------
+COPY ~PH_KITMOD\AstralVanguard\spl\avintv.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = avintvs END
+  SAY NAME1 @810
+  SAY UNIDENTIFIED_DESC @811
