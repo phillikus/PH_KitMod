@@ -19,6 +19,7 @@ ADD_KIT ~PH_Phantom~
 LAF fl#add_kit_ee STR_VAR
     kit_name = ~PH_Phantom~
     backstab = ~1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1~
+    thiefscl = ~100 100 100 100 100 100 0 0~
 END
 
 COPY_EXISTING ~LUPA0.2da~ ~override/LUPHP.2DA~
