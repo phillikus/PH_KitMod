@@ -21,6 +21,7 @@ LANGUAGE ~English~
          ~PH_KITMOD/tra/English/Chronomancer.tra~
          ~PH_KITMOD/tra/English/Stormlord.tra~
          ~PH_KITMOD/tra/English/AstralVanguard.tra~
+         ~PH_KITMOD/tra/English/Phantom.tra~
 
 // Doomblade
 BEGIN ~Doomblade~
@@ -115,3 +116,13 @@ PRINT ~Installing Astral Vanguard kit...~
 // EEex Lua bootstrap
 //////////////////////////////////////////////////////////
 INCLUDE ~PH_KITMOD/AstralVanguard/tpa/AstralVanguard.tpa~
+
+// Phantom Thief
+BEGIN ~Phantom Thief~
+
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
+  @1000
+
+PRINT ~Installing Phantom Thief kit...~
+
+INCLUDE ~PH_KITMOD/Phantom/tpa/Phantom.tpa~

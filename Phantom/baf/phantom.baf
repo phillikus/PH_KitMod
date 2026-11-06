@@ -1,0 +1,185 @@
+IF
+    Kit(Player1, PH_Phantom)
+    Global("PH_INVISIBLE_1", "GLOBAL", 0)
+    OR(2)
+        StateCheck(Player1, STATE_INVISIBLE)
+        StateCheck(Player1, STATE_IMPROVEDINVISIBILITY)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_1", "GLOBAL", 1)
+        ApplySpellRES("phstrk", Player1)
+END
+
+IF
+    Kit(Player1, PH_Phantom)
+    Global("PH_INVISIBLE_1", "GLOBAL", 1)
+    !StateCheck(Player1, STATE_INVISIBLE)
+    !StateCheck(Player1, STATE_IMPROVEDINVISIBILITY)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_1", "GLOBAL", 0)
+        ApplySpellRES("phshow", Player1)
+END
+
+IF
+    !Kit(Player1, PH_Phantom)
+    Global("PH_INVISIBLE_1", "GLOBAL", 1)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_1", "GLOBAL", 0)
+END
+
+IF
+    Kit(Player2, PH_Phantom)
+    Global("PH_INVISIBLE_2", "GLOBAL", 0)
+    OR(2)
+        StateCheck(Player2, STATE_INVISIBLE)
+        StateCheck(Player2, STATE_IMPROVEDINVISIBILITY)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_2", "GLOBAL", 1)
+        ApplySpellRES("phstrk", Player2)
+END
+
+IF
+    Kit(Player2, PH_Phantom)
+    Global("PH_INVISIBLE_2", "GLOBAL", 1)
+    !StateCheck(Player2, STATE_INVISIBLE)
+    !StateCheck(Player2, STATE_IMPROVEDINVISIBILITY)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_2", "GLOBAL", 0)
+        ApplySpellRES("phshow", Player2)
+END
+
+IF
+    !Kit(Player2, PH_Phantom)
+    Global("PH_INVISIBLE_2", "GLOBAL", 1)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_2", "GLOBAL", 0)
+END
+
+IF
+    Kit(Player3, PH_Phantom)
+    Global("PH_INVISIBLE_3", "GLOBAL", 0)
+    OR(2)
+        StateCheck(Player3, STATE_INVISIBLE)
+        StateCheck(Player3, STATE_IMPROVEDINVISIBILITY)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_3", "GLOBAL", 1)
+        ApplySpellRES("phstrk", Player3)
+END
+
+IF
+    Kit(Player3, PH_Phantom)
+    Global("PH_INVISIBLE_3", "GLOBAL", 1)
+    !StateCheck(Player3, STATE_INVISIBLE)
+    !StateCheck(Player3, STATE_IMPROVEDINVISIBILITY)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_3", "GLOBAL", 0)
+        ApplySpellRES("phshow", Player3)
+END
+
+IF
+    !Kit(Player3, PH_Phantom)
+    Global("PH_INVISIBLE_3", "GLOBAL", 1)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_3", "GLOBAL", 0)
+END
+
+IF
+    Kit(Player4, PH_Phantom)
+    Global("PH_INVISIBLE_4", "GLOBAL", 0)
+    OR(2)
+        StateCheck(Player4, STATE_INVISIBLE)
+        StateCheck(Player4, STATE_IMPROVEDINVISIBILITY)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_4", "GLOBAL", 1)
+        ApplySpellRES("phstrk", Player4)
+END
+
+IF
+    Kit(Player4, PH_Phantom)
+    Global("PH_INVISIBLE_4", "GLOBAL", 1)
+    !StateCheck(Player4, STATE_INVISIBLE)
+    !StateCheck(Player4, STATE_IMPROVEDINVISIBILITY)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_4", "GLOBAL", 0)
+        ApplySpellRES("phshow", Player4)
+END
+
+IF
+    !Kit(Player4, PH_Phantom)
+    Global("PH_INVISIBLE_4", "GLOBAL", 1)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_4", "GLOBAL", 0)
+END
+
+IF
+    Kit(Player5, PH_Phantom)
+    Global("PH_INVISIBLE_5", "GLOBAL", 0)
+    OR(2)
+        StateCheck(Player5, STATE_INVISIBLE)
+        StateCheck(Player5, STATE_IMPROVEDINVISIBILITY)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_5", "GLOBAL", 1)
+        ApplySpellRES("phstrk", Player5)
+END
+
+IF
+    Kit(Player5, PH_Phantom)
+    Global("PH_INVISIBLE_5", "GLOBAL", 1)
+    !StateCheck(Player5, STATE_INVISIBLE)
+    !StateCheck(Player5, STATE_IMPROVEDINVISIBILITY)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_5", "GLOBAL", 0)
+        ApplySpellRES("phshow", Player5)
+END
+
+IF
+    !Kit(Player5, PH_Phantom)
+    Global("PH_INVISIBLE_5", "GLOBAL", 1)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_5", "GLOBAL", 0)
+END
+
+IF
+    Kit(Player6, PH_Phantom)
+    Global("PH_INVISIBLE_6", "GLOBAL", 0)
+    OR(2)
+        StateCheck(Player6, STATE_INVISIBLE)
+        StateCheck(Player6, STATE_IMPROVEDINVISIBILITY)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_6", "GLOBAL", 1)
+        ApplySpellRES("phstrk", Player6)
+END
+
+IF
+    Kit(Player6, PH_Phantom)
+    Global("PH_INVISIBLE_6", "GLOBAL", 1)
+    !StateCheck(Player6, STATE_INVISIBLE)
+    !StateCheck(Player6, STATE_IMPROVEDINVISIBILITY)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_6", "GLOBAL", 0)
+        ApplySpellRES("phshow", Player6)
+END
+
+IF
+    !Kit(Player6, PH_Phantom)
+    Global("PH_INVISIBLE_6", "GLOBAL", 1)
+THEN
+    RESPONSE #100
+        SetGlobal("PH_INVISIBLE_6", "GLOBAL", 0)
+END

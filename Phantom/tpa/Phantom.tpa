@@ -1,0 +1,69 @@
+ADD_KIT ~PH_Phantom~
+  ~PH_Phantom 1 1 1 1 1 0 0 0~ // clasweap (Thief)
+  ~PH_Phantom 0 1 0 0 1 0 0 1 0 1 1 0 0 1 1 1 0 1 0 0 0 0 1 1 0 1 1 1 1 1 1 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~ // weapprof (Thief)
+  ~PH_Phantom 0 9 0 0 0 0~ // Minimum Ability - abclasrq
+  ~PH_Phantom 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~PH_Phantom 0 0 0 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~PH_Phantom 0 0 0 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
+  ~PH_Phantom 1 1 1 1 1 1 1 1 1~ // Alignment (Thief)
+  ~PH_Phantom 0 0 0 0 0 0~ // Dual Class Options
+  ~PH_KITMOD\Phantom\clab\PHPHAN.2DA~
+  ~K_T_H K_T_D K_T_G K_T_E K_T_HE K_T_HL K_T_HO~
+  ~0x00004000 4~
+  ~php~
+  ~LEAT14 * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 STAF08~
+	SAY @901
+	SAY @902
+	SAY @903
+
+LAF fl#add_kit_ee STR_VAR
+    kit_name = ~PH_Phantom~
+    backstab = ~1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1~
+END
+
+COPY_EXISTING ~LUPA0.2da~ ~override/LUPHP.2DA~
+LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL910~ END
+LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL911~ END
+LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL912~ END
+
+DEFINE_ACTION_FUNCTION cd_new_portrait_icon
+  INT_VAR string = 0
+  STR_VAR bam_file = "****"
+  RET     icon
+  BEGIN
+
+  COPY_EXISTING ~statdesc.2da~ ~override~
+    COUNT_2DA_ROWS 3 count
+    READ_2DA_ENTRY (count - 1) 0 3 icon
+    SET icon += 1
+
+  APPEND ~statdesc.2da~ ~%icon% %string% %bam_file%~ UNLESS ~%bam_file%~
+
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~baldur.bcs~ THEN BEGIN
+  EXTEND_TOP ~baldur.bcs~ ~PH_KITMOD\Phantom\baf\phantom.baf~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~bdbaldur.bcs~ THEN BEGIN
+  EXTEND_TOP ~bdbaldur.bcs~ ~PH_KITMOD\Phantom\baf\phantom.baf~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~baldur25.bcs~ THEN BEGIN
+  EXTEND_TOP ~baldur25.bcs~ ~PH_KITMOD\Phantom\baf\phantom.baf~
+END
+
+COPY ~PH_KITMOD\Phantom\bam\phveilb.bam~ ~override~
+COPY ~PH_KITMOD\Phantom\bam\phveilc.bam~ ~override~
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@906) STR_VAR bam_file = phveilc RET phveil = icon END
+
+COPY ~PH_KITMOD\Phantom\spl\phveil.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@906) STR_VAR END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = phveil END
+SAY NAME1 @906
+SAY UNIDENTIFIED_DESC @907
+
+COPY ~PH_KITMOD\Phantom\spl\phstrk.spl~ ~override~
+COPY ~PH_KITMOD\Phantom\spl\phstrkb.eff~ ~override~
+COPY ~PH_KITMOD\Phantom\spl\phstrkb.spl~ ~override~
+COPY ~PH_KITMOD\Phantom\spl\phshow.spl~ ~override~
