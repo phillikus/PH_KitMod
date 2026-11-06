@@ -24,10 +24,11 @@ Additionally, the Shocktrooper moves 30% faster until <PRO_HISHER> Opening Strik
 Opening Strike recharges after spending 3 consecutive rounds outside of combat.
 
 Combat Exhaustion:
-Prolonged battles strain the Shocktrooper and <PRO_HESHE> suffers a -2 penalty to AC, THAC0, saving throws and damage after 5 rounds of combat.
-After 10 total rounds of combat the Shocktrooper suffers the same penalties again for a total penalty of -4 to AC, THAC0, saving throws and damage.
-These penalties dissipate after spending 3 consecutive rounds outside of combat.
+Prolonged battles strain the Shocktrooper. After 5 rounds of continuous combat, the Shocktrooper suffers a −2 penalty to AC, THAC0, saving throws and damage.
+After 10 rounds of continuous combat, these penalties increase to −4. 
 
+All penalties are removed after spending 3 consecutive rounds outside of combat.
+ 
 - 10th level: Gains the Unstoppable Assault passive ability.
 
 Unstoppable Assault:

@@ -20,6 +20,7 @@ LANGUAGE ~English~
          ~PH_KITMOD/tra/English/Interdictor.tra~
          ~PH_KITMOD/tra/English/Chronomancer.tra~
          ~PH_KITMOD/tra/English/Stormlord.tra~
+         ~PH_KITMOD/tra/English/AstralVanguard.tra~
 
 // Doomblade
 BEGIN ~Doomblade~
@@ -101,3 +102,16 @@ PRINT ~Installing Stormlord kit...~
 // EEex Lua bootstrap
 //////////////////////////////////////////////////////////
 INCLUDE ~PH_KITMOD/Stormlord/tpa/Stormlord.tpa~
+
+// Astral Vanguard
+BEGIN ~Astral Vanguard~
+
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
+  @1000
+
+PRINT ~Installing Astral Vanguard kit...~
+
+//////////////////////////////////////////////////////////
+// EEex Lua bootstrap
+//////////////////////////////////////////////////////////
+INCLUDE ~PH_KITMOD/AstralVanguard/tpa/AstralVanguard.tpa~

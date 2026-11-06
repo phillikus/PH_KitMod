@@ -5,7 +5,7 @@ COPY_EXISTING ~CLABPA01.2DA~ ~OVERRIDE/PHSTORM.2DA~
 	REPLACE_TEXTUALLY ~GA_C0PAL02 ~ ~**** ~ // SMITE EVIL
 	REPLACE_TEXTUALLY ~SPCL111 ~ ~**** ~ // CURE DISEASE
 
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = AP_slnotun END // disable turn undead
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = AP_phnotun END // disable turn undead
   LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = AP_slstat END // electric resistance
   LPF set_clab_2da_entries INT_VAR f_MinLevel = 5 f_MaxLevel = 5 STR_VAR f_Entry = AP_slstat END // electric resistance
   LPF set_clab_2da_entries INT_VAR f_MinLevel = 9 f_MaxLevel = 9 STR_VAR f_Entry = AP_slstat END // electric resistance
@@ -82,7 +82,8 @@ LPF patch_add_hla STR_VAR 2da_row = ~PHS1~ ability = ~GA_slwrath~ num_allowed = 
 
 LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Thunderous Smite~) STR_VAR bam_file = SPWI308C RET slsmts = icon END
 
-COPY ~PH_KITMOD\Stormlord\spl\slnotun.spl~ ~override~
+COPY ~PH_KITMOD\Shared\spl\phnotun.spl~ ~override~
+
 COPY ~PH_KITMOD\Stormlord\spl\slstat.spl~ ~override~
 COPY ~PH_KITMOD\Stormlord\spl\slsmt.eff~ ~override~
 COPY ~PH_KITMOD\Stormlord\spl\slsmt1.spl~ ~override~

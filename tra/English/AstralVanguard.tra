@@ -1,0 +1,67 @@
+/* ===================== *
+ *    Astral Vanguard    *
+ * ===================== */
+@801 = ~astral vanguard~
+@802 = ~Astral Vanguard~
+@803 = ~Astral Vanguard:
+
+Astral Vanguards are warriors attuned to the stars and the currents of the Astral Plane. They bend space, guide their allies by celestial light and hinder their enemies with astral force. Rather than relying on overwhelming offense, they shape the battlefield and create openings for their companions.
+
+Advantages:
+- 1st level: May use Astral Mark once per day, gaining an additional use every 4 levels thereafter.
+
+Astral Mark:
+The Astral Vanguard traces a sigil of starlight across a foe's fate, laying bare their weaknesses in the cold brilliance of the stars.
+Mark an enemy for 3 rounds, giving them a -3 penalty to THAC0 and AC.
+Additionally, the marked target can be seen within the fog of war and cannot turn invisible for the duration.
+
+- 3rd level: Gains the Celestial Guidance passive ability.
+
+Celestial Guidance:
+The Astral Vanguard reads the constellations and aligns nearby allies with their celestial pattern. Starlight gathers around them, guiding each movement and turning aside dangers before they can take hold.
+Allies within 20 feet gain a +1 bonus to all saving throws and +15% magic resistance.
+
+- 5th level: May use Celestial Intervention once per day, gaining an additional use every 5 levels.
+
+Celestial Intervention:
+With a gesture, the Astral Vanguard folds the space between two points beneath a veil of starlight.
+The Vanguard and an endangered ally instalty swap positions. Additionally, target ally is cloaked in the starless dark and turns invisible for 2 rounds.
+
+
+- 8th level: May use Gravity Well once per day, gaining an additional use every 6 levels thereafter.
+
+Gravity Well:
+The Astral Vanguard bends the Astral Plane around a point, drawing the weight of the stars down upon the battlefield. Foes caught in its pull struggle to move, and the crushing force clings to them briefly even after they escape its reach.
+Create a 15-foot radius field of increased gravity that lasts for 5 rounds. Enemies within it have their movement speed halfed.
+
+- 14th level: Gravity Well reduces enemy movement speed to 40%.
+
+- May learn to cast the Black Blade of Disaster spell as high level ability, replacing War Cry.
+
+Disadvantages:
+- alignment restricted to Lawful Good
+- may not use Cure Disease and Turn Undead
+- may not use missile weapons (bows, crossbows, slings, darts)~
+
+@804 = ~Astral Mark~
+@805 = ~Astral Mark
+The Astral Vanguard traces a sigil of starlight across a foe's fate, laying bare their weaknesses in the cold brilliance of the stars.
+Mark an enemy for 3 rounds, giving them a -3 penalty to THAC0 and AC.
+Additionally, the marked target can be seen within the fog of war and cannot turn invisible for the duration.~
+
+@806 = ~Celestial Guidance~
+@807 = ~Celestial Guidance
+The Astral Vanguard reads the constellations and aligns nearby allies with their celestial pattern. Starlight gathers around them, guiding each movement and turning aside dangers before they can take hold.
+Allies within 20 feet gain a +1 bonus to all saving throws and +15% magic resistance.~
+
+@808 = ~Gravity Well~
+@809 = ~Gravity Well
+The Astral Vanguard bends the Astral Plane around a point, drawing the weight of the stars down upon the battlefield. Foes caught in its pull struggle to move, and the crushing force clings to them briefly even after they escape its reach.
+Create a 15-foot radius field of increased gravity that lasts for 5 rounds. Enemies within it have their movement speed reduced and cannot easily escape.
+- 6th level: movement speed reduced to 50%
+- 14th level: movement speed reduced to 40%~
+
+@810 = ~Celestial Intervention~
+@811 = ~Celestial Intervention
+With a gesture, the Astral Vanguard folds the space between two points beneath a veil of starlight.
+The Vanguard and an endangered ally instalty swap positions. Additionally, target ally is cloaked in the starless dark and turns invisible for 2 rounds.~
