@@ -1,0 +1,83 @@
+/* ===================== *
+ *     Voidstalker       *
+ * ===================== */
+@901 = ~voidstalker~
+@902 = ~Voidstalker~
+@903 = ~Voidstalker:
+
+A supernatural assassin who combines conventional thievery with powers drawn from the void. Voidstalkers channel this energy into their ambushes, striking through magical defenses that stop ordinary assassination techniques.
+
+Advantages:
+- 1st level: Gains the Unbound Instinct passive ability.
+
+Unbound Instinct:
+The Voidstalker's exposure to the void sharpens <PRO_HISHER> reflexes and allows <PRO_HIMHER> to anticipate attacks before they happen.
+<PRO_HISHER> movements become difficult to follow, while <PRI_HISHER> strikes find weaknesses in even the most heavily defended opponents.
+The Voidstalker gains a permanent +1 bonus to THAC0 and AC.
+
+- 1st level: Gains the Netherstrike passive ability.
+
+Netherstrike:
+Rather than striking at their victim's body, Voidstalkers tear open a fleeting rift into the emptiness between planes, allowing tendrils of void energy to surge through their weapon and into the target.
+These supernatural ambushes rend the victim's very essence, inflicting magical damage that cannot be stopped by ordinary physical defenses.
+
+Instead of a traditional backstab multiplier, attacks made while invisible deal additional magical damage, regardless of the target's backstab immunity or the attacker's position.
+1st level: +2d6
+5th level: +4d6
+10th level: +6d6
+15th level: +8d6
+20th level: +10d6
+
+This damage bypasses weapon protection spells such as Protection From Magical Weapons (requires EEex).
+
+- 5st level: May use the Shadow Step ability once per day, gaining an additional use every 4 levels thereafter.
+
+Shadow Step:
+The Voidstalker slips through the void, teleporting a short distance and becoming invisible for 1 round.
+
+- 8th level: May use the Void Prision ability once per day, gaining an additional use every 6 levels thereafter.
+
+Void Prison:
+The Voidstalker tears open a dimensional rift around an enemy, enclosing it within a sphere of condensed void energy.
+For 1 turn, the target is enclosed in an invulnerable globe of shimmering force if they fail a saving throw vs. spells at a -2 penalty.
+Hence, the creature caught inside the globe is completely safe from all attacks, but at the same time completely unable to affect the outside world.
+
+- 10th level: Unbound Instinct Bonus increases to +2 THAC0 and AC.
+- 20th level: Unbound Instinct Bonus increases to +3 THAC0 and AC.
+
+- High-Level Ability: Void Execution replaces Assassination.
+
+Disadvantages:
+- No normal backstab multiplier.
+- Cannot set traps: the Set Spike Trap, Set Explosive Trap and Set Time Trap high-level abilities are not available.~
+
+@904 = ~Netherstrike~
+@905 = ~Netherstrike
+
+Rather than striking at their victim's body, Voidstalkers tear open a fleeting rift into the emptiness between planes, allowing tendrils of void energy to surge through their weapon and into the target.
+These supernatural ambushes rend the victim's very essence, inflicting magical damage that cannot be stopped by ordinary physical defenses.
+
+Instead of a traditional backstab multiplier, attacks made while invisible deal additional magical damage, regardless of the target's backstab immunity or the attacker's position.
+1st level: +2d6
+5th level: +3d6
+9th level: +4d6
+13th level: +5d6
+17th level: +6d6
+
+This damage bypasses weapon protection spells such as Protection From Magical Weapons (requires EEex).~
+
+@906 = ~Shadow Step~
+@907 = ~Shadow Step
+
+The Voidstalker slips through the void, teleporting a short distance and becoming invisible for 1 round.~
+@908 = ~Void Prison~
+@909 = ~Void Prison:
+
+The Voidstalker tears open a dimensional rift around an enemy, enclosing it within a sphere of condensed void energy.
+For 1 turn, the target is enclosed in an invulnerable globe of shimmering force if they fail a saving throw vs. spells at a -2 penalty.
+Hence, the creature caught inside the globe is completely safe from all attacks, but at the same time completely unable to affect the outside world.~
+
+@910 = ~Void Execution~
+@911 = ~Void Execution
+
+Empowers the Voidstalker's next Netherstrike (it lasts up to one turn). The strike deals an additional 10d6 magic damage and stuns the target for 1 round. The target may save vs. death at -2 to avoid the stun. The additional damage is subject to magic resistance and magic damage resistance.~

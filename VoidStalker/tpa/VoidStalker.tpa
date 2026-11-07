@@ -1,0 +1,92 @@
+ADD_KIT ~PH_VoidStalker~
+  ~PH_VoidStalker 1 1 1 1 1 0 0 0~ // clasweap (Thief)
+  ~PH_VoidStalker 0 1 0 0 1 0 0 1 0 1 1 0 0 1 1 1 0 1 0 0 0 0 1 1 0 1 1 1 1 1 1 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~ // weapprof (Thief)
+  ~PH_VoidStalker 0 9 0 0 0 0~ // Minimum Ability - abclasrq
+  ~PH_VoidStalker 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~PH_VoidStalker 0 0 0 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~PH_VoidStalker 0 0 0 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
+  ~PH_VoidStalker 1 1 1 1 1 1 1 1 1~ // Alignment (Thief)
+  ~PH_VoidStalker 0 0 0 0 0 0~ // Dual Class Options
+  ~PH_KITMOD\VoidStalker\clab\VSVSTK.2DA~
+  ~K_T_H K_T_D K_T_G K_T_E K_T_HE K_T_HL K_T_HO~
+  ~0x00004000 4~
+  ~PVS~
+  ~LEAT14 * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 STAF08~
+	SAY @901
+	SAY @902
+	SAY @903
+
+LAF fl#add_kit_ee STR_VAR
+    kit_name = ~PH_VoidStalker~
+    backstab = ~1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1~
+    thiefscl = ~100 100 100 100 100 100 0 0~
+END
+
+COPY_EXISTING ~LUTH0.2da~ ~override/LUPVS.2DA~
+LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL910~ END
+LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL911~ END
+LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL912~ END
+
+DEFINE_ACTION_FUNCTION cd_new_portrait_icon
+  INT_VAR string = 0
+  STR_VAR bam_file = "****"
+  RET     icon
+  BEGIN
+
+  COPY_EXISTING ~statdesc.2da~ ~override~
+    COUNT_2DA_ROWS 3 count
+    READ_2DA_ENTRY (count - 1) 0 3 icon
+    SET icon += 1
+
+  APPEND ~statdesc.2da~ ~%icon% %string% %bam_file%~ UNLESS ~%bam_file%~
+
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~baldur.bcs~ THEN BEGIN
+  EXTEND_TOP ~baldur.bcs~ ~PH_KITMOD\VoidStalker\baf\voidstalker.baf~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~bdbaldur.bcs~ THEN BEGIN
+  EXTEND_TOP ~bdbaldur.bcs~ ~PH_KITMOD\VoidStalker\baf\voidstalker.baf~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~baldur25.bcs~ THEN BEGIN
+  EXTEND_TOP ~baldur25.bcs~ ~PH_KITMOD\VoidStalker\baf\voidstalker.baf~
+END
+
+COPY ~PH_KITMOD\VoidStalker\bam\vsstepb.bam~ ~override~
+COPY ~PH_KITMOD\VoidStalker\bam\vsstepc.bam~ ~override~
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@906) STR_VAR bam_file = vsstepc RET vsstep = icon END
+
+COPY ~PH_KITMOD\VoidStalker\bam\vsstrkc.bam~ ~override~
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@904) STR_VAR bam_file = vsstrkc RET vsstrk = icon END
+
+COPY ~PH_KITMOD\VoidStalker\spl\vsstat.spl~ ~override~
+COPY ~PH_KITMOD\VoidStalker\spl\vsstep.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@906) STR_VAR END
+SAY NAME1 @906
+SAY UNIDENTIFIED_DESC @907
+
+COPY ~PH_KITMOD\VoidStalker\spl\vsstrk.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@904) STR_VAR END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = vsstrk END
+
+
+COPY ~PH_KITMOD\VoidStalker\bam\vsprsnb.bam~ ~override~
+COPY ~PH_KITMOD\VoidStalker\bam\vsprsnc.bam~ ~override~
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@908) STR_VAR bam_file = vsprsnc RET vsprsn = icon END
+
+COPY ~PH_KITMOD\VoidStalker\fx\vsprsn.bam~ ~override~
+COPY ~PH_KITMOD\VoidStalker\fx\vsprsn.vvc~ ~override~
+
+COPY ~PH_KITMOD\VoidStalker\spl\vsprsna.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@906) STR_VAR END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = vsprsn END
+
+COPY ~PH_KITMOD\VoidStalker\spl\vsprsn.spl~ ~override~
+SAY NAME1 @908
+SAY UNIDENTIFIED_DESC @909
+
+COPY ~PH_KITMOD\VoidStalker\spl\vsstrk1.eff~ ~override~
+COPY ~PH_KITMOD\VoidStalker\spl\vsstrk1.spl~ ~override~
+COPY ~PH_KITMOD\VoidStalker\spl\vsshow.spl~ ~override~
