@@ -32,11 +32,11 @@ The Doomblade delivers a devastating, precisely aimed strike intended to end its
 If the target is affected by Mark of Death, it must additionally save vs. death at a -2 penalty or die instantly.
 
 Disadvantages:
-- May not use shields
-- d8 hit dice
-- Suffers a -1 penalty to luck
-- Suffers a -2 penalty to saving throws vs. spells
-- Alignment restricted to non-good~
+- May not use shields.
+- d8 hit dice.
+- Suffers a -1 penalty to luck.
+- Suffers a -2 penalty to saving throws vs. spells.
+- Alignment restricted to non-good.~
 
 @104 = ~Mark of Death~
 @105 = ~Mark of Death:

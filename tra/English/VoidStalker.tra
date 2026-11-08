@@ -46,12 +46,29 @@ Hence, the creature caught inside the globe is completely safe from all attacks,
 - 10th level: Unbound Instinct Bonus increases to +2 THAC0 and AC.
 - 20th level: Unbound Instinct Bonus increases to +3 THAC0 and AC.
 
-- High-Level Ability: Void Execution replaces Assassination.
+- May learn the Void Execution, Mass Void Prison and Netherform HLAs.
+
+Void Execution:
+The Voidstalker briefly opens themselves fully to the power of the void, allowing them to channel destructive dimensional energy through every weapon strike.
+Every strike within the next round applies the effects of Netherstrike.
+
+Mass Void Prison:
+The Voidstalker tears open dimensional rifts around all enemies in the targeted area, enclosing each of them within a sphere of condensed void energy.
+Each enemy within a 15 feet area must save vs. spells at a -4 penalty or be enclosed in a Void Prison for 1 turn.
+
+Allies are not affected.
+
+Nether Form:
+The Voidstalker abandons their physical form and partially transcends the boundaries of the material plane, becoming a manifestation of the emptiness between worlds. In this ethereal state, <PRO_HISHER> body is infused with the energies of the nether, granting them supernatural resilience and freedom from the limitations of mortal flesh.
+For the next 5 rounds, all physical attacks directed against the Voidstalker only deal 50% of their normal damage. During this time, <PRO_HESHE> is also under the effects of Improved Invisibility and cannot be directly targeted by spells.
 
 Disadvantages:
 - Does not gain a backstab multiplier.
-- May only distribute 15 skill points per level (40 at level 1) among thieving skills.
-- May not use Set Snare ability, may not use Set Spike Trap, Set Exploding Trap, Set Time Trap HLAs.
+- May only distribute 20 skill points per level (40 at level 1) among thieving skills.
+- May not learn the Assassination HLA.
+- May not use Set Snare ability, may not learn the Set Spike Trap, Set Exploding Trap, Set Time Trap HLAs.
+- Alignment restricted to non-good.~
+
 @904 = ~Netherstrike~
 @905 = ~Netherstrike
 
@@ -83,7 +100,8 @@ Hence, the creature caught inside the globe is completely safe from all attacks,
 @910 = ~Void Execution~
 @911 = ~Void Execution
 
-Empowers the Voidstalker's next Netherstrike (it lasts up to one turn). The strike deals an additional 10d6 magic damage and stuns the target for 1 round. The target may save vs. death at -2 to avoid the stun. The additional damage is subject to magic resistance and magic damage resistance.~
+The Voidstalker briefly opens themselves fully to the power of the void, allowing them to channel destructive dimensional energy through every weapon strike.
+Every strike within the next round applies the effects of Netherstrike.~
 
 @912 = ~Mass Void Prison~
 @913 = ~Mass Void Prison
@@ -92,3 +110,9 @@ The Voidstalker tears open dimensional rifts around all enemies in the targeted 
 Each enemy within a 15 feet area must save vs. spells at a -4 penalty or be enclosed in a Void Prison for 1 turn.
 
 Allies are not affected.~
+
+@914 = ~Nether Form~
+@915 = ~Nether Form
+
+The Voidstalker abandons their physical form and partially transcends the boundaries of the material plane, becoming a manifestation of the emptiness between worlds. In this ethereal state, <PRO_HISHER> body is infused with the energies of the nether, granting them supernatural resilience and freedom from the limitations of mortal flesh.
+For the next 5 rounds, all physical attacks directed against the Voidstalker only deal 50% of their normal damage. During this time, <PRO_HESHE> is also under the effects of Improved Invisibility and cannot be directly targeted by spells.~

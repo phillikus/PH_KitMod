@@ -1,20 +1,17 @@
 IF
     Kit(Player1, PH_VoidStalker)
     Global("VS_INVISIBLE_1", "GLOBAL", 0)
-    OR(2)
-        StateCheck(Player1, STATE_INVISIBLE)
-        StateCheck(Player1, STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player1, STATE_INVISIBLE)
 THEN
     RESPONSE #100
         SetGlobal("VS_INVISIBLE_1", "GLOBAL", 1)
-        ApplySpellRES("vsstrk", Player1)
+        ReallyForceSpellRES("vsstrk", Player1)
 END
 
 IF
     Kit(Player1, PH_VoidStalker)
     Global("VS_INVISIBLE_1", "GLOBAL", 1)
     !StateCheck(Player1, STATE_INVISIBLE)
-    !StateCheck(Player1, STATE_IMPROVEDINVISIBILITY)
 THEN
     RESPONSE #100
         SetGlobal("VS_INVISIBLE_1", "GLOBAL", 0)
@@ -32,20 +29,17 @@ END
 IF
     Kit(Player2, PH_VoidStalker)
     Global("VS_INVISIBLE_2", "GLOBAL", 0)
-    OR(2)
-        StateCheck(Player2, STATE_INVISIBLE)
-        StateCheck(Player2, STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player2, STATE_INVISIBLE)
 THEN
     RESPONSE #100
         SetGlobal("VS_INVISIBLE_2", "GLOBAL", 1)
-        ApplySpellRES("vsstrk", Player2)
+        ReallyForceSpellRES("vsstrk", Player2)
 END
 
 IF
     Kit(Player2, PH_VoidStalker)
     Global("VS_INVISIBLE_2", "GLOBAL", 1)
     !StateCheck(Player2, STATE_INVISIBLE)
-    !StateCheck(Player2, STATE_IMPROVEDINVISIBILITY)
 THEN
     RESPONSE #100
         SetGlobal("VS_INVISIBLE_2", "GLOBAL", 0)
@@ -63,20 +57,17 @@ END
 IF
     Kit(Player3, PH_VoidStalker)
     Global("VS_INVISIBLE_3", "GLOBAL", 0)
-    OR(2)
-        StateCheck(Player3, STATE_INVISIBLE)
-        StateCheck(Player3, STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player3, STATE_INVISIBLE)
 THEN
     RESPONSE #100
         SetGlobal("VS_INVISIBLE_3", "GLOBAL", 1)
-        ApplySpellRES("vsstrk", Player3)
+        ReallyForceSpellRES("vsstrk", Player3)
 END
 
 IF
     Kit(Player3, PH_VoidStalker)
     Global("VS_INVISIBLE_3", "GLOBAL", 1)
     !StateCheck(Player3, STATE_INVISIBLE)
-    !StateCheck(Player3, STATE_IMPROVEDINVISIBILITY)
 THEN
     RESPONSE #100
         SetGlobal("VS_INVISIBLE_3", "GLOBAL", 0)
@@ -94,20 +85,17 @@ END
 IF
     Kit(Player4, PH_VoidStalker)
     Global("VS_INVISIBLE_4", "GLOBAL", 0)
-    OR(2)
-        StateCheck(Player4, STATE_INVISIBLE)
-        StateCheck(Player4, STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player4, STATE_INVISIBLE)
 THEN
     RESPONSE #100
         SetGlobal("VS_INVISIBLE_4", "GLOBAL", 1)
-        ApplySpellRES("vsstrk", Player4)
+        ReallyForceSpellRES("vsstrk", Player4)
 END
 
 IF
     Kit(Player4, PH_VoidStalker)
     Global("VS_INVISIBLE_4", "GLOBAL", 1)
     !StateCheck(Player4, STATE_INVISIBLE)
-    !StateCheck(Player4, STATE_IMPROVEDINVISIBILITY)
 THEN
     RESPONSE #100
         SetGlobal("VS_INVISIBLE_4", "GLOBAL", 0)
@@ -125,20 +113,17 @@ END
 IF
     Kit(Player5, PH_VoidStalker)
     Global("VS_INVISIBLE_5", "GLOBAL", 0)
-    OR(2)
-        StateCheck(Player5, STATE_INVISIBLE)
-        StateCheck(Player5, STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player5, STATE_INVISIBLE)
 THEN
     RESPONSE #100
         SetGlobal("VS_INVISIBLE_5", "GLOBAL", 1)
-        ApplySpellRES("vsstrk", Player5)
+        ReallyForceSpellRES("vsstrk", Player5)
 END
 
 IF
     Kit(Player5, PH_VoidStalker)
     Global("VS_INVISIBLE_5", "GLOBAL", 1)
     !StateCheck(Player5, STATE_INVISIBLE)
-    !StateCheck(Player5, STATE_IMPROVEDINVISIBILITY)
 THEN
     RESPONSE #100
         SetGlobal("VS_INVISIBLE_5", "GLOBAL", 0)
@@ -156,20 +141,17 @@ END
 IF
     Kit(Player6, PH_VoidStalker)
     Global("VS_INVISIBLE_6", "GLOBAL", 0)
-    OR(2)
-        StateCheck(Player6, STATE_INVISIBLE)
-        StateCheck(Player6, STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player6, STATE_INVISIBLE)
 THEN
     RESPONSE #100
         SetGlobal("VS_INVISIBLE_6", "GLOBAL", 1)
-        ApplySpellRES("vsstrk", Player6)
+        ReallyForceSpellRES("vsstrk", Player6)
 END
 
 IF
     Kit(Player6, PH_VoidStalker)
     Global("VS_INVISIBLE_6", "GLOBAL", 1)
     !StateCheck(Player6, STATE_INVISIBLE)
-    !StateCheck(Player6, STATE_IMPROVEDINVISIBILITY)
 THEN
     RESPONSE #100
         SetGlobal("VS_INVISIBLE_6", "GLOBAL", 0)
