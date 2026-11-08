@@ -33,7 +33,8 @@ This damage bypasses weapon protection spells such as Protection From Magical We
 - 5st level: May use the Shadow Step ability once per day, gaining an additional use every 4 levels thereafter.
 
 Shadow Step:
-The Voidstalker slips through the void, teleporting a short distance and becoming invisible for 1 round.
+The Voidstalker momentarily abandons the material world, disappearing into the void before emerging at a new location, unseen and ready to strike.
+<PRO_HESHE> teleports a short distance away and becomes invisible for 1 round, ready to strike <PRO_HISHER> foe.
 
 - 8th level: May use the Void Prision ability once per day, gaining an additional use every 6 levels thereafter.
 
@@ -48,30 +49,32 @@ Hence, the creature caught inside the globe is completely safe from all attacks,
 - High-Level Ability: Void Execution replaces Assassination.
 
 Disadvantages:
-- No normal backstab multiplier.
-- Cannot set traps: the Set Spike Trap, Set Explosive Trap and Set Time Trap high-level abilities are not available.~
-
+- Does not gain a backstab multiplier.
+- May only distribute 15 skill points per level (40 at level 1) among thieving skills.
+- May not use Set Snare ability, may not use Set Spike Trap, Set Exploding Trap, Set Time Trap HLAs.
 @904 = ~Netherstrike~
 @905 = ~Netherstrike
 
 Rather than striking at their victim's body, Voidstalkers tear open a fleeting rift into the emptiness between planes, allowing tendrils of void energy to surge through their weapon and into the target.
-These supernatural ambushes rend the victim's very essence, inflicting magical damage that cannot be stopped by ordinary physical defenses.
+These supernatural attacks rend the victim's very essence, inflicting magical damage that cannot be stopped by ordinary physical defenses.
 
 Instead of a traditional backstab multiplier, attacks made while invisible deal additional magical damage, regardless of the target's backstab immunity or the attacker's position.
 1st level: +2d6
-5th level: +3d6
-9th level: +4d6
-13th level: +5d6
-17th level: +6d6
+5th level: +4d6
+10th level: +6d6
+15th level: +8d6
+20th level: +10d6
 
 This damage bypasses weapon protection spells such as Protection From Magical Weapons (requires EEex).~
 
 @906 = ~Shadow Step~
 @907 = ~Shadow Step
 
-The Voidstalker slips through the void, teleporting a short distance and becoming invisible for 1 round.~
+The Voidstalker momentarily abandons the material world, disappearing into the void before emerging at a new location, unseen and ready to strike.
+<PRO_HESHE> teleports a short distance away and becomes invisible for 1 round, ready to strike <PRO_HISHER> foe.~
+
 @908 = ~Void Prison~
-@909 = ~Void Prison:
+@909 = ~Void Prison
 
 The Voidstalker tears open a dimensional rift around an enemy, enclosing it within a sphere of condensed void energy.
 For 1 turn, the target is enclosed in an invulnerable globe of shimmering force if they fail a saving throw vs. spells at a -2 penalty.
@@ -81,3 +84,11 @@ Hence, the creature caught inside the globe is completely safe from all attacks,
 @911 = ~Void Execution
 
 Empowers the Voidstalker's next Netherstrike (it lasts up to one turn). The strike deals an additional 10d6 magic damage and stuns the target for 1 round. The target may save vs. death at -2 to avoid the stun. The additional damage is subject to magic resistance and magic damage resistance.~
+
+@912 = ~Mass Void Prison~
+@913 = ~Mass Void Prison
+
+The Voidstalker tears open dimensional rifts around all enemies in the targeted area, enclosing each of them within a sphere of condensed void energy.
+Each enemy within a 15 feet area must save vs. spells at a -4 penalty or be enclosed in a Void Prison for 1 turn.
+
+Allies are not affected.~

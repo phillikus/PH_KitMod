@@ -19,6 +19,7 @@ ADD_KIT ~PH_VoidStalker~
 LAF fl#add_kit_ee STR_VAR
     kit_name = ~PH_VoidStalker~
     backstab = ~1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1~
+    thiefskl = ~40 15~
     thiefscl = ~100 100 100 100 100 100 0 0~
 END
 
@@ -26,6 +27,26 @@ COPY_EXISTING ~LUTH0.2da~ ~override/LUPVS.2DA~
 LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL910~ END
 LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL911~ END
 LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL912~ END
+LPF patch_add_hla STR_VAR 2da_row = ~PVS1~ ability = ~GA_vsprsnm~ num_allowed = 1 END
+
+// Area projectile: enemies only, 15 ft radius.  ADD_PROJECTILE sets a variable named after the file: %vsprsnm%
+COPY ~PH_KITMOD\VoidStalker\spl\vsprsnm.pro~ ~override~
+ADD_PROJECTILE ~PH_KITMOD\VoidStalker\spl\vsprsnm.pro~
+
+// Writes projectile number %vs_proj% into the ability header of the spell being patched
+DEFINE_PATCH_MACRO vs_set_projectile BEGIN
+  READ_LONG  0x64 vs_hdr_off
+  READ_SHORT 0x68 vs_hdr_num
+  FOR (vs_i = 0; vs_i < vs_hdr_num; ++vs_i) BEGIN
+    WRITE_SHORT (vs_hdr_off + vs_i * 0x28 + 0x26) vs_proj
+  END
+END
+
+COPY ~PH_KITMOD\VoidStalker\spl\vsprsnm.spl~ ~override~
+  SET vs_proj = vsprsnm
+  LAUNCH_PATCH_MACRO ~vs_set_projectile~
+  SAY NAME1 @912
+  SAY UNIDENTIFIED_DESC @913
 
 DEFINE_ACTION_FUNCTION cd_new_portrait_icon
   INT_VAR string = 0
@@ -80,7 +101,7 @@ COPY ~PH_KITMOD\VoidStalker\fx\vsprsn.bam~ ~override~
 COPY ~PH_KITMOD\VoidStalker\fx\vsprsn.vvc~ ~override~
 
 COPY ~PH_KITMOD\VoidStalker\spl\vsprsna.spl~ ~override~
-    LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@906) STR_VAR END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@908) STR_VAR END
     LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = vsprsn END
 
 COPY ~PH_KITMOD\VoidStalker\spl\vsprsn.spl~ ~override~
