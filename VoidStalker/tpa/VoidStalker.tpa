@@ -19,7 +19,7 @@ ADD_KIT ~PH_VoidStalker~
 LAF fl#add_kit_ee STR_VAR
     kit_name = ~PH_VoidStalker~
     backstab = ~1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1~
-    thiefskl = ~40 15~
+    thiefskl = ~40 20~
     thiefscl = ~100 100 100 100 100 100 0 0~
 END
 
@@ -88,6 +88,7 @@ COPY ~PH_KITMOD\VoidStalker\bam\vsformc.bam~ ~override~
 LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@914) STR_VAR bam_file = vsformc RET vsform = icon END
 
 COPY ~PH_KITMOD\VoidStalker\spl\vsstat.spl~ ~override~
+
 COPY ~PH_KITMOD\VoidStalker\spl\vsstep.spl~ ~override~
     LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@906) STR_VAR END
 SAY NAME1 @906
@@ -120,7 +121,7 @@ COPY ~PH_KITMOD\VoidStalker\spl\vsexec.spl~ ~override~
 SAY NAME1 @910
 SAY UNIDENTIFIED_DESC @911
 
-COPY ~PH_KITMOD\VoidStalker\fx\vsprsmb.bam~ ~override~
+COPY ~PH_KITMOD\VoidStalker\bam\vsprsmb.bam~ ~override~
 
 COPY ~PH_KITMOD\VoidStalker\spl\vsprsnm.spl~ ~override~
   SET vs_proj = vsprsnm
