@@ -1,0 +1,41 @@
+/* ===================== *
+ *      Riftblade        *
+ * ===================== */
+@1101 = ~riftblade~
+@1102 = ~Riftblade~
+@1103 = ~Riftblade:
+
+Riftblades are heavily armored warriors who manipulate space and dimensional energy to dominate the battlefield. They open portals to reposition themselves and rescue allies, mark enemies with dimensional energy, and create unstable rifts that damage and hinder groups of opponents.
+
+Rather than relying on exceptional weapon damage or defensive magic, Riftblades excel through tactical mobility, enemy disruption, and battlefield control.
+
+Advantages:
+- Level 1: Gains the Rift Step modal ability. It provides three instant teleportation maneuvers: Rift Step teleports the Riftblade to a selected location within 30 feet; Rift Exchange swaps positions with a creature within 30 feet (allies cannot resist, enemies may save vs. spell, and Riftmarked enemies receive no save); Rift Pull teleports a selected creature within 30 feet to the Riftblade's location. These maneuvers ignore the normal one-spell-or-ability-per-round restriction and share a 3-round cooldown.
+
+- Level 3: May use Rift Mark once per day, gaining one additional use every 6 levels thereafter. The weapon imbue lasts 3 rounds. All attacks during the imbue deal bonus magic damage, and successful melee attacks apply Riftmark for 2 rounds. Riftmarked enemies suffer a -3 penalty to AC against all attackers and have their movement speed reduced. The mark's duration refreshes on reapplication; its effects do not stack. Rift Mark has no spell miscast chance.
+  - Level 3: +1d4 bonus magic damage.
+  - Intermediate level: Bonus damage increases to +1d6.
+  - Higher level: Bonus damage increases to +1d8.
+  - At a higher level, Riftmark reduces movement speed by 50% instead of 25%.
+
+- Level 12: Gains Dimensional Rift. The Riftblade opens a breach at a location within 30 feet. The rift has a 10-foot radius and lasts 3 rounds. Enemies entering or starting their turn in the area take 2d6 magic damage, have their movement speed reduced by 50% for 2 rounds, and are Riftmarked for 2 rounds. There is no saving throw. Dimensional Rift applies the normal Rift Mark effects, including -3 AC against all attackers; reapplication refreshes the mark, and its effects do not stack.
+
+- Level 15: Gains Dimensional Anchor, granting permanent immunity to involuntary teleportation and dimensional displacement, Maze, and Imprisonment.
+
+- High-Level Abilities: May use Maze once per day to banish one enemy into a dimensional labyrinth without a saving throw. The target returns when the standard Maze effect expires. May use Imprisonment once per day to permanently seal one enemy away without a saving throw; plot-critical and imprisonment-immune enemies remain protected.
+
+Disadvantages:
+- May achieve no more than Specialization (3 pips) in melee weapons and Proficiency (1 pip) in ranged weapons.
+- Cannot dual-class.~
+
+@1104 = ~Rift Step~
+@1105 = ~Choose one of three instant teleportation maneuvers: Rift Step teleports you to a selected location within 30 feet; Rift Exchange swaps your position with a creature within 30 feet (allies cannot resist, enemies may save vs. spell, and Riftmarked enemies receive no save); Rift Pull teleports a selected creature within 30 feet to your location. These maneuvers ignore the normal one-spell-or-ability-per-round restriction and share a 3-round cooldown.~
+
+@1106 = ~Rift Step~
+@1107 = ~Teleport to a selected location within 30 feet. This maneuver ignores the normal one-spell-or-ability-per-round restriction and shares a 3-round cooldown with Rift Exchange and Rift Pull.~
+
+@1108 = ~Rift Pull~
+@1109 = ~Teleport a selected creature within 30 feet to your location. This maneuver ignores the normal one-spell-or-ability-per-round restriction and shares a 3-round cooldown with Rift Step and Rift Exchange.~
+
+@1110 = ~Rift Exchange~
+@1111 = ~Swap positions with a creature within 30 feet. Allies cannot resist; enemies may save vs. spell, except Riftmarked enemies receive no save. This maneuver ignores the normal one-spell-or-ability-per-round restriction and shares a 3-round cooldown with Rift Step and Rift Pull.~

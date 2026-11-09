@@ -1,0 +1,54 @@
+ADD_KIT ~PH_Riftblade~
+  ~PH_Riftblade 1 1 1 1 1 1 1 1~ // Fighter equipment categories
+  ~PH_Riftblade 0 0 0 0 0 0 0 0 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 0 0 0 0 0 2 0 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~PH_Riftblade 9 0 0 11 0 0~ // Minimum Ability - abclasrq
+  ~PH_Riftblade 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~PH_Riftblade 0 0 0 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~PH_Riftblade 0 0 0 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
+  ~PH_Riftblade 1 1 1 1 1 1 1 1 1~ // Alignment
+  ~PH_Riftblade 0 0 0 0 0 0~ // Dual Class Options
+  ~PH_KITMOD\Riftblade\clab\PHRF.2da~
+  ~K_F_H K_F_D K_F_G K_F_E K_F_HE K_F_HL K_F_HO~
+  ~0x00004000 2~
+  ~Fi0~
+  ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+  SAY @1101
+  SAY @1102
+  SAY @1103
+
+LAF fl#add_kit_ee STR_VAR
+    kit_name = ~PH_Riftblade~
+END
+
+COPY ~PH_KITMOD\Riftblade\lua\M_Rift.lua~ ~override~
+
+COPY ~PH_KITMOD\Riftblade\fx\rfdimr.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\fx\rfdimr.vvc~ ~override~
+
+COPY ~PH_KITMOD\Riftblade\spl\rbexch.spl~ ~override~
+SAY NAME1 @1110
+SAY UNIDENTIFIED_DESC @1111
+COPY ~PH_KITMOD\Riftblade\spl\rbresc.spl~ ~override~
+SAY NAME1 @1108
+SAY UNIDENTIFIED_DESC @1109
+COPY ~PH_KITMOD\Riftblade\spl\rbrift.spl~ ~override~
+SAY NAME1 @1104
+SAY UNIDENTIFIED_DESC @1105
+COPY ~PH_KITMOD\Riftblade\spl\rbrift.2da~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbstep.spl~ ~override~
+SAY NAME1 @1106
+SAY UNIDENTIFIED_DESC @1107
+
+COPY ~PH_KITMOD\Riftblade\bam\RBANCHB.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\RBDRFTB.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\RBDRFTC.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbexchb.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\RBIMPRB.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\RBMARKB.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\RBMARKC.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\RBMAZEB.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\RBMAZEC.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbportb.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbrescb.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbriftb.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\RBSTEPB.BAM~ ~override~

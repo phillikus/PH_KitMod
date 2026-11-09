@@ -19,7 +19,7 @@ Additionally, the marked target can be seen within the fog of war and cannot tur
 
 Celestial Guidance:
 The Astral Vanguard reads the constellations and aligns nearby allies with their celestial pattern. Starlight gathers around them, guiding each movement and turning aside dangers before they can take hold.
-Allies within 20 feet gain a +1 bonus to all saving throws and +15% magic resistance.
+Allies within 20 feet gain a +1 bonus to all saving throws and +15% magic resistance. These bonuses are doubled at level 15.
 
 - 5th level: May use Celestial Intervention once per day, gaining an additional use every 5 levels.
 
@@ -33,7 +33,7 @@ Gravity Well:
 The Astral Vanguard bends the Astral Plane around a point, drawing the weight of the stars down upon the battlefield. Foes caught in its pull struggle to move, and the crushing force clings to them briefly even after they escape its reach.
 Create a 15-foot radius field of increased gravity that lasts for 5 rounds. Enemies within it have their movement speed halfed.
 
-- 14th level: Gravity Well reduces enemy movement speed to 40%.
+- 14th level: Gravity Well reduces enemy movement speed to 30%.
 
 - May learn to cast the Black Blade of Disaster spell as high level ability, replacing War Cry.
 
@@ -51,14 +51,14 @@ Additionally, the marked target can be seen within the fog of war and cannot tur
 @806 = ~Celestial Guidance~
 @807 = ~Celestial Guidance
 The Astral Vanguard reads the constellations and aligns nearby allies with their celestial pattern. Starlight gathers around them, guiding each movement and turning aside dangers before they can take hold.
-Allies within 20 feet gain a +1 bonus to all saving throws and +15% magic resistance.~
+Allies within 20 feet gain a +1 bonus to all saving throws and +15% magic resistance. These bonuses are doubled at level 15.~
 
 @808 = ~Gravity Well~
 @809 = ~Gravity Well
 The Astral Vanguard bends the Astral Plane around a point, drawing the weight of the stars down upon the battlefield. Foes caught in its pull struggle to move, and the crushing force clings to them briefly even after they escape its reach.
 Create a 15-foot radius field of increased gravity that lasts for 5 rounds. Enemies within it have their movement speed reduced and cannot easily escape.
 - 6th level: movement speed reduced to 50%
-- 14th level: movement speed reduced to 40%~
+- 14th level: movement speed reduced to 30%~
 
 @810 = ~Celestial Intervention~
 @811 = ~Celestial Intervention

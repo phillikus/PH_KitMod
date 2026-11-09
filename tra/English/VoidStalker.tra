@@ -12,25 +12,23 @@ Advantages:
 
 Unbound Instinct:
 The Voidstalker's exposure to the void sharpens <PRO_HISHER> reflexes and allows <PRO_HIMHER> to anticipate attacks before they happen.
-<PRO_HISHER> movements become difficult to follow, while <PRI_HISHER> strikes find weaknesses in even the most heavily defended opponents.
 The Voidstalker gains a permanent +1 bonus to THAC0 and AC.
 
 - 1st level: Gains the Netherstrike passive ability.
 
 Netherstrike:
 Rather than striking at their victim's body, Voidstalkers tear open a fleeting rift into the emptiness between planes, allowing tendrils of void energy to surge through their weapon and into the target.
-These supernatural ambushes rend the victim's very essence, inflicting magical damage that cannot be stopped by ordinary physical defenses.
 
 Instead of a traditional backstab multiplier, attacks made while invisible deal additional magical damage, regardless of the target's backstab immunity or the attacker's position.
 1st level: +2d6
 5th level: +4d6
-10th level: +6d6
-15th level: +8d6
-20th level: +10d6
-25th level: +12d8
-30th level: +14d8
-35th level: +16d8
-40th level: +18d8
+10th level: +6d8
+15th level: +8d8
+20th level: +10d8
+25th level: +12d10
+30th level: +14d10
+35th level: +16d10
+40th level: +18d10
 
 This damage bypasses weapon protection spells such as Protection From Magical Weapons (requires EEex).
 
@@ -38,7 +36,7 @@ This damage bypasses weapon protection spells such as Protection From Magical We
 
 Shadow Step:
 The Voidstalker momentarily abandons the material world, disappearing into the void before emerging at a new location, unseen and ready to strike.
-<PRO_HESHE> teleports a short distance away and becomes invisible for 1 round, ready to strike <PRO_HISHER> foe.
+The Voidstalker teleports a short distance away and becomes invisible for 1 round. Additionally, <PRO_HESHE> is under the effect of Non-Detection.
 
 - 8th level: May use the Void Prision ability once per day, gaining an additional use every 6 levels thereafter.
 
@@ -77,10 +75,9 @@ Disadvantages:
 @905 = ~Netherstrike
 
 Rather than striking at their victim's body, Voidstalkers tear open a fleeting rift into the emptiness between planes, allowing tendrils of void energy to surge through their weapon and into the target.
-These supernatural attacks rend the victim's very essence, inflicting magical damage that cannot be stopped by ordinary physical defenses.
 
 Instead of a traditional backstab multiplier, attacks made while invisible deal additional magical damage, regardless of the target's backstab immunity or the attacker's position.
-1st level: +2d6
+1st level: 2d6
 5th level: +4d6
 10th level: +6d6
 15th level: +8d6
@@ -96,7 +93,7 @@ This damage bypasses weapon protection spells such as Protection From Magical We
 @907 = ~Shadow Step
 
 The Voidstalker momentarily abandons the material world, disappearing into the void before emerging at a new location, unseen and ready to strike.
-<PRO_HESHE> teleports a short distance away and becomes invisible for 1 round, ready to strike <PRO_HISHER> foe.~
+The Voidstalker teleports a short distance away and becomes invisible for 1 round. Additionally, <PRO_HESHE> is under the effect of Non-Detection.~
 
 @908 = ~Void Prison~
 @909 = ~Void Prison
