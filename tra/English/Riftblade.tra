@@ -27,14 +27,21 @@ The Riftblade and a creature within 30 feet vanish into a flash of dimensional e
 - 3rd level: May use Rift Strike once per day, gaining one additional use every 6 levels thereafter.
 
 Rift Strike:
-The Riftblade draws dimensional energy along <PRO_HISHER> weapon, making each blow resonate through the planes. The weapon imbue lasts 3 rounds. Attacks deal bonus magic damage and successful melee attacks apply Riftmark for 2 rounds. Riftmarked enemies suffer a -3 penalty to AC against all attackers and have their movement speed reduced. Reapplying Riftmark refreshes its duration; its effects do not stack. Rift Strike has no spell miscast chance.
+The Riftblade draws dimensional energy along <PRO_HISHER> weapon, making each blow resonate through the planes. 
+For 3 rounds, melee attacks by the Riftblade deal an additional 1d6 magic damage and slow hit targets by 25%.
 
-3rd level: +1d4 bonus magic damage.
-Intermediate level: Bonus damage increases to +1d6.
-Higher level: Bonus damage increases to +1d8.
-At a higher level, Riftmark reduces movement speed by 50% instead of 25%.
+- 8th level: Rift Strike bonus damage increased to 2d4.
+- 10th level: The saving throw penalties of Rift Pull and Rift Exchange increase to -4.
+- 12th level: May use the Distortion Field ability once per day, gaining an additional use at level 24.
 
-- 15th level: Gains Dimensional Anchor.
+Distortion Field:
+The Riftblade tears open a dimensional disturbance at a selected location, distorting the flow of space within its area.
+All enemies within the area of effect suffer a 50% movement-speed reduction.
+
+- 13th level: Rift Strike bonus damage increased to 2d6.
+
+- 15th level: Gains the Dimensional Anchor passive ability.
+- 18th level: Rift Trick cooldown reduced to 2 rounds.
 
 Dimensional Anchor:
 The Riftblade binds <PRO_HIMHER> essence to the material plane, resisting forces that would tear <PRO_HIMHER> away. The Riftblade is permanently immune to involuntary teleportation and dimensional displacement, Maze, and Imprisonment.
@@ -52,7 +59,8 @@ Disadvantages:
 - Cannot dual-class.~
 
 @1104 = ~Rift Trick~
-@1105 = ~The Riftblade reaches through the seams of the world, turning distance into a weapon. Choose one of three instant teleportation maneuvers:
+@1105 = ~Rift Trick: 
+The Riftblade reaches through the seams of the world, turning distance into a weapon. Choose one of three instant teleportation maneuvers:
 
 Rift Step: Teleport to a selected location within 30 feet.
 Rift Pull: Teleport a selected creature within 30 feet to your location.
@@ -61,11 +69,28 @@ Rift Exchange: Swap positions with a creature within 30 feet. Allies cannot resi
 These maneuvers ignore the normal one-spell-or-ability-per-round restriction and share a 3-round cooldown.~
 
 @1106 = ~Rift Step~
-@1107 = ~You slip between moments and emerge at a chosen point up to 30 feet away.~
+@1107 = ~Rift Step: 
+You slip between moments and emerge at a chosen point up to 60 feet away.~
 
 @1108 = ~Rift Pull~
-@1109 = ~The Riftblade tears open a rift beneath a creature and drags it through space to <PRO_HISHER> side. The target must be within 30 feet. Enemies may save vs. spell at a -2 penalty to resist being exchanged.~
+@1109 = ~Rift Pull:
+The Riftblade tears open a rift beneath a creature and drags it through space to <PRO_HISHER> side. The target must be within 60 feet. Enemies may save vs. spell at a -2 penalty to resist being exchanged.
+The saving throw penalty increases to -4 at 10th level.~
 
 @1110 = ~Rift Exchange~
-@1111 = ~The Riftblade and a creature within 30 feet vanish into a flash of dimensional energy, reappearing in each other's places. Enemies may save vs. spell at a -2 penalty to resist being exchanged.
-~
+@1111 = ~Rift Exchange:
+The Riftblade and a creature within 60 feet vanish into a flash of dimensional energy, reappearing in each other's places. Enemies may save vs. spell at a -2 penalty to resist being exchanged.
+The saving throw penalty increases to -4 at 10th level.~
+
+@1112 = ~Rift Strike~
+@1113 = ~Rift Strike:
+The Riftblade draws dimensional energy along <PRO_HISHER> weapon, making each blow resonate through the planes. 
+For 3 rounds, melee attacks by the Riftblade deal an additional magic damage and slow hit targets by 25%.
+3rd level: +1d6 magic damage
+8th level: +2d4 magic damage
+13th level: +2d6 magic damage~
+
+@1114 = ~Distortion Field~
+@1115 = ~Distortion Field:
+The Riftblade tears open a dimensional disturbance at a selected location, distorting the flow of space within its area.
+All enemies within the area of effect suffer a 50% movement-speed reduction.~

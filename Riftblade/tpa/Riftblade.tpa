@@ -20,10 +20,40 @@ LAF fl#add_kit_ee STR_VAR
     kit_name = ~PH_Riftblade~
 END
 
+DEFINE_ACTION_FUNCTION rb_new_portrait_icon
+  INT_VAR string = 0
+  STR_VAR bam_file = "****"
+  RET icon
+  BEGIN
+
+  COPY_EXISTING ~statdesc.2da~ ~override~
+    COUNT_2DA_ROWS 3 count
+    READ_2DA_ENTRY (count - 1) 0 3 icon
+    SET icon += 1
+
+  APPEND ~statdesc.2da~ ~%icon% %string% %bam_file%~ UNLESS ~%bam_file%~
+
+END
+
 COPY ~PH_KITMOD\Riftblade\lua\M_Rift.lua~ ~override~
 
-COPY ~PH_KITMOD\Riftblade\fx\rfdimr.bam~ ~override~
-COPY ~PH_KITMOD\Riftblade\fx\rfdimr.vvc~ ~override~
+COPY ~PH_KITMOD\Riftblade\fx\rbfield.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbexchb.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\RBIMPRB.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbstrkb.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbstrkc.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\RBMAZEB.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\RBMAZEC.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbportb.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbrescb.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbriftb.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\RBSTEPB.BAM~ ~override~
+
+COPY ~PH_KITMOD\Riftblade\bam\rbfielb.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbfielc.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbstrkc.bam~ ~override~
+LAF rb_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1114) STR_VAR bam_file = rbfielc RET rbfield_icon = icon END
+LAF rb_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1112) STR_VAR bam_file = rbstrkc RET rbstrk_icon = icon END
 
 COPY ~PH_KITMOD\Riftblade\spl\rbexch.spl~ ~override~
 SAY NAME1 @1110
@@ -35,8 +65,24 @@ SAY NAME1 @1108
 SAY UNIDENTIFIED_DESC @1109
 COPY ~PH_KITMOD\Riftblade\spl\rbresc1.spl~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbresc2.spl~ ~override~
-COPY ~PH_KITMOD\Riftblade\spl\rbstat1.spl~ ~override~
-COPY ~PH_KITMOD\Riftblade\spl\rbstat2.spl~ ~override~
+
+COPY ~PH_KITMOD\Riftblade\spl\rbstrk.eff~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbstrk.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rbstrk_icon END
+SAY NAME1 @1112
+SAY UNIDENTIFIED_DESC @1113
+COPY ~PH_KITMOD\Riftblade\spl\rbstrk1.spl~ ~override~
+
+COPY ~PH_KITMOD\Riftblade\spl\rbfield.pro~ ~override~
+ADD_PROJECTILE ~PH_KITMOD\Riftblade\spl\rbfield.pro~
+COPY ~PH_KITMOD\Riftblade\spl\rbfield.spl~ ~override~
+  WRITE_SHORT 0x98 ~rbfield~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rbfield_icon END
+SAY NAME1 @1114
+SAY UNIDENTIFIED_DESC @1115
+COPY ~PH_KITMOD\Riftblade\spl\rbdim.spl~ ~override~
+
+
 COPY ~PH_KITMOD\Riftblade\spl\rbrift.spl~ ~override~
 SAY NAME1 @1104
 SAY UNIDENTIFIED_DESC @1105
@@ -44,17 +90,3 @@ COPY ~PH_KITMOD\Riftblade\spl\rbrift.2da~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbstep.spl~ ~override~
 SAY NAME1 @1106
 SAY UNIDENTIFIED_DESC @1107
-
-COPY ~PH_KITMOD\Riftblade\bam\RBANCHB.BAM~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\RBDRFTB.BAM~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\RBDRFTC.BAM~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\rbexchb.bam~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\RBIMPRB.BAM~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\RBMARKB.BAM~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\RBMARKC.BAM~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\RBMAZEB.BAM~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\RBMAZEC.BAM~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\rbportb.bam~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\rbrescb.bam~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\rbriftb.bam~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\RBSTEPB.BAM~ ~override~
