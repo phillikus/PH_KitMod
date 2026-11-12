@@ -85,7 +85,7 @@ LAF runemaster_new_portrait_icon
   RET rmsghtc_icon = icon
 END
 
-ACTION_FOR_EACH ~fx~ IN rmmght rmnull rmruin rmsght rmward BEGIN
+ACTION_FOR_EACH ~fx~ IN rmmght rmnull rmruin rmsght rmward rmmghts rmnulls rmruins rmsghts rmwards BEGIN
   COPY ~PH_KITMOD\Runemaster\fx\%fx%.bam~ ~override~
   COPY ~PH_KITMOD\Runemaster\fx\%fx%.vvc~ ~override~
   COPY ~PH_KITMOD\Runemaster\fx\%fx%.pro~ ~override~
@@ -101,6 +101,7 @@ DEFINE_PATCH_MACRO runemaster_set_projectile BEGIN
 END
 
 COPY ~PH_KITMOD\Runemaster\spl\rmrune.2da~ ~override~
+COPY ~PH_KITMOD\Runemaster\spl\rmrunes.2da~ ~override~
 COPY ~PH_KITMOD\Runemaster\spl\rmrune.spl~ ~override~
   SAY NAME1 @1204
   SAY UNIDENTIFIED_DESC @1205
@@ -136,6 +137,41 @@ COPY ~PH_KITMOD\Runemaster\spl\rmruin.spl~ ~override~
 COPY ~PH_KITMOD\Runemaster\spl\rmsght.spl~ ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmsghtc_icon END
   SET runemaster_projectile = rmsght
+  LAUNCH_PATCH_MACRO ~runemaster_set_projectile~
+  SAY NAME1 @1214
+  SAY UNIDENTIFIED_DESC @1215
+
+COPY ~PH_KITMOD\Runemaster\spl\rmwards.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmwardc_icon END
+  SET runemaster_projectile = rmwards
+  LAUNCH_PATCH_MACRO ~runemaster_set_projectile~
+  SAY NAME1 @1206
+  SAY UNIDENTIFIED_DESC @1207
+
+COPY ~PH_KITMOD\Runemaster\spl\rmmghts.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmmghtc_icon END
+  SET runemaster_projectile = rmmghts
+  LAUNCH_PATCH_MACRO ~runemaster_set_projectile~
+  SAY NAME1 @1208
+  SAY UNIDENTIFIED_DESC @1209
+
+COPY ~PH_KITMOD\Runemaster\spl\rmnulls.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmnullc_icon END
+  SET runemaster_projectile = rmnulls
+  LAUNCH_PATCH_MACRO ~runemaster_set_projectile~
+  SAY NAME1 @1210
+  SAY UNIDENTIFIED_DESC @1211
+
+COPY ~PH_KITMOD\Runemaster\spl\rmruins.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmruinc_icon END
+  SET runemaster_projectile = rmruins
+  LAUNCH_PATCH_MACRO ~runemaster_set_projectile~
+  SAY NAME1 @1212
+  SAY UNIDENTIFIED_DESC @1213
+
+COPY ~PH_KITMOD\Runemaster\spl\rmsghts.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmsghtc_icon END
+  SET runemaster_projectile = rmsghts
   LAUNCH_PATCH_MACRO ~runemaster_set_projectile~
   SAY NAME1 @1214
   SAY UNIDENTIFIED_DESC @1215
