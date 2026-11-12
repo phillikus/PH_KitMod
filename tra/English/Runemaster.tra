@@ -1,0 +1,125 @@
+/* ===================== *
+ *      Runemaster       *
+ * ===================== */
+@1201 = ~runemaster~
+@1202 = ~Runemaster~
+@1203 = ~Runemaster:
+
+Runemasters are dwarven frontline warriors who inscribe ancient runes to shape the battlefield. Their heavy armor and martial training let them stand beside other Fighters, while their runecraft can defend allies, empower attacks, expose hidden enemies, and disrupt hostile spellcasters.
+
+Advantages:
+- Restricted to dwarves.
+- May wear all armor and use shields.
+- May place up to 3 proficiency points in melee weapons.
+- Cannot use longbows, shortbows, or crossbows.
+- Uses one shared pool of daily charges for all rune inscriptions.
+- May have up to 3 inscriptions active at once. Inscribing the same rune replaces its previous inscription.
+
+Runic Inscription:
+The Runemaster selects a rune and places its stationary magical field at a chosen location. Its effects apply to eligible creatures within the field. The Runemaster may benefit from the resonance of one of <PRO_HISHER> own inscriptions while standing within its area; leaving the area immediately ends that resonance. Overlapping inscriptions never stack resonance effects.
+
+Uses per day:
+1st-5th level: 2
+6th-11th level: 3
+12th-17th level: 4
+18th-23rd level: 5
+24th-29th level: 6
+30th-35th level: 7
+36th level and above: 8
+
+Runes:
+
+Rune of Warding (1st level):
+Creates a 3-round protective field for allies only.
+1st level: 10% physical damage resistance.
+9th level: 15% physical damage resistance.
+18th level: 20% physical damage resistance.
+27th level: 25% physical damage resistance and +1 to saving throws.
+
+Rune of Might (1st level):
+Creates a 3-round field that empowers allies only.
+1st level: +1 THAC0 and +1 melee damage.
+9th level: +2 THAC0 and +2 melee damage.
+18th level: +2 THAC0 and +3 melee damage.
+27th level: +3 THAC0 and +4 melee damage.
+
+Rune of Ruin (6th level):
+Pulses once per round for 3 rounds in a medium area, damaging enemies only.
+6th level: 1d6 magical damage per pulse.
+12th level: 2d6 magical damage per pulse.
+18th level: 3d6 magical damage per pulse and -1 AC.
+27th level: 4d6 magical damage per pulse and -2 AC.
+
+Rune of Sight (12th level):
+Creates a 5-round medium field that detects invisible enemies and grants allies backstab immunity.
+18th level: Also detects improved invisible enemies.
+27th level: Grants True Sight within the field.
+
+Rune of Nullification (18th level):
+Dispel occurs once when the rune is activated. Enemies in the area must save vs. Spell to avoid spellcasting failure. The field lasts 3 rounds and affects enemies only.
+18th level: Dispel combat protections and inflict 25% spellcasting failure.
+27th level: Inflict 50% spellcasting failure.
+
+Runic Resonance:
+Only one resonance can be active at a time, and it affects only the Runemaster.
+
+Warding — Stoneguard:
+1st level: +1 AC.
+9th level: +1 AC and +1 to saving throws.
+18th level: +2 AC, +1 to saving throws, and 10% physical damage resistance.
+27th level: +2 AC, +2 to saving throws, and 15% physical damage resistance.
+
+Might — Battleforged:
+1st level: +1 melee damage.
+9th level: +1 THAC0 and +1 melee damage.
+18th level: +1 attack per round and +2 melee damage.
+27th level: +1 attack per round and +3 melee damage.
+
+Ruin — Destructive:
+6th level: +1d4 magical damage per melee hit.
+18th level: +1d6 magical damage per melee hit.
+27th level: +1d8 magical damage per melee hit. This is the Runemaster's Runic Weapon Resonance, not a separate damage bonus.
+
+Sight — Watcher's:
+12th level: Immune to backstab.
+18th level: Improved detection of invisible enemies.
+27th level: True Sight and +2 to saving throws vs. Spell.
+
+Nullification — Spellbreaker:
+18th level: +10% magic resistance.
+27th level: +15% magic resistance and +2 to saving throws vs. Spell.
+
+High-Level Abilities:
+Each ability may be used once per day.
+
+Greater Rune of Power:
+Inscribes a 5-round rune that grants nearby allies +3 THAC0, +4 melee damage, and +2 to saving throws.
+
+Rune of Annihilation:
+Detonates active Runes of Ruin, dealing substantial magical damage in their areas. Enemies must save vs. Spell or be stunned for 1 round. If no Rune of Ruin is active, it creates an immediate explosion at the selected location.
+
+Greater Rune of Warding:
+Inscribes a 5-round rune that grants nearby allies 40% physical damage resistance, +3 to saving throws, and immunity to fear and stun.
+
+Disadvantages:
+- Restricted to dwarves.
+- Cannot use longbows, shortbows, or crossbows.~ 
+
+@1204 = ~Rune Carving~
+@1205 = ~Rune Carving
+Select one of your available runes and inscribe it at a chosen location. The rune creates a stationary field whose effects depend on the rune and your level. All inscriptions share a limited pool of daily uses.~ 
+@1206 = ~Rune of Warding~
+@1207 = ~Rune of Warding
+Inscribes a protective field at the chosen location. Nearby allies gain physical damage resistance for 3 rounds; the strength of the protection increases with your level.~ 
+@1208 = ~Rune of Might~
+@1209 = ~Rune of Might
+Inscribes a battlefield rune at the chosen location. Nearby allies gain improved accuracy and melee damage for 3 rounds; the bonuses improve with your level.~ 
+@1210 = ~Rune of Nullification~
+@1211 = ~Rune of Nullification
+Inscribes an anti-magic rune at the chosen location. When activated, it dispels enemy combat protections in its area. Enemies in the field must save vs. Spell or suffer spellcasting failure for 3 rounds.~ 
+@1212 = ~Rune of Ruin~
+@1213 = ~Rune of Ruin
+Inscribes a destructive rune at the chosen location. It pulses once per round for 3 rounds, damaging enemies in a medium area with magical energy and weakening their defenses at higher levels.~ 
+@1214 = ~Rune of Sight~
+@1215 = ~Rune of Sight
+Inscribes a rune at the chosen location that reveals invisible enemies and protects allies from backstabs for 5 rounds. Its detection improves as you gain levels.~ 

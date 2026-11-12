@@ -28,9 +28,15 @@ COPY ~PH_KITMOD\Riftblade\fx\rfdimr.vvc~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbexch.spl~ ~override~
 SAY NAME1 @1110
 SAY UNIDENTIFIED_DESC @1111
+COPY ~PH_KITMOD\Riftblade\spl\rbexch1.spl~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbexch2.spl~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbresc.spl~ ~override~
 SAY NAME1 @1108
 SAY UNIDENTIFIED_DESC @1109
+COPY ~PH_KITMOD\Riftblade\spl\rbresc1.spl~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbresc2.spl~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbstat1.spl~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbstat2.spl~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbrift.spl~ ~override~
 SAY NAME1 @1104
 SAY UNIDENTIFIED_DESC @1105

@@ -1,0 +1,141 @@
+// Runemaster — dwarven Fighter kit.
+//
+// This kit entry sets up the Fighter chassis and the requested weapon
+// restrictions. Rune powers and progression are documented in the TRA;
+// they require dedicated SPL/CLAB/runtime resources to become active effects.
+
+ADD_KIT ~PH_Runemaster~
+  ~PH_Runemaster 1 1 1 1 1 1 1 1~ // Fighter equipment categories
+  ~PH_Runemaster 0 0 0 0 0 0 0 0 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 0 0 0 0 0 2 0 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~PH_Runemaster 9 0 0 11 0 0~ // Minimum abilities
+  ~PH_Runemaster 0 0 0 0 0 0~ // Kit ability modifiers
+  ~PH_Runemaster 0 0 17 0 0 0~ // Dual-class requirements (to)
+  ~PH_Runemaster 0 0 15 0 0 0~ // Dual-class requirements (from)
+  ~PH_Runemaster 1 1 1 1 1 1 1 1 1~ // Alignment: any
+  ~PH_Runemaster 0 0 0 0 0 0~ // Dual-class options
+  ~PH_KITMOD\Runemaster\clab\PHRM.2da~
+  ~K_F_H K_F_D K_F_G K_F_E K_F_HE K_F_HL K_F_HO~
+  ~0x00004000 2~
+  ~Fi0~
+  ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+  SAY @1201
+  SAY @1202
+  SAY @1203
+
+LAF fl#add_kit_ee STR_VAR
+    kit_name = ~PH_Runemaster~
+END
+
+// Prevent longbow, shortbow, and crossbow use (and their ammunition).
+OUTER_SET runemaster_kit_code = (0x4000 + %PH_Runemaster%)
+
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  READ_SHORT 0x1c runemaster_item_type
+  PATCH_IF (runemaster_item_type = 15 OR runemaster_item_type = 27
+         OR runemaster_item_type = 5 OR runemaster_item_type = 31) BEGIN
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR opcode = 319 parameter1 = runemaster_kit_code parameter2 = 9 power = 0 timing = 2
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+// Copy the kit's rune resources and register the Warding portrait icon.
+
+ACTION_FOR_EACH ~bam~ IN rmruneb rmwardb rmwardc rmmghtb rmmghtc rmnullb rmnullc rmruinb rmruinc rmsghtb rmsghtc BEGIN
+  COPY ~PH_KITMOD\Runemaster\bam\%bam%.bam~ ~override~
+END
+
+DEFINE_ACTION_FUNCTION runemaster_new_portrait_icon
+  INT_VAR string = 0
+  STR_VAR bam_file = "****"
+  RET icon
+BEGIN
+  COPY_EXISTING ~statdesc.2da~ ~override~
+    COUNT_2DA_ROWS 3 count
+    READ_2DA_ENTRY (count - 1) 0 3 icon
+    SET icon += 1
+
+  APPEND ~statdesc.2da~ ~%icon% %string% %bam_file%~ UNLESS ~%bam_file%~
+END
+
+LAF runemaster_new_portrait_icon
+  INT_VAR string = RESOLVE_STR_REF(~Rune of Warding~)
+  STR_VAR bam_file = rmwardc
+  RET rmwardc_icon = icon
+END
+
+LAF runemaster_new_portrait_icon
+  INT_VAR string = RESOLVE_STR_REF(~Rune of Might~)
+  STR_VAR bam_file = rmmghtc
+  RET rmmghtc_icon = icon
+END
+LAF runemaster_new_portrait_icon
+  INT_VAR string = RESOLVE_STR_REF(~Rune of Nullification~)
+  STR_VAR bam_file = rmnullc
+  RET rmnullc_icon = icon
+END
+LAF runemaster_new_portrait_icon
+  INT_VAR string = RESOLVE_STR_REF(~Rune of Ruin~)
+  STR_VAR bam_file = rmruinc
+  RET rmruinc_icon = icon
+END
+LAF runemaster_new_portrait_icon
+  INT_VAR string = RESOLVE_STR_REF(~Rune of Sight~)
+  STR_VAR bam_file = rmsghtc
+  RET rmsghtc_icon = icon
+END
+
+ACTION_FOR_EACH ~fx~ IN rmmght rmnull rmruin rmsght rmward BEGIN
+  COPY ~PH_KITMOD\Runemaster\fx\%fx%.bam~ ~override~
+  COPY ~PH_KITMOD\Runemaster\fx\%fx%.vvc~ ~override~
+  COPY ~PH_KITMOD\Runemaster\fx\%fx%.pro~ ~override~
+  ADD_PROJECTILE ~PH_KITMOD\Runemaster\fx\%fx%.pro~
+END
+
+DEFINE_PATCH_MACRO runemaster_set_projectile BEGIN
+  READ_LONG  0x64 runemaster_hdr_off
+  READ_SHORT 0x68 runemaster_hdr_num
+  FOR (runemaster_i = 0; runemaster_i < runemaster_hdr_num; ++runemaster_i) BEGIN
+    WRITE_SHORT (runemaster_hdr_off + runemaster_i * 0x28 + 0x26) runemaster_projectile
+  END
+END
+
+COPY ~PH_KITMOD\Runemaster\spl\rmrune.2da~ ~override~
+COPY ~PH_KITMOD\Runemaster\spl\rmrune.spl~ ~override~
+  SAY NAME1 @1204
+  SAY UNIDENTIFIED_DESC @1205
+  
+COPY ~PH_KITMOD\Runemaster\spl\rmward.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmwardc_icon END
+  SET runemaster_projectile = rmward
+  LAUNCH_PATCH_MACRO ~runemaster_set_projectile~
+  SAY NAME1 @1206
+  SAY UNIDENTIFIED_DESC @1207
+
+COPY ~PH_KITMOD\Runemaster\spl\rmmght.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmmghtc_icon END
+  SET runemaster_projectile = rmmght
+  LAUNCH_PATCH_MACRO ~runemaster_set_projectile~
+  SAY NAME1 @1208
+  SAY UNIDENTIFIED_DESC @1209
+
+COPY ~PH_KITMOD\Runemaster\spl\rmnull.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmnullc_icon END
+  SET runemaster_projectile = rmnull
+  LAUNCH_PATCH_MACRO ~runemaster_set_projectile~
+  SAY NAME1 @1210
+  SAY UNIDENTIFIED_DESC @1211
+
+COPY ~PH_KITMOD\Runemaster\spl\rmruin.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmruinc_icon END
+  SET runemaster_projectile = rmruin
+  LAUNCH_PATCH_MACRO ~runemaster_set_projectile~
+  SAY NAME1 @1212
+  SAY UNIDENTIFIED_DESC @1213
+
+COPY ~PH_KITMOD\Runemaster\spl\rmsght.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmsghtc_icon END
+  SET runemaster_projectile = rmsght
+  LAUNCH_PATCH_MACRO ~runemaster_set_projectile~
+  SAY NAME1 @1214
+  SAY UNIDENTIFIED_DESC @1215

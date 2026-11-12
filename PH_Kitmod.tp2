@@ -23,6 +23,7 @@ LANGUAGE ~English~
          ~PH_KITMOD/tra/English/AstralVanguard.tra~
          ~PH_KITMOD/tra/English/VoidStalker.tra~
          ~PH_KITMOD/tra/English/Riftblade.tra~
+         ~PH_KITMOD/tra/English/Runemaster.tra~
 
 // Doomblade
 BEGIN ~Doomblade~
@@ -137,3 +138,13 @@ REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
 PRINT ~Installing Riftblade kit...~
 
 INCLUDE ~PH_KITMOD/Riftblade/tpa/Riftblade.tpa~
+
+// Runemaster
+BEGIN ~Runemaster~
+
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
+  @1000
+
+PRINT ~Installing Runemaster kit...~
+
+INCLUDE ~PH_KITMOD/Runemaster/tpa/Runemaster.tpa~
