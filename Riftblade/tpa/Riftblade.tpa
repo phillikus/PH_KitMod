@@ -1,6 +1,6 @@
 ADD_KIT ~PH_Riftblade~
   ~PH_Riftblade 1 1 1 1 1 1 1 1~ // Fighter equipment categories
-  ~PH_Riftblade 0 0 0 0 0 0 0 0 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 1 1 1 1 1 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~PH_Riftblade 0 0 0 0 0 0 0 0 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
   ~PH_Riftblade 9 0 0 11 0 0~ // Minimum Ability - abclasrq
   ~PH_Riftblade 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
   ~PH_Riftblade 0 0 0 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
@@ -18,6 +18,7 @@ ADD_KIT ~PH_Riftblade~
 
 LAF fl#add_kit_ee STR_VAR
     kit_name = ~PH_Riftblade~
+    hpclass = HPPRS // D8
 END
 
   COPY_EXISTING ~LUFI0.2DA~ ~override/LURBF.2DA~

@@ -51,14 +51,15 @@ The Riftblade binds <PRO_HIMHER> essence to the material plane, resisting forces
 
 Rift Rend:
 The Riftblade delivers a devastating melee strike with <PRO_HISHER> next successful melee attack. Struck target is trapped in a dimensional labyrinth for several rounds as per the Maze spell.
+This effect bypasses weapon protection spells such as Protection From Magical Weapons (requires EEex).
 
 Eternal Rift:
 The Riftblade delivers a final strike with <PRO_HISHER> next successful melee attack. Struck target is permanetly trapped in an eternal prison beyond the boundaries of the material plane as per the Imprisonment spell.
+This effect bypasses weapon protection spells such as Protection From Magical Weapons (requires EEex).~
 
 Disadvantages:
-- d8 hit dice
-- May achieve no more than Master (3 pips) in melee weapons and Proficiency (1 pip) in ranged weapons.
-- Cannot dual-class.~
+- d8 hit dice.
+- May not learn the Whirlwind and Greater Whirlwind high level abilities.~
 
 @1104 = ~Rift Trick~
 @1105 = ~Rift Trick: 
@@ -66,8 +67,9 @@ The Riftblade reaches through the seams of the world, turning distance into a we
 
 Rift Step: Teleport to a selected location within 30 feet.
 Rift Pull: Teleport a selected creature within 30 feet to your location.
-Rift Exchange: Swap positions with a creature within 30 feet. Allies cannot resist; enemies may save vs. spell, except Riftmarked enemies, which receive no save.
+Rift Exchange: Swap positions with a creature within 30 feet.
 
+Enemies may save vs spell at a -2 penalty (-4 at level 10) to resist being teleported.
 These maneuvers ignore the normal one-spell-or-ability-per-round restriction and share a 3-round cooldown (2 rounds from level 18 on).~
 
 @1106 = ~Rift Step~
@@ -100,8 +102,10 @@ All enemies within the area of effect suffer a 50% movement-speed reduction.~
 
 @1116 = ~Rift Rend~
 @1117 = ~Rift Rend:
-The Riftblade delivers a devastating melee strike with <PRO_HISHER> next successful melee attack within 3 rounds. Struck target is trapped in a dimensional labyrinth for several rounds as per the Maze spell.~
+The Riftblade delivers a devastating melee strike with <PRO_HISHER> next successful melee attack within 3 rounds. Struck target is trapped in a dimensional labyrinth for several rounds as per the Maze spell.
+This effect bypasses weapon protection spells such as Protection From Magical Weapons (requires EEex).~
 
 @1118 = ~Eternal Rift~
 @1119 = ~Eternal Rift:
-The Riftblade delivers a final strike with <PRO_HISHER> next successful melee attack within 3 rounds. Struck target is permanetly trapped in an eternal prison beyond the boundaries of the material plane as per the Imprisonment spell.~
+The Riftblade delivers a final strike with <PRO_HISHER> next successful melee attack within 3 rounds. Struck target is permanetly trapped in an eternal prison beyond the boundaries of the material plane as per the Imprisonment spell.
+This effect bypasses weapon protection spells such as Protection From Magical Weapons (requires EEex).~
