@@ -17,6 +17,7 @@ function RBRESC(effect, target)
 		return
 	end
 
+    target:virtual_ClearActions(false)
 	local response = string.format("JumpToPoint([%d.%d])", x, y)
 	EEex_Action_QueueResponseStringOnAIBase(response, target)
 end
@@ -29,6 +30,8 @@ function RBEXCH(effect, target)
 
 	local casterX, casterY = caster.m_pos.x, caster.m_pos.y
 	local targetX, targetY = target.m_pos.x, target.m_pos.y
+
+    target:virtual_ClearActions(false)
 
 	EEex_Action_QueueResponseStringOnAIBase(
 		string.format("JumpToPoint([%d.%d])", casterX, casterY),

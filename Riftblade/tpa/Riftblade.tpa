@@ -1,6 +1,6 @@
 ADD_KIT ~PH_Riftblade~
   ~PH_Riftblade 1 1 1 1 1 1 1 1~ // Fighter equipment categories
-  ~PH_Riftblade 0 0 0 0 0 0 0 0 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 0 0 0 0 0 2 0 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~PH_Riftblade 0 0 0 0 0 0 0 0 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 1 1 1 1 1 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
   ~PH_Riftblade 9 0 0 11 0 0~ // Minimum Ability - abclasrq
   ~PH_Riftblade 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
   ~PH_Riftblade 0 0 0 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
@@ -10,7 +10,7 @@ ADD_KIT ~PH_Riftblade~
   ~PH_KITMOD\Riftblade\clab\PHRF.2da~
   ~K_F_H K_F_D K_F_G K_F_E K_F_HE K_F_HL K_F_HO~
   ~0x00004000 2~
-  ~Fi0~
+  ~RBF~
   ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
   SAY @1101
   SAY @1102
@@ -19,6 +19,12 @@ ADD_KIT ~PH_Riftblade~
 LAF fl#add_kit_ee STR_VAR
     kit_name = ~PH_Riftblade~
 END
+
+  COPY_EXISTING ~LUFI0.2DA~ ~override/LURBF.2DA~
+  LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL900~ END
+  LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL901~ END
+  LPF patch_add_hla STR_VAR 2da_row = ~RBF1~ ability = ~GA_rbstrkm~ num_allowed = 1 END
+  LPF patch_add_hla STR_VAR 2da_row = ~RBF1~ ability = ~GA_rbstrki~ num_allowed = 1 prerequisite = ~GA_rbstrkm~ END
 
 DEFINE_ACTION_FUNCTION rb_new_portrait_icon
   INT_VAR string = 0
@@ -39,11 +45,8 @@ COPY ~PH_KITMOD\Riftblade\lua\M_Rift.lua~ ~override~
 
 COPY ~PH_KITMOD\Riftblade\fx\rbfield.bam~ ~override~
 COPY ~PH_KITMOD\Riftblade\bam\rbexchb.bam~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\RBIMPRB.BAM~ ~override~
 COPY ~PH_KITMOD\Riftblade\bam\rbstrkb.BAM~ ~override~
 COPY ~PH_KITMOD\Riftblade\bam\rbstrkc.BAM~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\RBMAZEB.BAM~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\RBMAZEC.BAM~ ~override~
 COPY ~PH_KITMOD\Riftblade\bam\rbportb.bam~ ~override~
 COPY ~PH_KITMOD\Riftblade\bam\rbrescb.bam~ ~override~
 COPY ~PH_KITMOD\Riftblade\bam\rbriftb.bam~ ~override~
@@ -54,6 +57,12 @@ COPY ~PH_KITMOD\Riftblade\bam\rbfielc.BAM~ ~override~
 COPY ~PH_KITMOD\Riftblade\bam\rbstrkc.bam~ ~override~
 LAF rb_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1114) STR_VAR bam_file = rbfielc RET rbfield_icon = icon END
 LAF rb_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1112) STR_VAR bam_file = rbstrkc RET rbstrk_icon = icon END
+COPY ~PH_KITMOD\Riftblade\bam\rbstrmb.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbstrmc.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbstrib.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbstric.bam~ ~override~
+LAF rb_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1116) STR_VAR bam_file = rbstrmc RET rbstrm_icon = icon END
+LAF rb_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1118) STR_VAR bam_file = rbstric RET rbstri_icon = icon END
 
 COPY ~PH_KITMOD\Riftblade\spl\rbexch.spl~ ~override~
 SAY NAME1 @1110
@@ -72,6 +81,22 @@ COPY ~PH_KITMOD\Riftblade\spl\rbstrk.spl~ ~override~
 SAY NAME1 @1112
 SAY UNIDENTIFIED_DESC @1113
 COPY ~PH_KITMOD\Riftblade\spl\rbstrk1.spl~ ~override~
+
+COPY ~PH_KITMOD\Riftblade\spl\rbstat.spl~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbclear.eff~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbclear.spl~ ~override~
+
+COPY ~PH_KITMOD\Riftblade\spl\rbstrkm.eff~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbstrkm.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rbstrm_icon END
+SAY NAME1 @1116
+SAY UNIDENTIFIED_DESC @1117
+
+COPY ~PH_KITMOD\Riftblade\spl\rbstrki.eff~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbstrki.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rbstri_icon END
+SAY NAME1 @1118
+SAY UNIDENTIFIED_DESC @1119
 
 COPY ~PH_KITMOD\Riftblade\spl\rbfield.pro~ ~override~
 ADD_PROJECTILE ~PH_KITMOD\Riftblade\spl\rbfield.pro~

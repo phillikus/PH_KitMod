@@ -41,21 +41,23 @@ All enemies within the area of effect suffer a 50% movement-speed reduction.
 - 13th level: Rift Strike bonus damage increased to 2d6.
 
 - 15th level: Gains the Dimensional Anchor passive ability.
-- 18th level: Rift Trick cooldown reduced to 2 rounds.
 
 Dimensional Anchor:
 The Riftblade binds <PRO_HIMHER> essence to the material plane, resisting forces that would tear <PRO_HIMHER> away. The Riftblade is permanently immune to involuntary teleportation and dimensional displacement, Maze, and Imprisonment.
 
-- High-Level Abilities: May learn Maze and Imprisonment.
+- 18th level: Rift Trick cooldown reduced to 2 rounds.
 
-Maze:
-The Riftblade casts an enemy into a labyrinth between worlds, where it is lost until the maze releases it. The target is banished without a saving throw and returns when the standard Maze effect expires.
+- High-Level Abilities: May learn the Rift Rend and Eternal Rift high level abilities.
 
-Imprisonment:
-The Riftblade seals an enemy beyond reach, trapping it in a dimensional prison. The target is imprisoned permanently without a saving throw. Plot-critical and imprisonment-immune enemies remain protected.
+Rift Rend:
+The Riftblade delivers a devastating melee strike with <PRO_HISHER> next successful melee attack. Struck target is trapped in a dimensional labyrinth for several rounds as per the Maze spell.
+
+Eternal Rift:
+The Riftblade delivers a final strike with <PRO_HISHER> next successful melee attack. Struck target is permanetly trapped in an eternal prison beyond the boundaries of the material plane as per the Imprisonment spell.
 
 Disadvantages:
-- May achieve no more than Specialization (3 pips) in melee weapons and Proficiency (1 pip) in ranged weapons.
+- d8 hit dice
+- May achieve no more than Master (3 pips) in melee weapons and Proficiency (1 pip) in ranged weapons.
 - Cannot dual-class.~
 
 @1104 = ~Rift Trick~
@@ -66,7 +68,7 @@ Rift Step: Teleport to a selected location within 30 feet.
 Rift Pull: Teleport a selected creature within 30 feet to your location.
 Rift Exchange: Swap positions with a creature within 30 feet. Allies cannot resist; enemies may save vs. spell, except Riftmarked enemies, which receive no save.
 
-These maneuvers ignore the normal one-spell-or-ability-per-round restriction and share a 3-round cooldown.~
+These maneuvers ignore the normal one-spell-or-ability-per-round restriction and share a 3-round cooldown (2 rounds from level 18 on).~
 
 @1106 = ~Rift Step~
 @1107 = ~Rift Step: 
@@ -94,3 +96,12 @@ For 3 rounds, melee attacks by the Riftblade deal an additional magic damage and
 @1115 = ~Distortion Field:
 The Riftblade tears open a dimensional disturbance at a selected location, distorting the flow of space within its area.
 All enemies within the area of effect suffer a 50% movement-speed reduction.~
+
+
+@1116 = ~Rift Rend~
+@1117 = ~Rift Rend:
+The Riftblade delivers a devastating melee strike with <PRO_HISHER> next successful melee attack within 3 rounds. Struck target is trapped in a dimensional labyrinth for several rounds as per the Maze spell.~
+
+@1118 = ~Eternal Rift~
+@1119 = ~Eternal Rift:
+The Riftblade delivers a final strike with <PRO_HISHER> next successful melee attack within 3 rounds. Struck target is permanetly trapped in an eternal prison beyond the boundaries of the material plane as per the Imprisonment spell.~
