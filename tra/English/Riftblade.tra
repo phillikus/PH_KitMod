@@ -28,7 +28,7 @@ The Riftblade and a creature within 30 feet vanish into a flash of dimensional e
 
 Rift Strike:
 The Riftblade draws dimensional energy along <PRO_HISHER> weapon, making each blow resonate through the planes. 
-For 3 rounds, melee attacks by the Riftblade deal an additional 1d6 magic damage and slow hit targets by 25%.
+For 3 rounds, melee attacks by the Riftblade deal an additional 1d6 magic damage and reduce the targets movement speed by 25%
 
 - 8th level: Rift Strike bonus damage increased to 2d4.
 - 10th level: The saving throw penalties of Rift Pull and Rift Exchange increase to -4.
@@ -43,7 +43,7 @@ All enemies within the area of effect suffer a 50% movement-speed reduction.
 - 15th level: Gains the Dimensional Anchor passive ability.
 
 Dimensional Anchor:
-The Riftblade binds <PRO_HIMHER> essence to the material plane, resisting forces that would tear <PRO_HIMHER> away. The Riftblade is permanently immune to involuntary teleportation and dimensional displacement, Maze, and Imprisonment.
+The Riftblade binds <PRO_HISHER> essence to the material plane, resisting forces that would tear <PRO_HIMHER> away. The Riftblade is permanently immune to involuntary teleportation and dimensional displacement, Maze, and Imprisonment.
 
 - 18th level: Rift Trick cooldown reduced to 2 rounds.
 
@@ -89,7 +89,7 @@ The saving throw penalty increases to -4 at 10th level.~
 @1112 = ~Rift Strike~
 @1113 = ~Rift Strike:
 The Riftblade draws dimensional energy along <PRO_HISHER> weapon, making each blow resonate through the planes. 
-For 3 rounds, melee attacks by the Riftblade deal an additional magic damage and slow hit targets by 25%.
+For 3 rounds, melee attacks by the Riftblade deal an additional magic damage and reduce the targets movement speed by 25%.
 3rd level: +1d6 magic damage
 8th level: +2d4 magic damage
 13th level: +2d6 magic damage~
