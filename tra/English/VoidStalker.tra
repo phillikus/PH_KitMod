@@ -41,8 +41,8 @@ The Voidstalker teleports a short distance away and becomes invisible for 1 roun
 - 8th level: May use the Void Prision ability once per day, gaining an additional use every 6 levels thereafter.
 
 Void Prison:
-The Voidstalker tears open a dimensional rift around an enemy, enclosing it within a sphere of condensed void energy.
-For 1 turn, the target is enclosed in an invulnerable globe of shimmering force if they fail a saving throw vs. spells at a -2 penalty.
+The Voidstalker tears open a dimensional rift around a creature, enclosing it within a sphere of condensed void energy.
+For 1 turn, the target is enclosed in an invulnerable globe of shimmering force if they fail a saving throw vs. spells at a -2 penalty (allies don't get a save).
 Hence, the creature caught inside the globe is completely safe from all attacks, but at the same time completely unable to affect the outside world.
 
 - 10th level: Unbound Instinct Bonus increases to +2 THAC0 and AC.
@@ -98,8 +98,8 @@ The Voidstalker teleports a short distance away and becomes invisible for 1 roun
 @908 = ~Void Prison~
 @909 = ~Void Prison
 
-The Voidstalker tears open a dimensional rift around an enemy, enclosing it within a sphere of condensed void energy.
-For 1 turn, the target is enclosed in an invulnerable globe of shimmering force if they fail a saving throw vs. spells at a -2 penalty.
+The Voidstalker tears open a dimensional rift around a creature, enclosing it within a sphere of condensed void energy.
+For 1 turn, the target is enclosed in an invulnerable globe of shimmering force if they fail a saving throw vs. spells at a -2 penalty (allies don't get a save).
 Hence, the creature caught inside the globe is completely safe from all attacks, but at the same time completely unable to affect the outside world.~
 
 @910 = ~Void Execution~
