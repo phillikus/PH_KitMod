@@ -109,11 +109,19 @@ COPY ~PH_KITMOD\Runemaster\spl\rmrune.spl~ ~override~
   SAY NAME1 @1204
   SAY UNIDENTIFIED_DESC @1205
 
-  
 COPY ~PH_KITMOD\Runemaster\spl\rmsght1.spl~ ~override~
 COPY ~PH_KITMOD\Runemaster\spl\rmsght2.spl~ ~override~
+
+COPY ~PH_KITMOD\Runemaster\spl\Resonance\rmruin1.eff~ ~override~
+COPY ~PH_KITMOD\Runemaster\spl\Resonance\rmruin1.spl~ ~override~
+COPY ~PH_KITMOD\Runemaster\spl\Resonance\rmmghtr.spl~ ~override~
+COPY ~PH_KITMOD\Runemaster\spl\Resonance\rmnullr.spl~ ~override~
+COPY ~PH_KITMOD\Runemaster\spl\Resonance\rmruinr.spl~ ~override~
+COPY ~PH_KITMOD\Runemaster\spl\Resonance\rmsghtr.spl~ ~override~
+COPY ~PH_KITMOD\Runemaster\spl\Resonance\rmwardr.spl~ ~override~
   
 COPY ~PH_KITMOD\Runemaster\spl\rmward.spl~ ~override~
+  LPF ADD_SPELL_EFFECT INT_VAR opcode = 326 target = 2 timing = 1 duration = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Runemaster~) parameter2 = 109 STR_VAR resource = rmwardr END
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmwardc_icon END
   SET runemaster_projectile = rmward
   LAUNCH_PATCH_MACRO ~runemaster_set_projectile~
@@ -121,6 +129,7 @@ COPY ~PH_KITMOD\Runemaster\spl\rmward.spl~ ~override~
   SAY UNIDENTIFIED_DESC @1207
 
 COPY ~PH_KITMOD\Runemaster\spl\rmmght.spl~ ~override~
+  LPF ADD_SPELL_EFFECT INT_VAR opcode = 326 target = 2 timing = 0 duration = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Runemaster~) parameter2 = 109 STR_VAR resource = rmmghtr END
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmmghtc_icon END
   SET runemaster_projectile = rmmght
   LAUNCH_PATCH_MACRO ~runemaster_set_projectile~
@@ -128,6 +137,7 @@ COPY ~PH_KITMOD\Runemaster\spl\rmmght.spl~ ~override~
   SAY UNIDENTIFIED_DESC @1209
 
 COPY ~PH_KITMOD\Runemaster\spl\rmnull.spl~ ~override~
+  LPF ADD_SPELL_EFFECT INT_VAR opcode = 326 target = 2 timing = 0 duration = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Runemaster~) parameter2 = 109 STR_VAR resource = rmnullr END
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmnullc_icon END
   SET runemaster_projectile = rmnull
   LAUNCH_PATCH_MACRO ~runemaster_set_projectile~
@@ -135,6 +145,7 @@ COPY ~PH_KITMOD\Runemaster\spl\rmnull.spl~ ~override~
   SAY UNIDENTIFIED_DESC @1211
 
 COPY ~PH_KITMOD\Runemaster\spl\rmruin.spl~ ~override~
+  LPF ADD_SPELL_EFFECT INT_VAR opcode = 326 target = 2 timing = 0 duration = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Runemaster~) parameter2 = 109 STR_VAR resource = rmruinr END
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmruinc_icon END
   SET runemaster_projectile = rmruin
   LAUNCH_PATCH_MACRO ~runemaster_set_projectile~
@@ -142,6 +153,7 @@ COPY ~PH_KITMOD\Runemaster\spl\rmruin.spl~ ~override~
   SAY UNIDENTIFIED_DESC @1213
 
 COPY ~PH_KITMOD\Runemaster\spl\rmsght.spl~ ~override~
+  LPF ADD_SPELL_EFFECT INT_VAR opcode = 326 target = 2 timing = 0 duration = 2 parameter1 = IDS_OF_SYMBOL (~KIT~ ~PH_Runemaster~) parameter2 = 109 STR_VAR resource = rmsghtr END
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rmsghtc_icon END
   SET runemaster_projectile = rmsght
   LAUNCH_PATCH_MACRO ~runemaster_set_projectile~

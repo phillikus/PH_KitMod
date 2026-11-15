@@ -51,7 +51,7 @@ Allies within the rune gain the following benefits:
 - 18th level: +4 bonus to saving throws vs spell, +30% magic resistance, +20% magic damage resistance.
 
 Each rune stays on the battlefield for 5 rounds.
-Only one rune may be active at a time. Creating a new rune replaces the previous one.
+Only one rune may be active at a time (creating a new rune replaces the previous one).
 
 - 10th level: The Runemaster's growing mastery allows <PRO_HIMHER> to inscribe runes of greater potency. Their symbols now radiate power far beyond their carved boundaries, expanding the reach of all runes from 10 to 15 feet.
 - 15th level: Gain the Runic Resonance passive ability. 
@@ -63,19 +63,19 @@ While standing within the area of <PRO_HISHER> runes, <PRO_HESHE> gains addition
 These effects only benefit the Runemaster himself and do not affect nearby allies:
 
 Rune of Warding:
-- +20% bonus to elemental resistances, immunity to poison and disease.
+- +20% bonus to elemental resistances, +2 bonus to Constitution
 
 Rune of Might:
-- +1/2 bonus to APR, immunity to fear, +2 bonus to saving throws vs death.
+- +1/2 bonus to APR, immunity to fear, +2 bonus to Strength
 
 Rune of Ruin:
-- +1d6 magical damage with each melee attack, gain a 10% chance to briefly stun struck targets.
+- +20% movement speed, gain a 10% chance to briefly stun targets with melee attacks.
 
 Rune of Revelation: 
-- instantly cast True Sight.
+- instantly cast True Sight (only once per rune).
 
 Rune of Nullification:
-- instantly cast Globe of Invulnerability, Spell Shield and Spell Immunity: Abjuration. 
+- instantly cast Globe of Invulnerability and Spell Immunity: Abjuration (only once per rune).
 
 Disadvantages:
 - race restricted to dwarves.
@@ -83,20 +83,81 @@ Disadvantages:
 - Cannot use longbows, shortbows, or crossbows.~ 
 
 @1204 = ~Rune Carving~
-@1205 = ~Rune Carving
-Select one of your available runes and inscribe it at a chosen location. The rune creates a stationary field whose effects depend on the rune and your level. All inscriptions share a limited pool of daily uses.~ 
+@1205 = ~Rune Carving:
+The Runemaster inscribes a magical rune at a selected location, creating a stationary magical field with a 10ft radius that affects creatures within its area.
+As the Runemaster gains experience, <PRO_HISHER> runes become more powerful and he learns to craft additional runes:
+
+Rune of Warding:
+The Runemaster inscribes a protective symbol that surrounds nearby allies with an aura of magical protection, keeping them safe from harm.
+Allies within the rune gain the following benefits:
+- 1st level: +3 bonus to AC, +1 bonus to all saving throws.
+- 9th level: +4 bonus to AC, +2 bonus to all saving throws, +5% physical damage resistance.
+- 18th level: +5 bonus to AC, +2 bonus to all saving throws, +10% physical damage resistance.
+
+Rune of Might:
+The Runemaster inscribes a symbol of strength and martial prowess, empowering nearby allies and improving their ability to strike their enemies.
+Allies within the rune gain the following benefits:
+- 1st level: +2 bonus to THAC0 and physical damage.
+- 9th level: +3 bonus to THAC0 and physical damage, +5% critical hit chance.
+- 18th level: +4 bonus to THAC0 and physical damage, +10% critical hit chance.
+
+Rune of Ruin (available from level 6):
+The Runemaster inscribes a destructive symbol that releases repeated pulses of magical energy, damaging and weakening enemies caught within its influence.
+Hostile creatures within the rune suffer the following effects:
+- 6th level: 2d6 magical damage per round.
+- 9th level: 3d6 magical damage per round, -20% movement speed.
+- 18th level: 4d6 magical damage per round, -30% movement speed.
+
+Rune of Revelation (available from level 9):
+The Runemaster inscribes an ancient symbol of perception, allowing nearby allies to detect hidden threats and protecting them against supernatural ambushes.
+This rune affects both allies and hostile creatures:
+- 9th level: Hostile creatures are revealed, allies gain increased vision range.
+- 18th level: Allies are additionally immune to backstab.
+
+Rune of Nullification (available from level 12):
+The Runemaster inscribes a powerful anti-magic symbol that protects nearby allies from hostile magic.
+Allies within the rune gain the following benefits:
+- 12th level: +3 bonus to saving throws vs spell, +15% magic resistance.
+- 18th level: +4 bonus to saving throws vs spell, +30% magic resistance, +20% magic damage resistance.
+
+Each rune stays on the battlefield for 5 rounds.
+Only one rune may be active at a time (creating a new rune replaces the previous one).~
+
 @1206 = ~Rune of Warding~
-@1207 = ~Rune of Warding
-Inscribes a protective field at the chosen location. Nearby allies gain physical damage resistance for 3 rounds; the strength of the protection increases with your level.~ 
+@1207 = ~Rune of Warding:
+The Runemaster inscribes a protective symbol that surrounds nearby allies with an aura of magical protection, keeping them safe from harm.
+Allies within the rune gain the following benefits:
+- 1st level: +3 bonus to AC, +1 bonus to all saving throws.
+- 9th level: +4 bonus to AC, +2 bonus to all saving throws, +5% physical damage resistance.
+- 18th level: +5 bonus to AC, +2 bonus to all saving throws, +10% physical damage resistance.~ 
+
 @1208 = ~Rune of Might~
-@1209 = ~Rune of Might
-Inscribes a battlefield rune at the chosen location. Nearby allies gain improved accuracy and melee damage for 3 rounds; the bonuses improve with your level.~ 
+@1209 = ~Rune of Might:
+The Runemaster inscribes a symbol of strength and martial prowess, empowering nearby allies and improving their ability to strike their enemies.
+Allies within the rune gain the following benefits:
+- 1st level: +2 bonus to THAC0 and physical damage.
+- 9th level: +3 bonus to THAC0 and physical damage, +5% critical hit chance.
+- 18th level: +4 bonus to THAC0 and physical damage, +10% critical hit chance.~
+
 @1210 = ~Rune of Nullification~
 @1211 = ~Rune of Nullification
-Inscribes an anti-magic rune at the chosen location. When activated, it dispels enemy combat protections in its area. Enemies in the field must save vs. Spell or suffer spellcasting failure for 3 rounds.~ 
+Rune of Nullification:
+The Runemaster inscribes a powerful anti-magic symbol that protects nearby allies from hostile magic.
+Allies within the rune gain the following benefits:
+- 12th level: +3 bonus to saving throws vs spell, +15% magic resistance.
+- 18th level: +4 bonus to saving throws vs spell, +30% magic resistance, +20% magic damage resistance.~
+
 @1212 = ~Rune of Ruin~
-@1213 = ~Rune of Ruin
-Inscribes a destructive rune at the chosen location. It pulses once per round for 3 rounds, damaging enemies in a medium area with magical energy and weakening their defenses at higher levels.~ 
-@1214 = ~Rune of Sight~
-@1215 = ~Rune of Sight
-Inscribes a rune at the chosen location that reveals invisible enemies and protects allies from backstabs for 5 rounds. Its detection improves as you gain levels.~ 
+@1213 = ~Rune of Ruin:
+The Runemaster inscribes a destructive symbol that releases repeated pulses of magical energy, damaging and weakening enemies caught within its influence.
+Hostile creatures within the rune suffer the following effects:
+- 6th level: 2d6 magical damage per round.
+- 9th level: 3d6 magical damage per round, -20% movement speed.
+- 18th level: 4d6 magical damage per round, -30% movement speed.~
+
+@1214 = ~Rune of Revelation~
+@1215 = ~Rune of Revelation:
+The Runemaster inscribes an ancient symbol of perception, allowing nearby allies to detect hidden threats and protecting them against supernatural ambushes.
+This rune affects both allies and hostile creatures:
+- 9th level: Hostile creatures are revealed, allies gain increased vision range.
+- 18th level: Allies are additionally immune to backstab.~
