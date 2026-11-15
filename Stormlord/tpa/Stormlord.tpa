@@ -80,7 +80,12 @@ COPY_EXISTING ~LUPA0.2da~ ~override/LUPHS.2DA~
 LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL923~ END
 LPF patch_add_hla STR_VAR 2da_row = ~PHS1~ ability = ~GA_slwrath~ num_allowed = 1 END	
 
-LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Thunderous Smite~) STR_VAR bam_file = SPWI308C RET slsmts = icon END
+COPY ~PH_KITMOD\Stormlord\bam\slsmtb.bam~ ~override~
+COPY ~PH_KITMOD\Stormlord\bam\slsmtc.bam~ ~override~
+COPY ~PH_KITMOD\Stormlord\bam\slclapb.bam~ ~override~
+COPY ~PH_KITMOD\Stormlord\bam\slwratb.bam~ ~override~
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Thunderous Smite~) STR_VAR bam_file = slsmtc RET slsmts = icon END
 
 COPY ~PH_KITMOD\Shared\spl\phnotun.spl~ ~override~
 
