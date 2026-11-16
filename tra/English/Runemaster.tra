@@ -11,7 +11,7 @@ Through five distinct runic inscriptions, the Runemaster can strengthen allies, 
 The Runemaster is a versatile frontline Fighter whose strength lies in preparation, positioning and adaptability rather than exceptional raw damage.
 
 Advantages:
-- 1st level: May use the Rune Carving ability twice per day, gaining an additional use every 4 levels thereafter.
+- 1st level: May use the Rune Carving ability twice per day, gaining an additional use at level 4 and every 4 levels thereafter.
 
 Rune Carving:
 The Runemaster inscribes a magical rune at a selected location, creating a stationary magical field with a 10ft radius that affects creatures within its area.
@@ -51,7 +51,6 @@ Allies within the rune gain the following benefits:
 - 18th level: +4 bonus to saving throws vs spell, +30% magic resistance, +20% magic damage resistance.
 
 Each rune stays on the battlefield for 5 rounds.
-Only one rune may be active at a time (creating a new rune replaces the previous one).
 
 - 10th level: The Runemaster's growing mastery allows <PRO_HIMHER> to inscribe runes of greater potency. Their symbols now radiate power far beyond their carved boundaries, expanding the reach of all runes from 10 to 15 feet.
 - 15th level: Gain the Runic Resonance passive ability. 
@@ -120,8 +119,7 @@ Allies within the rune gain the following benefits:
 - 12th level: +3 bonus to saving throws vs spell, +15% magic resistance.
 - 18th level: +4 bonus to saving throws vs spell, +30% magic resistance, +20% magic damage resistance.
 
-Each rune stays on the battlefield for 5 rounds.
-Only one rune may be active at a time (creating a new rune replaces the previous one).~
+Each rune stays on the battlefield for 5 rounds.~
 
 @1206 = ~Rune of Warding~
 @1207 = ~Rune of Warding:

@@ -30,9 +30,9 @@ Instead of a traditional backstab multiplier, attacks made while invisible deal 
 
 This damage bypasses weapon protection spells such as Protection From Magical Weapons (requires EEex).
 
-- 5th level: May use the Shadow Step ability once per day, gaining an additional use every 4 levels thereafter.
+- 5th level: May use the Void Step ability once per day, gaining an additional use every 4 levels thereafter.
 
-Shadow Step:
+Void Step:
 The Voidstalker momentarily abandons the material world, disappearing into the void before emerging at a new location, unseen and ready to strike.
 The Voidstalker teleports a short distance away and becomes invisible for 1 round. Additionally, <PRO_HESHE> is under the effect of Non-Detection.
 
@@ -87,8 +87,8 @@ Instead of a traditional backstab multiplier, attacks made while invisible deal 
 
 This damage bypasses weapon protection spells such as Protection From Magical Weapons (requires EEex).~
 
-@906 = ~Shadow Step~
-@907 = ~Shadow Step
+@906 = ~Void Step~
+@907 = ~Void Step
 
 The Voidstalker momentarily abandons the material world, disappearing into the void before emerging at a new location, unseen and ready to strike.
 The Voidstalker teleports a short distance away and becomes invisible for 1 round. Additionally, <PRO_HESHE> is under the effect of Non-Detection.~

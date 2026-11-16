@@ -97,21 +97,11 @@ LAF runemaster_new_portrait_icon
   RET rmsghtc_icon = icon
 END
 
-COPY ~PH_KITMOD\Runemaster\spl\rmclear.2da~ ~override\rmclear.2da~
-
 ACTION_FOR_EACH ~fx~ IN rmmght rmnull rmruin rmsght rmward rmmghts rmnulls rmruins rmsghts rmwards BEGIN
   COPY ~PH_KITMOD\Runemaster\fx\%fx%.bam~ ~override~
   COPY ~PH_KITMOD\Runemaster\fx\%fx%.vvc~ ~override~
   COPY ~PH_KITMOD\Runemaster\fx\%fx%.pro~ ~override~
   ADD_PROJECTILE ~PH_KITMOD\Runemaster\fx\%fx%.pro~
-
-  OUTER_SET rmclear_id = EVAL ~%fx%~ - 1
-
-  COPY_EXISTING ~rmclear.2da~ ~override~
-    COUNT_2DA_ROWS 2 row_count
-    INSERT_2DA_ROW row_count 2 ~%fx% %rmclear_id%~
-    PRETTY_PRINT_2DA
-  BUT_ONLY
 END
 
 DEFINE_PATCH_MACRO runemaster_set_projectile BEGIN

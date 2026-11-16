@@ -85,6 +85,12 @@ COPY ~PH_KITMOD\Stormlord\bam\slsmtc.bam~ ~override~
 COPY ~PH_KITMOD\Stormlord\bam\slclapb.bam~ ~override~
 COPY ~PH_KITMOD\Stormlord\bam\slwratb.bam~ ~override~
 
+COPY ~PH_KITMOD\Stormlord\fx\slclapc.bam~ ~override~
+COPY ~PH_KITMOD\Stormlord\fx\slclapr.bam~ ~override~
+COPY ~PH_KITMOD\Stormlord\fx\slclapc.vvc~ ~override~
+COPY ~PH_KITMOD\Stormlord\wav\sltclap.wav~ ~override~
+COPY ~PH_KITMOD\Stormlord\wav\slsmt.wav~ ~override~
+
 LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Thunderous Smite~) STR_VAR bam_file = slsmtc RET slsmts = icon END
 
 COPY ~PH_KITMOD\Shared\spl\phnotun.spl~ ~override~
@@ -116,10 +122,19 @@ WRITE_SHORT 0x98 ~slwrath~
 COPY ~PH_KITMOD\Stormlord\spl\sltclap.pro~ ~override~
 ADD_PROJECTILE ~PH_KITMOD\Stormlord\spl\sltclap.pro~
 
+DEFINE_PATCH_MACRO stormlord_set_projectile BEGIN
+  READ_LONG  0x64 stormlord_hdr_off
+  READ_SHORT 0x68 stormlord_hdr_num
+  FOR (stormlord_i = 0; stormlord_i < stormlord_hdr_num; ++stormlord_i) BEGIN
+    WRITE_SHORT (stormlord_hdr_off + stormlord_i * 0x28 + 0x26) stormlord_projectile
+  END
+END
+
 COPY ~PH_KITMOD\Stormlord\spl\sltclap.spl~ ~override~
+  SET stormlord_projectile = sltclap
+  LAUNCH_PATCH_MACRO ~stormlord_set_projectile~
 SAY NAME1 @608
 SAY UNIDENTIFIED_DESC @609
-WRITE_SHORT 0x98 ~sltclap~
 
 
 // change new storm spells to cleric spells so they can be added to the Storm Lord spellbook

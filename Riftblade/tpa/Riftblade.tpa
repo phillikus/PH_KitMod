@@ -24,7 +24,7 @@ END
   COPY_EXISTING ~LUFI0.2DA~ ~override/LURBF.2DA~
   LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL900~ END
   LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL901~ END
-  LPF patch_add_hla STR_VAR 2da_row = ~RBF1~ ability = ~GA_rbstrkm~ num_allowed = 1 END
+  LPF patch_add_hla STR_VAR 2da_row = ~RBF1~ ability = ~GA_rbstrkm~ num_allowed = 3 END
   LPF patch_add_hla STR_VAR 2da_row = ~RBF1~ ability = ~GA_rbstrki~ num_allowed = 1 prerequisite = ~GA_rbstrkm~ END
 
 DEFINE_ACTION_FUNCTION rb_new_portrait_icon
@@ -50,7 +50,6 @@ COPY ~PH_KITMOD\Riftblade\bam\rbstrkb.BAM~ ~override~
 COPY ~PH_KITMOD\Riftblade\bam\rbstrkc.BAM~ ~override~
 COPY ~PH_KITMOD\Riftblade\bam\rbportb.bam~ ~override~
 COPY ~PH_KITMOD\Riftblade\bam\rbrescb.bam~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\rbriftb.bam~ ~override~
 COPY ~PH_KITMOD\Riftblade\bam\RBSTEPB.BAM~ ~override~
 
 COPY ~PH_KITMOD\Riftblade\bam\rbfielb.BAM~ ~override~
@@ -108,11 +107,6 @@ SAY NAME1 @1114
 SAY UNIDENTIFIED_DESC @1115
 COPY ~PH_KITMOD\Riftblade\spl\rbdim.spl~ ~override~
 
-
-COPY ~PH_KITMOD\Riftblade\spl\rbrift.spl~ ~override~
-SAY NAME1 @1104
-SAY UNIDENTIFIED_DESC @1105
-COPY ~PH_KITMOD\Riftblade\spl\rbrift.2da~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbstep.spl~ ~override~
 SAY NAME1 @1106
 SAY UNIDENTIFIED_DESC @1107
