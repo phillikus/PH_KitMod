@@ -36,8 +36,11 @@ DEFINE_ACTION_FUNCTION cd_new_portrait_icon
 
 END
 
-LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Crushing Victory~) STR_VAR bam_file = SPWI918C RET sbcrushs = icon END
+COPY ~PH_KITMOD\Skullbreaker\bam\sbcrshb.bam~ ~override~
+COPY ~PH_KITMOD\Skullbreaker\bam\sbcrshc.bam~ ~override~
+COPY ~PH_KITMOD\Skullbreaker\bam\sbwave.bam~ ~override~
 
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Crushing Victory~) STR_VAR bam_file = sbcrshc RET sbcrushs = icon END
 
 COPY ~PH_KITMOD\Skullbreaker\spl\sbstat.spl~ ~override~
 COPY ~PH_KITMOD\Skullbreaker\spl\sbclub.eff~ ~override~

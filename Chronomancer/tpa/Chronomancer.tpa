@@ -30,6 +30,7 @@ END
 
 COPY ~PH_KITMOD\Chronomancer\bam\chqck.bam~ ~override~
 COPY ~PH_KITMOD\Chronomancer\bam\chtemp.bam~ ~override~
+COPY ~PH_KITMOD\Chronomancer\bam\chstep.bam~ ~override~
 
 COPY ~PH_KITMOD\Chronomancer\lua\M_Chrono.lua~ ~override~
 COPY ~PH_KITMOD\Chronomancer\spl\chstat.spl~ ~override~

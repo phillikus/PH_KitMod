@@ -23,10 +23,12 @@ The same target may only be affected once per round. This ability lasts for 2 ro
 
 Thunderclap:
 The Stormlord unleashes a deafening burst of thunder, disorienting nearby enemies and hindering their movement. 
-All enemies within 15 feet are deafened for 3 rounds. If they fail a saving throw vs. death they are also slowed for 2 rounds and knocked unconscious for 1 round.
+All enemies within 15 feet are deafened and move 50% slower for 3 rounds. If they fail a saving throw vs. death they are also knocked unconscious for 1 round.
 
 - 10th level: Thunderous Smite damage increased to 4d8, target must save vs. death or be stunned for half a round.
+- 12th level: Thunderclap save penalty increases to -2.
 - 14th level: Targets hit by Thunderous Smite must save vs. death at a -2 penalty or be stunned for half a round.
+- 16th level: Thunderclap save penalty increases to -4.
 - 18th level: Thunderous Smite damage increased to 5d8.
 
 - gain the Wrath of the Storm High Level Ability, replacing the Summon (Fallen) Deva ability.
@@ -59,4 +61,4 @@ The Stormlord invokes the Wrath of the Storm, unleashing divine lightning upon a
 @608 = ~Thunderclap~
 @609 = ~Thunderclap:
 The Stormlord unleashes a deafening burst of thunder, disorienting nearby enemies and hindering their movement. 
-All enemies within 15 feet are deafened for 3 rounds. If they fail a saving throw vs. death they are also slowed for 2 rounds and knocked unconscious for 1 round.~
+All enemies within 15 feet are deafened and move 50% slower for 3 rounds. If they fail a saving throw vs. death they are also knocked unconscious for 1 round.~
