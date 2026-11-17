@@ -25,6 +25,29 @@ LANGUAGE ~English~
          ~PH_KITMOD/tra/English/Riftblade.tra~
          ~PH_KITMOD/tra/English/Runemaster.tra~
 
+// Riftblade
+BEGIN ~Riftblade~
+
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
+  @1000
+
+ACTION_IF (MOD_IS_INSTALLED ~EEEX/EEEX.TP2~ ~0~) THEN BEGIN
+
+  PRINT ~Installing Riftblade kit...~
+
+  INCLUDE ~PH_KITMOD/Riftblade/tpa/Riftblade.tpa~
+END
+
+// Runemaster
+BEGIN ~Runemaster~
+
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
+  @1000
+
+PRINT ~Installing Runemaster kit...~
+
+INCLUDE ~PH_KITMOD/Runemaster/tpa/Runemaster.tpa~
+
 // Doomblade
 BEGIN ~Doomblade~
 
@@ -63,29 +86,6 @@ PRINT ~Installing Shocktrooper kit...~
 // EEex Lua bootstrap
 //////////////////////////////////////////////////////////
 INCLUDE ~PH_KITMOD/Shocktrooper/tpa/Shocktrooper.tpa~
-
-// Riftblade
-BEGIN ~Riftblade~
-
-REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
-  @1000
-
-ACTION_IF (MOD_IS_INSTALLED ~EEEX/EEEX.TP2~ ~0~) THEN BEGIN
-
-  PRINT ~Installing Riftblade kit...~
-
-  INCLUDE ~PH_KITMOD/Riftblade/tpa/Riftblade.tpa~
-END
-
-// Runemaster
-BEGIN ~Runemaster~
-
-REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
-  @1000
-
-PRINT ~Installing Runemaster kit...~
-
-INCLUDE ~PH_KITMOD/Runemaster/tpa/Runemaster.tpa~
 
 // Stormlord
 BEGIN ~Stormlord~
