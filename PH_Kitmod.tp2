@@ -64,34 +64,28 @@ PRINT ~Installing Shocktrooper kit...~
 //////////////////////////////////////////////////////////
 INCLUDE ~PH_KITMOD/Shocktrooper/tpa/Shocktrooper.tpa~
 
-// Interdictor
-//BEGIN ~Interdictor~
-
-//REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
-//  @1000
-
-//PRINT ~Installing Interdictor kit...~
-
-//////////////////////////////////////////////////////////
-// EEex Lua bootstrap
-//////////////////////////////////////////////////////////
-//INCLUDE ~PH_KITMOD/Interdictor/tpa/Interdictor.tpa~
-
-// Chronomancer
-BEGIN ~Chronomancer~
+// Riftblade
+BEGIN ~Riftblade~
 
 REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
   @1000
 
 ACTION_IF (MOD_IS_INSTALLED ~EEEX/EEEX.TP2~ ~0~) THEN BEGIN
 
-  PRINT ~Installing Chronomancer kit...~
+  PRINT ~Installing Riftblade kit...~
 
-  //////////////////////////////////////////////////////////
-  // EEex Lua bootstrap
-  //////////////////////////////////////////////////////////
-  INCLUDE ~PH_KITMOD/Chronomancer/tpa/Chronomancer.tpa~
+  INCLUDE ~PH_KITMOD/Riftblade/tpa/Riftblade.tpa~
 END
+
+// Runemaster
+BEGIN ~Runemaster~
+
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
+  @1000
+
+PRINT ~Installing Runemaster kit...~
+
+INCLUDE ~PH_KITMOD/Runemaster/tpa/Runemaster.tpa~
 
 // Stormlord
 BEGIN ~Stormlord~
@@ -129,25 +123,31 @@ PRINT ~Installing Voidstalker kit...~
 
 INCLUDE ~PH_KITMOD/VoidStalker/tpa/VoidStalker.tpa~
 
-// Riftblade
-BEGIN ~Riftblade~
+// Interdictor
+//BEGIN ~Interdictor~
+
+//REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
+//  @1000
+
+//PRINT ~Installing Interdictor kit...~
+
+//////////////////////////////////////////////////////////
+// EEex Lua bootstrap
+//////////////////////////////////////////////////////////
+//INCLUDE ~PH_KITMOD/Interdictor/tpa/Interdictor.tpa~
+
+// Chronomancer
+BEGIN ~Chronomancer~
 
 REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
   @1000
 
 ACTION_IF (MOD_IS_INSTALLED ~EEEX/EEEX.TP2~ ~0~) THEN BEGIN
 
-  PRINT ~Installing Riftblade kit...~
+  PRINT ~Installing Chronomancer kit...~
 
-  INCLUDE ~PH_KITMOD/Riftblade/tpa/Riftblade.tpa~
+  //////////////////////////////////////////////////////////
+  // EEex Lua bootstrap
+  //////////////////////////////////////////////////////////
+  INCLUDE ~PH_KITMOD/Chronomancer/tpa/Chronomancer.tpa~
 END
-
-// Runemaster
-BEGIN ~Runemaster~
-
-REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
-  @1000
-
-PRINT ~Installing Runemaster kit...~
-
-INCLUDE ~PH_KITMOD/Runemaster/tpa/Runemaster.tpa~

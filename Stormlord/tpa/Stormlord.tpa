@@ -150,7 +150,9 @@ WRITE_SHORT 0X1C 2
 // remove Turn Undead Button (EEEx)
 OUTER_SET stormlord_ids = IDS_OF_SYMBOL (~kit~ ~PH_Stormlord~)
 
-COPY ~PH_KITMOD\Stormlord\lua\m_phtur1.lua~ ~override~ // Lua file read by EEex, provided by Bubbs and further edited by myself
+INCLUDE ~PH_KITMOD\Shared\tpa\replace_multiline.tpa~
+
+COPY ~PH_KITMOD\Stormlord\lua\m_phsltu.lua~ ~override~ // Lua file read by EEex, provided by Bubbs and further edited by myself
 ///////////////////////////////////////////////////////////////////////////
 // Update lua file                                                       //
 ///////////////////////////////////////////////////////////////////////////

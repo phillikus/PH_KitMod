@@ -112,6 +112,8 @@ DEFINE_PATCH_MACRO runemaster_set_projectile BEGIN
   END
 END
 
+COPY ~PH_KITMOD\Runemaster\wav\rmrune.wav~ ~override~
+COPY ~PH_KITMOD\Runemaster\wav\rmruin.wav~ ~override~
 COPY ~PH_KITMOD\Runemaster\spl\rmrune1.2da~ ~override~
 COPY ~PH_KITMOD\Runemaster\spl\rmrune2.2da~ ~override~
 COPY ~PH_KITMOD\Runemaster\spl\rmrune3.2da~ ~override~

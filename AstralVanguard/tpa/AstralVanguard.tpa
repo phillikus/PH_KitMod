@@ -211,3 +211,21 @@ COPY ~PH_KITMOD\AstralVanguard\spl\avintv.spl~ ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = avintvs END
   SAY NAME1 @810
   SAY UNIDENTIFIED_DESC @811
+
+// remove Turn Undead Button (EEEx)
+OUTER_SET astralvanguard_ids = IDS_OF_SYMBOL (~kit~ ~PH_Stormlord~)
+
+INCLUDE ~PH_KITMOD\Shared\tpa\replace_multiline.tpa~
+
+COPY ~PH_KITMOD\AstralVanguard\lua\m_phavtu.lua~ ~override~ // Lua file read by EEex, provided by Bubbs and further edited by myself
+///////////////////////////////////////////////////////////////////////////
+// Update lua file                                                       //
+///////////////////////////////////////////////////////////////////////////
+  LPF REPLACE_MULTILINE
+    INT_VAR
+    strict = 1
+    verbose = 0
+    STR_VAR
+    pattern = ~~~~~0x4000~~~~~
+    string = EVAL ~~~~~%astralvanguard_ids%~~~~~ //"
+  END
