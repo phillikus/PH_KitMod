@@ -16,7 +16,7 @@ COPY_EXISTING ~CLABPA01.2DA~ ~OVERRIDE/PHSTORM.2DA~
   LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = GA_slwi308 END // Lightning Bolt
   LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = GA_SPPR302 END // Call Lighnting
   LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = GA_SPPR327 END // Storm Shell (IWD)
-  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = GA_SPPR420 END // Static Charge (IWD)
+  LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = GA_SPPR419 END // Static Charge (IWD)
   LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = GA_slwi615 END // Chain Lightning
   
   LPF set_clab_2da_entries INT_VAR f_MinLevel = 2 f_MaxLevel = 2 STR_VAR f_Entry = GA_slsmt END // Thunderous Smite

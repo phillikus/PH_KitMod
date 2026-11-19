@@ -29,8 +29,8 @@ LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL911~ END
 LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL912~ END
 LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL916~ END
 LPF patch_add_hla STR_VAR 2da_row = ~PVS1~ ability = ~GA_vsprsnm~ num_allowed = 1 END
-LPF patch_add_hla STR_VAR 2da_row = ~PVS1~ ability = ~GA_vsexec~ num_allowed = 1 END
-LPF patch_add_hla STR_VAR 2da_row = ~PVS1~ ability = ~GA_vsform~ num_allowed = 1 END
+LPF patch_add_hla STR_VAR 2da_row = ~PVS2~ ability = ~GA_vsexec~ num_allowed = 1 END
+LPF patch_add_hla STR_VAR 2da_row = ~PVS3~ ability = ~GA_vsform~ num_allowed = 1 END
 
 // Area projectile: enemies only, 15 ft radius.  ADD_PROJECTILE sets a variable named after the file: %vsprsnm%
 COPY ~PH_KITMOD\VoidStalker\spl\vsprsnm.pro~ ~override~

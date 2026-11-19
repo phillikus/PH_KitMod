@@ -16,14 +16,14 @@ Shocking Grasp, Lightning Bolt, Call Lightning, Storm Shell (IWD), Static Charge
 
 Thunderous Smite:
 Stormlords are able to channel the power of lightning into their weapons. Successful melee attacks call down a bolt of lightning onto the target, dealing 2d8 electrical damage (save vs. death for half).
-The same target may only be affected once per round. This ability lasts for 2 rounds + 1 round for every 2 additional levels of the caster up to a maximum of 1 turn at level 18.
+The same target may only be affected once per round. This ability lasts for 2 rounds + 1 round for every 2 additional levels of the caster up to a maximum of 10 rounds at level 18.
 
 - 6th level: Thunderous Smite damage increased to 3d8, target must save vs. death or be slowed for 1 round.
 - 8th level: May use the Thunderclap ability once per day, gaining an additional use at level 12 and 16.
 
 Thunderclap:
 The Stormlord unleashes a deafening burst of thunder, disorienting nearby enemies and hindering their movement. 
-All enemies within 15 feet are deafened and move 50% slower for 3 rounds. If they fail a saving throw vs. death they are also knocked unconscious for 1 round.
+All enemies within 15 feet are deafened and move 50% slower for 3 rounds. If they fail a saving throw vs. breath they are also knocked unconscious for 1 round.
 
 - 10th level: Thunderous Smite damage increased to 4d8, target must save vs. death or be stunned for half a round.
 - 12th level: Thunderclap save penalty increases to -2.
@@ -52,7 +52,7 @@ Channel the power of lightning into your wepaon. Successful melee attacks call d
 - 14th level: 4d8 electrical damage, target must save vs. death at a -2 penalty or be stunned for half a round.
 - 18th level: 5d8 electrical damage, target must save vs. death at a -2 penalty or be stunned for half a round.
 
-The same target may only be affected once per round. This ability lasts for 2 rounds + 1 round for every 2 additional levels of the caster up to a maximum of 1 turn at level 18.~
+The same target may only be affected once per round. This ability lasts for 2 rounds + 1 round for every 2 additional levels of the caster up to a maximum of 10 rounds at level 18.~
 
 @606 = ~Wrath of the Storm~
 @607 = ~Wrath of the Storm:
@@ -61,4 +61,5 @@ The Stormlord invokes the Wrath of the Storm, unleashing divine lightning upon a
 @608 = ~Thunderclap~
 @609 = ~Thunderclap:
 The Stormlord unleashes a deafening burst of thunder, disorienting nearby enemies and hindering their movement. 
-All enemies within 15 feet are deafened and move 50% slower for 3 rounds. If they fail a saving throw vs. death they are also knocked unconscious for 1 round.~
+All enemies within 15 feet are deafened and move 50% slower for 3 rounds. If they fail a saving throw vs. breath they are also knocked unconscious for 1 round.
+The saving throw penalty increases to -2 at 12th level and -4 at 16th level.~
