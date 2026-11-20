@@ -100,6 +100,10 @@ COPY ~PH_KITMOD\Riftblade\spl\rbprsn.spl~ ~override~
 SAY NAME1 @1114
 SAY UNIDENTIFIED_DESC @1115
 
+COPY ~PH_KITMOD\Riftblade\spl\rbward1.spl~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbward2.spl~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbward3.spl~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbward4.spl~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbdim.spl~ ~override~
 
 COPY ~PH_KITMOD\Riftblade\spl\rbstep.spl~ ~override~

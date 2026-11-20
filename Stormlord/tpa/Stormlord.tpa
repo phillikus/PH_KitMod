@@ -148,6 +148,8 @@ COPY_EXISTING ~SPWI615.SPL~ ~OVERRIDE/slwi615.SPL~
 WRITE_SHORT 0X1C 2
 
 // remove Turn Undead Button (EEEx)
+ACTION_IF (MOD_IS_INSTALLED ~EEEX/EEEX.TP2~ ~0~) THEN BEGIN
+
 OUTER_SET stormlord_ids = IDS_OF_SYMBOL (~kit~ ~PH_Stormlord~)
 
 INCLUDE ~PH_KITMOD\Shared\tpa\replace_multiline.tpa~
@@ -164,3 +166,4 @@ COPY ~PH_KITMOD\Stormlord\lua\m_phsltu.lua~ ~override~ // Lua file read by EEex,
     pattern = ~~~~~0x4000~~~~~
     string = EVAL ~~~~~%stormlord_ids%~~~~~ //"
   END
+END

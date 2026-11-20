@@ -213,6 +213,8 @@ COPY ~PH_KITMOD\AstralVanguard\spl\avintv.spl~ ~override~
   SAY UNIDENTIFIED_DESC @811
 
 // remove Turn Undead Button (EEEx)
+ACTION_IF (MOD_IS_INSTALLED ~EEEX/EEEX.TP2~ ~0~) THEN BEGIN
+
 OUTER_SET astralvanguard_ids = IDS_OF_SYMBOL (~kit~ ~PH_Stormlord~)
 
 INCLUDE ~PH_KITMOD\Shared\tpa\replace_multiline.tpa~
@@ -229,3 +231,4 @@ COPY ~PH_KITMOD\AstralVanguard\lua\m_phavtu.lua~ ~override~ // Lua file read by 
     pattern = ~~~~~0x4000~~~~~
     string = EVAL ~~~~~%astralvanguard_ids%~~~~~ //"
   END
+END
