@@ -42,20 +42,11 @@ DEFINE_ACTION_FUNCTION rb_new_portrait_icon
 
 END
 
-COPY ~PH_KITMOD\Riftblade\lua\M_Rift.lua~ ~override~
-
-COPY ~PH_KITMOD\Riftblade\fx\rbfield.bam~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\rbexchb.bam~ ~override~
 COPY ~PH_KITMOD\Riftblade\bam\rbstrkb.BAM~ ~override~
 COPY ~PH_KITMOD\Riftblade\bam\rbstrkc.BAM~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\rbportb.bam~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\rbrescb.bam~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\RBSTEPB.BAM~ ~override~
-
-COPY ~PH_KITMOD\Riftblade\bam\rbfielb.BAM~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\rbfielc.BAM~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbstepb.BAM~ ~override~
 COPY ~PH_KITMOD\Riftblade\bam\rbstrkc.bam~ ~override~
-LAF rb_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1114) STR_VAR bam_file = rbfielc RET rbfield_icon = icon END
+
 LAF rb_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1112) STR_VAR bam_file = rbstrkc RET rbstrk_icon = icon END
 COPY ~PH_KITMOD\Riftblade\bam\rbstrmb.bam~ ~override~
 COPY ~PH_KITMOD\Riftblade\bam\rbstrmc.bam~ ~override~
@@ -64,16 +55,6 @@ COPY ~PH_KITMOD\Riftblade\bam\rbstric.bam~ ~override~
 LAF rb_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1116) STR_VAR bam_file = rbstrmc RET rbstrm_icon = icon END
 LAF rb_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1118) STR_VAR bam_file = rbstric RET rbstri_icon = icon END
 
-COPY ~PH_KITMOD\Riftblade\spl\rbexch.spl~ ~override~
-SAY NAME1 @1110
-SAY UNIDENTIFIED_DESC @1111
-COPY ~PH_KITMOD\Riftblade\spl\rbexch1.spl~ ~override~
-COPY ~PH_KITMOD\Riftblade\spl\rbexch2.spl~ ~override~
-COPY ~PH_KITMOD\Riftblade\spl\rbresc.spl~ ~override~
-SAY NAME1 @1108
-SAY UNIDENTIFIED_DESC @1109
-COPY ~PH_KITMOD\Riftblade\spl\rbresc1.spl~ ~override~
-COPY ~PH_KITMOD\Riftblade\spl\rbresc2.spl~ ~override~
 
 COPY ~PH_KITMOD\Riftblade\spl\rbstrk.eff~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbstrk.spl~ ~override~
@@ -98,13 +79,27 @@ COPY ~PH_KITMOD\Riftblade\spl\rbstrki.spl~ ~override~
 SAY NAME1 @1118
 SAY UNIDENTIFIED_DESC @1119
 
-COPY ~PH_KITMOD\Riftblade\spl\rbfield.pro~ ~override~
-ADD_PROJECTILE ~PH_KITMOD\Riftblade\spl\rbfield.pro~
-COPY ~PH_KITMOD\Riftblade\spl\rbfield.spl~ ~override~
-  WRITE_SHORT 0x98 ~rbfield~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rbfield_icon END
+COPY ~PH_KITMOD\Riftblade\bam\rbprsnb.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbprsnc.bam~ ~override~
+LAF rb_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1114) STR_VAR bam_file = rbprsnc RET rbprsn_icon = icon END
+
+COPY ~PH_KITMOD\Riftblade\fx\rbprsn.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\fx\rbprsn.vvc~ ~override~
+
+COPY ~PH_KITMOD\Riftblade\fx\rbstepi.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\fx\rbstepi.vvc~ ~override~
+COPY ~PH_KITMOD\Riftblade\fx\rbstepo.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\fx\rbstepo.vvc~ ~override~
+
+COPY ~PH_KITMOD\Riftblade\spl\rbprsna.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@1114) STR_VAR END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rbprsn_icon END
+
+COPY ~PH_KITMOD\Riftblade\wav\rbprsn.wav~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbprsn.spl~ ~override~
 SAY NAME1 @1114
 SAY UNIDENTIFIED_DESC @1115
+
 COPY ~PH_KITMOD\Riftblade\spl\rbdim.spl~ ~override~
 
 COPY ~PH_KITMOD\Riftblade\spl\rbstep.spl~ ~override~

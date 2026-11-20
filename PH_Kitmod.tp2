@@ -31,12 +31,9 @@ BEGIN ~Riftblade~
 REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~
   @1000
 
-ACTION_IF (MOD_IS_INSTALLED ~EEEX/EEEX.TP2~ ~0~) THEN BEGIN
+PRINT ~Installing Riftblade kit...~
 
-  PRINT ~Installing Riftblade kit...~
-
-  INCLUDE ~PH_KITMOD/Riftblade/tpa/Riftblade.tpa~
-END
+INCLUDE ~PH_KITMOD/Riftblade/tpa/Riftblade.tpa~
 
 // Runemaster
 BEGIN ~Runemaster~

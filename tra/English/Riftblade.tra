@@ -5,38 +5,28 @@
 @1102 = ~Riftblade~
 @1103 = ~Riftblade:
 
-Riftblades are heavily armored warriors who bend space and dimensional energy to control the battlefield. With a twist of the blade, they cross impossible distances, pull creatures through the void, or exchange places in the blink of an eye.
-Rather than relying on exceptional weapon damage or defensive magic, Riftblades excel through tactical mobility, enemy disruption, and battlefield control.
+The Riftblade is a warrior who has learned to bend the boundaries of space and harness the forces that lie beyond the mortal plane. Rather than relying solely on physical prowess, the Riftblade manipulates dimensional energy to traverse the battlefield, empower their weapons and temporarily remove enemies from reality.
+The kit combines exceptional mobility with magical weapon disruption, selective battlefield control and specialized resistance against otherworldly creatures. Its strength lies in controlling the engagement: appearing where least expected, weakening dangerous opponents and protecting itself against the very forces it commands.
 
 Advantages:
-- 1st level: May use Rift Step once per day, gaining an additional use every 2 levels thereafter.
+- 1st level: May use Rift Step once per day, gaining an additional use at level 3 and every 3 levels thereafter.
 
 Rift Step:
-The Riftblade slips between moments, emerging at a chosen point up to 30 feet away.
+The Riftblade briefly tears open the fabric of space and steps through the resulting rift, instantly appearing at a selected location.
 
-- 3rd level: May use Rift Strike once per day, gaining one additional use every 6 levels thereafter.
+- 4th level: May use Rift Strike once per day, gaining one additional use every 4 levels thereafter.
 
 Rift Strike:
 The Riftblade draws dimensional energy along <PRO_HISHER> weapon, making each blow resonate through the planes. 
 For 3 rounds, melee attacks by the Riftblade deal an additional 1d6 magic damage and reduce the targets movement speed by 25%
 
-- 4th level: May use Rift Pull once per day, gaining an additional use every 3 levels thereafter.
-
-Rift Pull:
-The Riftblade tears open a rift beneath a creature and drags it through space to <PRO_HISHER> side. The target must be within 30 feet. Enemies may save vs. spell at a -2 penalty to resist being exchanged.
-
-- 7th level: May use Rift Exchange once per day, gaining an additional use every 4 levels thereafter.
-
-Rift Exchange:
-The Riftblade and a creature within 30 feet vanish into a flash of dimensional energy, reappearing in each other's places. Enemies may save vs. spell at a -2 penalty to resist being exchanged.
-
 - 8th level: Rift Strike bonus damage increased to 2d4.
-- 10th level: The saving throw penalties of Rift Pull and Rift Exchange increase to -4.
-- 12th level: May use the Distortion Field ability once per day, gaining an additional use at level 24.
+- 10th level: May use the Dimensional Prison ability once per day, gaining an additional use every 5 levels therafter.
 
-Distortion Field:
-The Riftblade tears open a dimensional disturbance at a selected location, distorting the flow of space within its area.
-All enemies within the area of effect suffer a 50% movement-speed reduction.
+Dimensional Prison:
+The Riftblade folds space around an enemy, enclosing them within a sphere of dimensional energy.
+For 1 turn, the target is enclosed in an invulnerable globe of shimmering force if they fail a saving throw vs. spells at a -2 penalty (allies don't get a save).
+Hence, the creature caught inside the globe is completely safe from all attacks, but at the same time completely unable to affect the outside world.
 
 - 13th level: Rift Strike bonus damage increased to 2d6.
 
@@ -63,17 +53,7 @@ Disadvantages:
 
 @1106 = ~Rift Step~
 @1107 = ~Rift Step: 
-You slip between moments and emerge at a chosen point up to 60 feet away.~
-
-@1108 = ~Rift Pull~
-@1109 = ~Rift Pull:
-The Riftblade tears open a rift beneath a creature and drags it through space to <PRO_HISHER> side. The target must be within 60 feet. Enemies may save vs. spell at a -2 penalty to resist being exchanged.
-The saving throw penalty increases to -4 at 10th level.~
-
-@1110 = ~Rift Exchange~
-@1111 = ~Rift Exchange:
-The Riftblade and a creature within 60 feet vanish into a flash of dimensional energy, reappearing in each other's places. Enemies may save vs. spell at a -2 penalty to resist being exchanged.
-The saving throw penalty increases to -4 at 10th level.~
+The Riftblade briefly tears open the fabric of space and steps through the resulting rift, instantly appearing at a selected location.~
 
 @1112 = ~Rift Strike~
 @1113 = ~Rift Strike:
@@ -83,11 +63,12 @@ For 3 rounds, melee attacks by the Riftblade deal additional magic damage and re
 8th level: +2d4 magic damage
 13th level: +2d6 magic damage~
 
-@1114 = ~Distortion Field~
-@1115 = ~Distortion Field:
-The Riftblade tears open a dimensional disturbance at a selected location, distorting the flow of space within its area.
-All enemies within the area of effect suffer a 50% movement-speed reduction.~
+@1114 = ~Dimensional Prison~
+@1115 = ~Dimensional Prison:
 
+The Riftblade folds space around an enemy, enclosing them within a sphere of dimensional energy.
+For 1 turn, the target is enclosed in an invulnerable globe of shimmering force if they fail a saving throw vs. spells at a -2 penalty (allies don't get a save).
+Hence, the creature caught inside the globe is completely safe from all attacks, but at the same time completely unable to affect the outside world.~
 
 @1116 = ~Rift Rend~
 @1117 = ~Rift Rend:
