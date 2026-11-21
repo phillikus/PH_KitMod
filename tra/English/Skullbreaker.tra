@@ -21,7 +21,7 @@ However, different effects may be applied at the same time.
 NOTE: Due to an engine limitation, the mentioned effects will always apply to BOTH main and offhand weapon.
 This means there is a chance that the off-hand effect applies to the main-hand and vice versa if two different weapon types are equipped.
 
-- 2nd level: May use the Shockwave ability once per day, gains an additional use every 4 levels thereafter.
+- 2nd level: May use the Shockwave ability once per day, gaining an additional use every 4 levels thereafter.
 
 Shockwave:
 All enemies within 15 feet are pushed back and stunned for half a round. Huge creatures are immune to the knockback effect.
@@ -35,7 +35,7 @@ All crushing damage you deal within the next 5 rounds is doubled.
 Become winded after Crushing Victory ends, suffering a -2 penalty to AC and THAC0 as well as becoming fatigued.
 
 Disadvantages:
-- May only achieve Mastery (3 pips) in 1-handed blunt weapons and slings, all other weapons can only achieve proficiency.~
+- May only achieve Mastery (3 pips) in 1-handed blunt weapons and slings, all other weapons can only achieve proficiency (1 pip).~
 
 @204 = ~Shockwave~
 @205 = ~Shockwave
