@@ -21,11 +21,14 @@ LAF fl#add_kit_ee STR_VAR
     hpclass = HPPRS // D8
 END
 
-  COPY_EXISTING ~LUFI0.2DA~ ~override/LURBF.2DA~
-  LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL900~ END
-  LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL901~ END
-  LPF patch_add_hla STR_VAR 2da_row = ~RBF1~ ability = ~GA_rbstrkm~ num_allowed = 3 END
-  LPF patch_add_hla STR_VAR 2da_row = ~RBF2~ ability = ~GA_rbstrki~ num_allowed = 1 prerequisite = ~GA_rbstrkm~ END
+  COPY_EXISTING ~LUFI0.2DA~ ~override/LURBF.2DA~  
+  LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL905~ END
+  LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL906~ END
+  LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL909~ END
+
+  LPF patch_add_hla STR_VAR 2da_row = ~RBF1~ ability = ~GA_rbmass~ num_allowed = 3 END
+  LPF patch_add_hla STR_VAR 2da_row = ~RBF2~ ability = ~GA_rbstrkm~ num_allowed = 3 prerequisite = ~GA_rbmass~ END
+  LPF patch_add_hla STR_VAR 2da_row = ~RBF3~ ability = ~GA_rbstrki~ num_allowed = 1 prerequisite = ~GA_rbstrkm~ END
 
 DEFINE_ACTION_FUNCTION rb_new_portrait_icon
   INT_VAR string = 0
@@ -56,6 +59,7 @@ LAF rb_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1116) STR_VAR bam_fil
 LAF rb_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1118) STR_VAR bam_file = rbstric RET rbstri_icon = icon END
 
 
+COPY ~PH_KITMOD\Riftblade\wav\rbstrk.wav~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbstrk.eff~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbstrk.spl~ ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rbstrk_icon END
@@ -67,39 +71,46 @@ COPY ~PH_KITMOD\Riftblade\spl\rbstat.spl~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbclear.eff~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbclear.spl~ ~override~
 
+// Mass Rift Strike
+//COPY ~PH_KITMOD\Riftblade\bam\rbmass.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbmass.pro~ ~override~
+ADD_PROJECTILE ~PH_KITMOD\Riftblade\spl\rbmass.pro~
+
+COPY ~PH_KITMOD\Riftblade\spl\rbmass.spl~ ~override~
+SAY NAME1 @1114
+SAY UNIDENTIFIED_DESC @1115
+WRITE_SHORT 0x98 ~rbmass~
+
+// Rift Rend
+COPY ~PH_KITMOD\Riftblade\fx\rbstrkm.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\fx\rbstrkm.vvc~ ~override~
+COPY ~PH_KITMOD\Riftblade\wav\rbstrkm.wav~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbstrkm.eff~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbstrm1.spl~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbstrkm.spl~ ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rbstrm_icon END
 SAY NAME1 @1116
 SAY UNIDENTIFIED_DESC @1117
 
+// Eternal Rift
+COPY ~PH_KITMOD\Riftblade\fx\rbstrki.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\fx\rbstrki.vvc~ ~override~
+COPY ~PH_KITMOD\Riftblade\wav\rbstrki.wav~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbstrki.eff~ ~override~
+COPY ~PH_KITMOD\Riftblade\spl\rbstri1.spl~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbstrki.spl~ ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rbstri_icon END
 SAY NAME1 @1118
 SAY UNIDENTIFIED_DESC @1119
 
-COPY ~PH_KITMOD\Riftblade\bam\rbprsnb.bam~ ~override~
-COPY ~PH_KITMOD\Riftblade\bam\rbprsnc.bam~ ~override~
-LAF rb_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1114) STR_VAR bam_file = rbprsnc RET rbprsn_icon = icon END
-
-COPY ~PH_KITMOD\Riftblade\fx\rbprsn.bam~ ~override~
-COPY ~PH_KITMOD\Riftblade\fx\rbprsn.vvc~ ~override~
-
 COPY ~PH_KITMOD\Riftblade\fx\rbstepi.bam~ ~override~
 COPY ~PH_KITMOD\Riftblade\fx\rbstepi.vvc~ ~override~
 COPY ~PH_KITMOD\Riftblade\fx\rbstepo.bam~ ~override~
 COPY ~PH_KITMOD\Riftblade\fx\rbstepo.vvc~ ~override~
+COPY ~PH_KITMOD\Riftblade\fx\rbstrk.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\fx\rbstrk.vvc~ ~override~
 
-COPY ~PH_KITMOD\Riftblade\spl\rbprsna.spl~ ~override~
-    LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@1114) STR_VAR END
-    LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = rbprsn_icon END
-
-COPY ~PH_KITMOD\Riftblade\wav\rbprsn.wav~ ~override~
-COPY ~PH_KITMOD\Riftblade\spl\rbprsn.spl~ ~override~
-SAY NAME1 @1114
-SAY UNIDENTIFIED_DESC @1115
-
+// Rift Ward
 COPY ~PH_KITMOD\Riftblade\spl\rbward1.spl~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbward2.spl~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbward3.spl~ ~override~

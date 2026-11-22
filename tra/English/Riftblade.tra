@@ -5,8 +5,10 @@
 @1102 = ~Riftblade~
 @1103 = ~Riftblade:
 
-The Riftblade is a warrior who has learned to bend the boundaries of space and harness the forces that lie beyond the mortal plane. Rather than relying solely on physical prowess, the Riftblade manipulates dimensional energy to traverse the battlefield, empower their weapons and temporarily remove enemies from reality.
-The kit combines exceptional mobility with magical weapon disruption, selective battlefield control and specialized resistance against otherworldly creatures. Its strength lies in controlling the engagement: appearing where least expected, weakening dangerous opponents and protecting itself against the very forces it commands.
+The Riftblade is a warrior who has mastered the manipulation of planar energies, drawing upon the forces that flow between worlds. The Riftblade can tear open brief passages through reality to cross distances in an instant, imbue <PRO_HISHER> weapons with dimensional power, and unleash rifts that banish enemies beyond the mortal plane. 
+Their growing attunement to other worlds also grants <PRO_HIMHER> supernatural protection against creatures beyond the Material Plane.
+
+Though the Riftblade wields extraordinary powers, <PRO_HESHE> remains a warrior first and foremost, relying on martial skill and mastery of dimensional forces rather than spellcasting.
 
 Advantages:
 - 1st level: May use Rift Step once per day, gaining an additional use at level 3 and every 3 levels thereafter.
@@ -17,40 +19,45 @@ The Riftblade briefly tears open the fabric of space and steps through the resul
 - 2nd level: May use Rift Strike once per day, gaining an additional use every 4 levels thereafter.
 
 Rift Strike:
-The Riftblade draws dimensional energy along <PRO_HISHER> weapon, making each blow resonate through the planes. 
-For 3 rounds, melee attacks by the Riftblade deal an additional 1d6 magic damage and reduce the targets movement speed by 25%
+The Riftblade channels unstable dimensional energy into <PRO_HISHER> weapon, preparing a devastating strike that tears at the target's connection to reality.
+The next successful melee attack deals additional magic damage. The target must save vs. Breath or suffer a dimensional disruption, reducing its movement speed for 2 rounds.
+The damage and slow effect improve as the Riftblade gains experience:
+- 2nd level: 1d8 magic damage, 20% movement speed reduction 
+- 5th level: 2d8 magic damage, 30% movement speed reduction 
+- 10th level: 3d8 magic damage, 40% movement speed reduction, save penalty increases to -2
+- 15th level: 4d8 magic damage, 50% movement speed reduction
+- 20th level: 5d8 magic damage, 60% movement speed reduction, save penalty increases to -4
 
-- 4th level: gains the Planar Ward passive ability.
+- 4th level: Gains the Planar Ward passive ability.
 
 Planar Ward:
-The Riftblade's growing attunement to the planes grants <PRO_HIMHER> supernatural protection against the creatures that dwell beyond the mortal world. The Riftblade gains a +2 bonus to AC and all saving throws against certain otherworldly beings.
-This protection develops as <PRO_HESHE> gains experience:
-Level 4: Elementals and Genies
-Level 8: Demons, Devils and Rakshasas
-Level 12: Planetars, Solars and Devas
-Level 16: Githyanki, Beholders and Mind Flayers
+The Riftblade's growing attunement to the planes grants <PRO_HIMHER> supernatural protection against creatures from other planes of existence. The Riftblade gains a +2 bonus to Armor Class and all saving throws when attacked by these creatures.
+This protection expands as <PRO_HESHE> gains experience:
+- Elemental Attunement (4th level): Elementals, Mephits, Salamandars and Genies
+- Infernal Attunement (8th level): Imps and Demons
+- Celestial Attunement (12th level): Planetars, Solars and Devas
+- Astral Attunement (16th level): Githyanki
 
-- 8th level: Rift Strike bonus damage increased to 1d8.
-- 10th level: May use the Dimensional Prison ability once per day, gaining an additional use every 5 levels therafter.
+The protection from previously attained attunements is retained.
 
-Dimensional Prison:
-The Riftblade folds space around an enemy, enclosing them within a sphere of dimensional energy.
-For 1 turn, the target is enclosed in an invulnerable globe of shimmering force if they fail a saving throw vs. spells at a -2 penalty (allies don't get a save).
-Hence, the creature caught inside the globe is completely safe from all attacks, but at the same time completely unable to affect the outside world.
-The saving throw penalty increases to -4 at level 20 and you may target 2 creatures.
-
-- 13th level: Rift Strike bonus damage increased to 1d10.
 - 15th level: Gains the Dimensional Anchor passive ability.
 
 Dimensional Anchor:
 The Riftblade binds <PRO_HISHER> essence to the material plane, resisting forces that would tear <PRO_HIMHER> away. The Riftblade is permanently immune to involuntary teleportation and dimensional displacement, Maze, and Imprisonment.
 
-- High-Level Abilities: May learn the Rift Rend and Eternal Rift high level abilities.
+- High-Level Abilities: May learn the Mass Rift Strike, Rift Rend and Eternal Rift high level abilities.
+
+Mass Rift Strike:
+The Riftblade unleashes a surge of dimensional energy, tearing at the fabric of reality around <PRO_HIMHER> and disrupting all nearby enemies.
+All enemies within 15 feet suffer the current effects of Rift Strike.
+
+This ability may be selected up to 3 times.
 
 Rift Rend:
 The Riftblade delivers a devastating melee strike with <PRO_HISHER> next successful melee attack. Struck target is trapped in a dimensional labyrinth for several rounds as per the Maze spell.
 This effect bypasses weapon protection spells such as Protection From Magical Weapons (requires EEex).
 
+Requires: Mass Rift Strike.
 This ability may be selected up to 3 times.
 
 Eternal Rift:
@@ -61,7 +68,7 @@ Requires: Rift Rend.
 
 Disadvantages:
 - d8 hit dice.
-- May not learn the Whirlwind and Greater Whirlwind high level abilities.~
+- May not learn the Power Attack, Critical Strike and Smite high level abilities.~
 
 @1106 = ~Rift Step~
 @1107 = ~Rift Step:
@@ -69,25 +76,28 @@ The Riftblade briefly tears open the fabric of space and steps through the resul
 
 @1112 = ~Rift Strike~
 @1113 = ~Rift Strike
-The Riftblade draws dimensional energy along <PRO_HISHER> weapon, making each blow resonate through the planes. 
-For 3 rounds, melee attacks by the Riftblade deal additional magic damage and reduce the targets movement speed by 25%.
-3rd level: +1d6 magic damage
-8th level: +1d8 magic damage
-13th level: +1d10 magic damage~
+The Riftblade channels unstable dimensional energy into <PRO_HISHER> weapon, preparing a devastating strike that tears at the target's connection to reality.
+The next successful melee attack deals additional magic damage. The target must save vs. Breath or suffer a dimensional disruption, reducing its movement speed for 2 rounds.
+The damage and slow effect improve as the Riftblade gains experience:
+- 2nd level: 1d8 magic damage, 20% movement speed reduction 
+- 5th level: 2d8 magic damage, 30% movement speed reduction 
+- 10th level: 3d8 magic damage, 40% movement speed reduction, save penalty increases to -2
+- 15th level: 4d8 magic damage, 50% movement speed reduction
+- 20th level: 5d8 magic damage, 60% movement speed reduction, save penalty increases to -4~
 
-@1114 = ~Dimensional Prison~
-@1115 = ~Dimensional Prison
+@1114 = ~Mass Rift Strike~
+@1115 = ~Mass Rift Strike
+The Riftblade unleashes a surge of dimensional energy, tearing at the fabric of reality around <PRO_HIMHER> and disrupting all nearby enemies.
+All enemies within 15 feet suffer the current effects of Rift Strike.
 
-The Riftblade folds space around an enemy, enclosing them within a sphere of dimensional energy.
-For 1 turn, the target is enclosed in an invulnerable globe of shimmering force if they fail a saving throw vs. spells at a -2 penalty (allies don't get a save).
-Hence, the creature caught inside the globe is completely safe from all attacks, but at the same time completely unable to affect the outside world.
-The saving throw penalty increases to -4 at level 20 and you may target 2 creatures.~
+This ability may be selected up to 3 times.~
 
 @1116 = ~Rift Rend~
 @1117 = ~Rift Rend
 The Riftblade delivers a devastating melee strike with <PRO_HISHER> next successful melee attack within 3 rounds. Struck target is trapped in a dimensional labyrinth for several rounds as per the Maze spell.
 This effect bypasses weapon protection spells such as Protection From Magical Weapons (requires EEex).
 
+Requires: Mass Rift Strike.
 This ability may be selected up to 3 times.~
 
 @1118 = ~Eternal Rift~
@@ -95,4 +105,4 @@ This ability may be selected up to 3 times.~
 The Riftblade delivers a final strike with <PRO_HISHER> next successful melee attack within 3 rounds. Struck target is permanetly trapped in an eternal prison beyond the boundaries of the material plane as per the Imprisonment spell.
 This effect bypasses weapon protection spells such as Protection From Magical Weapons (requires EEex).
 
-Requires: Rift Rend~
+Requires: Rift Rend.~
