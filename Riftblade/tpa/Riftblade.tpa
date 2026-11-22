@@ -72,7 +72,7 @@ COPY ~PH_KITMOD\Riftblade\spl\rbclear.eff~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbclear.spl~ ~override~
 
 // Mass Rift Strike
-//COPY ~PH_KITMOD\Riftblade\bam\rbmass.bam~ ~override~
+COPY ~PH_KITMOD\Riftblade\bam\rbmass.bam~ ~override~
 COPY ~PH_KITMOD\Riftblade\spl\rbmass.pro~ ~override~
 ADD_PROJECTILE ~PH_KITMOD\Riftblade\spl\rbmass.pro~
 
