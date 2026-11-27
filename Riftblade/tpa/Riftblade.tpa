@@ -26,9 +26,8 @@ END
   LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL906~ END
   LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPCL909~ END
 
-  LPF patch_add_hla STR_VAR 2da_row = ~RBF1~ ability = ~GA_rbmass~ num_allowed = 3 END
-  LPF patch_add_hla STR_VAR 2da_row = ~RBF2~ ability = ~GA_rbstrkm~ num_allowed = 3 prerequisite = ~GA_rbmass~ END
-  LPF patch_add_hla STR_VAR 2da_row = ~RBF3~ ability = ~GA_rbstrki~ num_allowed = 1 prerequisite = ~GA_rbstrkm~ END
+  LPF patch_add_hla STR_VAR 2da_row = ~RBF1~ ability = ~GA_rbstrkm~ num_allowed = 3 END
+  LPF patch_add_hla STR_VAR 2da_row = ~RBF2~ ability = ~GA_rbstrki~ num_allowed = 1 prerequisite = ~GA_rbstrkm~ END
 
 DEFINE_ACTION_FUNCTION rb_new_portrait_icon
   INT_VAR string = 0

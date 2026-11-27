@@ -40,24 +40,23 @@ This protection expands as <PRO_HESHE> gains experience:
 
 The protection from previously attained attunements is retained.
 
-- 15th level: Gains the Dimensional Anchor passive ability.
+- 15th level: May use Mass Rift Strike once per day, gaining an additional use at level 20 and 25.
+
+Mass Rift Strike:
+The Riftblade unleashes a surge of dimensional energy, tearing at the fabric of reality around <PRO_HIMHER> and disrupting all nearby enemies.
+All enemies within 30 feet suffer the current effects of Rift Strike.
+
+- 18th level: Gains the Dimensional Anchor passive ability.
 
 Dimensional Anchor:
 The Riftblade binds <PRO_HISHER> essence to the material plane, resisting forces that would tear <PRO_HIMHER> away. The Riftblade is permanently immune to involuntary teleportation and dimensional displacement, Maze, and Imprisonment.
 
-- High-Level Abilities: May learn the Mass Rift Strike, Rift Rend and Eternal Rift high level abilities.
-
-Mass Rift Strike:
-The Riftblade unleashes a surge of dimensional energy, tearing at the fabric of reality around <PRO_HIMHER> and disrupting all nearby enemies.
-All enemies within 15 feet suffer the current effects of Rift Strike.
-
-This ability may be selected up to 3 times.
+- High-Level Abilities: May learn the Rift Rend and Eternal Rift high level abilities.
 
 Rift Rend:
 The Riftblade delivers a devastating melee strike with <PRO_HISHER> next successful melee attack. Struck target is trapped in a dimensional labyrinth for several rounds as per the Maze spell.
 This effect bypasses weapon protection spells such as Protection From Magical Weapons (requires EEex).
 
-Requires: Mass Rift Strike.
 This ability may be selected up to 3 times.
 
 Eternal Rift:
@@ -88,16 +87,13 @@ The damage and slow effect improve as the Riftblade gains experience:
 @1114 = ~Mass Rift Strike~
 @1115 = ~Mass Rift Strike
 The Riftblade unleashes a surge of dimensional energy, tearing at the fabric of reality around <PRO_HIMHER> and disrupting all nearby enemies.
-All enemies within 15 feet suffer the current effects of Rift Strike.
-
-This ability may be selected up to 3 times.~
+All enemies within 30 feet suffer the current effects of Rift Strike.~
 
 @1116 = ~Rift Rend~
 @1117 = ~Rift Rend
 The Riftblade delivers a devastating melee strike with <PRO_HISHER> next successful melee attack within 3 rounds. Struck target is trapped in a dimensional labyrinth for several rounds as per the Maze spell.
 This effect bypasses weapon protection spells such as Protection From Magical Weapons (requires EEex).
 
-Requires: Mass Rift Strike.
 This ability may be selected up to 3 times.~
 
 @1118 = ~Eternal Rift~

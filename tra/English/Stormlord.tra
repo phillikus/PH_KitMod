@@ -34,7 +34,7 @@ All enemies within 15 feet are deafened and move 50% slower for 3 rounds. If the
 - gain the Wrath of the Storm High Level Ability, replacing the Summon (Fallen) Deva ability.
 
 Wrath of the Storm:
-The Stormlord invokes the Wrath of the Storm, unleashing divine lightning upon all nearby enemies and summoning a torrential downpour. Instantly strike every hostile creature within a 60-foot radius with Thunderous Smite. One additional bolt is called down upon all affected opponents after 1 round.
+The Stormlord invokes the Wrath of the Storm, unleashing divine lightning upon all nearby enemies and summoning a torrential downpour. Instantly strike every hostile creature within a 30-foot radius with Thunderous Smite. One additional bolt is called down upon all affected opponents after 1 round.
 
 Disadvantages:
 - d8 HD
@@ -56,7 +56,7 @@ The same target may only be affected once per round. This ability lasts for 2 ro
 
 @606 = ~Wrath of the Storm~
 @607 = ~Wrath of the Storm:
-The Stormlord invokes the Wrath of the Storm, unleashing divine lightning upon all nearby enemies and summoning a torrential downpour. Instantly strike every hostile creature within a 60-foot radius with Thunderous Smite. One additional bolt is called down upon all affected opponents after 1 round.~
+The Stormlord invokes the Wrath of the Storm, unleashing divine lightning upon all nearby enemies and summoning a torrential downpour. Instantly strike every hostile creature within a 30-foot radius with Thunderous Smite. One additional bolt is called down upon all affected opponents after 1 round.~
 
 @608 = ~Thunderclap~
 @609 = ~Thunderclap:
